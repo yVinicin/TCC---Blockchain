@@ -1,0 +1,134 @@
+test:
+  name: Benchmark Hyperledger Fabric - SmartBFT
+  description: Desempenho da rede SmartBFT
+  workers:
+    number: 2
+  rounds:
+    # -------------------------------------------------------
+    # WARM-UP: popula o ledger com 1000 assets antes das
+    # baterias de leitura e transferencia.
+    # -------------------------------------------------------
+    - label: Aquecimento-Ledger (warmup)
+      description: Populacao inicial do ledger
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/warmup.js
+
+    # -------------------------------------------------------
+    # ESCRITA PURA — CreateAsset
+    # txNumber = TPS x 300s
+    # -------------------------------------------------------
+    - label: createAsset(Escrita) - 50tps
+      description: Escrita pura a 50 TPS (~300s)
+      txNumber: 15000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 50
+      workload:
+        module: workload/createAsset.js
+
+    - label: createAsset(Escrita) - 160tps
+      description: Escrita pura a 160 TPS (~300s)
+      txNumber: 48000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 160
+      workload:
+        module: workload/createAsset.js
+
+    - label: createAsset(Escrita) - 270tps
+      description: Escrita pura a 270 TPS (~300s)
+      txNumber: 81000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 270
+      workload:
+        module: workload/createAsset.js
+
+    # -------------------------------------------------------
+    # LEITURA PURA — ReadAsset
+    # txNumber = TPS x 300s
+    # -------------------------------------------------------
+    - label: readAsset(Leitura) - 50tps
+      description: Leitura pura a 50 TPS (~300s)
+      txNumber: 15000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 50
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 160tps
+      description: Leitura pura a 160 TPS (~300s)
+      txNumber: 48000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 160
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 270tps
+      description: Leitura pura a 270 TPS (~300s)
+      txNumber: 81000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 270
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    # -------------------------------------------------------
+    # LEITURA + ESCRITA — TransferAsset (misto)
+    # txNumber = TPS x 300s
+    # -------------------------------------------------------
+    - label: transferAsset(Leitura+Escrita) - 50tps
+      description: Leitura e escrita a 50 TPS (~300s)
+      txNumber: 15000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 50
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset(Leitura+Escrita) - 160tps
+      description: Leitura e escrita a 160 TPS (~300s)
+      txNumber: 48000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 160
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset(Leitura+Escrita) - 270tps
+      description: Leitura e escrita a 270 TPS (~300s)
+      txNumber: 81000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 270
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+

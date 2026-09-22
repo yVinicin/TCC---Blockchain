@@ -1,0 +1,31 @@
+# Binários do Prometheus
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/prometheus
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/promtool
+
+# Ambientes virtuais Python
+venv/
+.venv/
+
+# Dependências Node.js
+node_modules/
+
+# Binários do Prometheus
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/prometheus
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/promtool
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+
+# Prometheus
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/prometheus
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/promtool
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/data/
+
+# Grafana
+**/grafana_db/

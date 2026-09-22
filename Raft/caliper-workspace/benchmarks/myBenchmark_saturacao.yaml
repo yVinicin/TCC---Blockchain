@@ -1,0 +1,207 @@
+test:
+  name: Benchmark Hyperledger Fabric - Raft
+  description: Teste para encontrar o ponto de saturação da rede Raft
+
+  workers:
+    number: 2
+
+  rounds:
+
+    # -------------------------------------------------------
+    # WARM-UP: popula o ledger com 1000 assets antes das
+    # baterias de transferência.
+    # -------------------------------------------------------
+    - label: Aquecimento-Ledger
+      description: Populacao inicial do ledger
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/warmup.js
+
+    # -------------------------------------------------------
+    # TESTES DE SATURAÇÃO
+    # -------------------------------------------------------
+
+    - label: transferAsset - 100tps
+      description: Leitura e escrita a 100 TPS (~30s)
+      txNumber: 3000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 200tps
+      description: Leitura e escrita a 200 TPS (~30s)
+      txNumber: 6000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 200
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 300tps
+      description: Leitura e escrita a 300 TPS (~30s)
+      txNumber: 9000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 300
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 400tps
+      description: Leitura e escrita a 400 TPS (~30s)
+      txNumber: 12000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 400
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 500tps
+      description: Leitura e escrita a 500 TPS (~30s)
+      txNumber: 15000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 500
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 600tps
+      description: Leitura e escrita a 600 TPS (~30s)
+      txNumber: 18000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 600
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 700tps
+      description: Leitura e escrita a 700 TPS (~30s)
+      txNumber: 21000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 700
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 800tps
+      description: Leitura e escrita a 800 TPS (~30s)
+      txNumber: 24000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 800
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 900tps
+      description: Leitura e escrita a 900 TPS (~30s)
+      txNumber: 27000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 900
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 1000tps
+      description: Leitura e escrita a 1000 TPS (~30s)
+      txNumber: 30000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1000
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 1100tps
+      description: Leitura e escrita a 1100 TPS (~30s)
+      txNumber: 33000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1100
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 1200tps
+      description: Leitura e escrita a 1200 TPS (~30s)
+      txNumber: 36000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1200
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 1300tps
+      description: Leitura e escrita a 1300 TPS (~30s)
+      txNumber: 39000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1300
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 1400tps
+      description: Leitura e escrita a 1400 TPS (~30s)
+      txNumber: 42000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1400
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset - 1500tps
+      description: Leitura e escrita a 1500 TPS (~30s)
+      txNumber: 45000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 1500
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+

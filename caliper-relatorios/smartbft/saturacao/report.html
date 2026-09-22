@@ -1,0 +1,728 @@
+<!doctype html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script>
+    function plotChart(divId, chartData) {
+        // Convert from stringified html, to valid JSON
+        const chartDetails = JSON.parse(chartData.replace(/&quot;/g,'"'));
+        new Chart(document.getElementById(divId), {
+            type: chartDetails.type,
+            data: {
+                labels: chartDetails.labels,
+                datasets: chartDetails.datasets
+            },
+            options: {
+                legend: { display: chartDetails.legend },
+                title: {
+                    display: true,
+                    text: chartDetails.title
+                }
+            }
+        });
+    }
+</script>
+<html>
+<head>
+    <title>Hyperledger Caliper Report</title>
+    <meta charset="UTF-8"/>
+    <style type="text/css">
+        .left-column {
+            position: fixed;
+            width:20%;
+        }
+        .left-column ul {
+            display: block;
+            padding: 0;
+            list-style: none;
+            border-bottom: 1px solid #d9d9d9;
+            font-size: 14px;
+        }
+        .left-column h2{
+            font-size: 24px;
+            font-weight: 400;
+            margin-block-end: 0.5em;
+        }
+        .left-column h3{
+            font-size: 18px;
+            font-weight: 400;
+            margin-block-end: 0.5em;
+        }
+        .left-column li{
+            margin-left: 10px;
+            margin-bottom: 5px;
+            color: #5e6b73;
+        }
+        .right-column {
+            margin-left: 22%;
+            width:60%;
+        }
+        .right-column table {
+            font-size:11px;
+            color:#333333;
+            border-width: 1px;
+            border-color: #666666;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .right-column h2{
+            font-weight: 400;
+        }
+        .right-column h3{
+            font-weight: 400;
+        }
+        .right-column h4 {
+            font-weight: 400;
+            margin-block-end: 0;
+        }
+        .right-column th {
+            border-width: 1px;
+            font-size: small;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #f2f2f2;
+        }
+        .right-column td {
+            border-width: 1px;
+            font-size: small;
+            padding: 8px;
+            border-style: solid;
+            border-color: #666666;
+            background-color: #ffffff;
+            font-weight: 400;
+        }
+        .tag {
+            margin-bottom: 10px;
+            padding: 5px 10px;
+        }
+        pre {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            overflow:auto;
+            max-height:300px;
+            font-size:12px;
+        }
+        .charting {
+            display:flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            page-break-inside: auto;
+        }
+        .chart {
+            display:flex;
+            flex:1;
+            max-width: 50%;
+        }
+    </style>
+</head>
+<body style="font-family: IBM Plex Sans; font-weight: 200;">
+    <main>
+        <div class="left-column">
+            <img src="https://hyperledger.github.io/caliper/assets/img/hyperledger_caliper_logo_color.png" style="width:95%;" alt="">
+            <ul>
+                <h3>&nbspBasic information</h3>
+                <li>DLT: &nbsp<span style="font-weight: 500;">fabric</span></li>
+                <li>Name: &nbsp<span style="font-weight: 500;">Benchmark Hyperledger Fabric - SmartBFT</span></li>
+                <li>Description: &nbsp<span style="font-weight: 500;">Teste para encontrar o ponto de saturação da rede SmartBFT</span></li>
+                <li>Benchmark Rounds: &nbsp<span style="font-weight: 500;">16</span></li>
+                <li><a href="#benchmarkInfo">Details</a></li>
+            </ul>
+            <ul>
+                <h3>&nbspBenchmark results</h3>
+                <li><a href="#benchmarksummary">Summary</a></li>
+                    <li><a href="#Aquecimento-Ledger">Aquecimento-Ledger</a></li>
+                    <li><a href="#transferAsset - 100tps">transferAsset - 100tps</a></li>
+                    <li><a href="#transferAsset - 200tps">transferAsset - 200tps</a></li>
+                    <li><a href="#transferAsset - 300tps">transferAsset - 300tps</a></li>
+                    <li><a href="#transferAsset - 400tps">transferAsset - 400tps</a></li>
+                    <li><a href="#transferAsset - 500tps">transferAsset - 500tps</a></li>
+                    <li><a href="#transferAsset - 600tps">transferAsset - 600tps</a></li>
+                    <li><a href="#transferAsset - 700tps">transferAsset - 700tps</a></li>
+                    <li><a href="#transferAsset - 800tps">transferAsset - 800tps</a></li>
+                    <li><a href="#transferAsset - 900tps">transferAsset - 900tps</a></li>
+                    <li><a href="#transferAsset - 1000tps">transferAsset - 1000tps</a></li>
+                    <li><a href="#transferAsset - 1100tps">transferAsset - 1100tps</a></li>
+                    <li><a href="#transferAsset - 1200tps">transferAsset - 1200tps</a></li>
+                    <li><a href="#transferAsset - 1300tps">transferAsset - 1300tps</a></li>
+                    <li><a href="#transferAsset - 1400tps">transferAsset - 1400tps</a></li>
+                    <li><a href="#transferAsset - 1500tps">transferAsset - 1500tps</a></li>
+            </ul>
+            <ul>
+                <h3>&nbspSystem under test</h3>
+                <li><a href="#sutdetails">Details</a></li>
+            </ul>
+        </div>
+
+        <div class="right-column">
+            <h1 style="padding-top: 3em; font-weight: 500;">Caliper report</h1>
+            <div style="border-bottom: 1px solid #d9d9d9; margin-bottom: 10px;" id="benchmarksummary">
+                <table style="min-width: 100%;">
+                    <h3>Summary of performance metrics</h3>
+                    <tr>
+                         <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                    </tr>
+
+                    <tr>
+                         <td>Aquecimento-Ledger</td> <td>1000</td> <td>0</td> <td>100.2</td> <td>1.10</td> <td>0.03</td> <td>0.26</td> <td>90.9</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 100tps</td> <td>3000</td> <td>0</td> <td>100.1</td> <td>0.14</td> <td>0.03</td> <td>0.07</td> <td>99.9</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 200tps</td> <td>6000</td> <td>0</td> <td>200.1</td> <td>1.70</td> <td>0.03</td> <td>0.19</td> <td>199.6</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 300tps</td> <td>8924</td> <td>76</td> <td>276.0</td> <td>3.94</td> <td>0.03</td> <td>0.67</td> <td>275.6</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 400tps</td> <td>11998</td> <td>2</td> <td>275.4</td> <td>3.77</td> <td>0.03</td> <td>0.62</td> <td>274.9</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 500tps</td> <td>15000</td> <td>0</td> <td>276.0</td> <td>3.71</td> <td>0.03</td> <td>0.53</td> <td>275.7</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 600tps</td> <td>18000</td> <td>0</td> <td>274.7</td> <td>3.76</td> <td>0.03</td> <td>0.55</td> <td>274.2</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 700tps</td> <td>20997</td> <td>3</td> <td>274.1</td> <td>3.81</td> <td>0.03</td> <td>0.44</td> <td>268.4</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 800tps</td> <td>23864</td> <td>136</td> <td>274.6</td> <td>4.21</td> <td>0.03</td> <td>0.44</td> <td>274.3</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 900tps</td> <td>26753</td> <td>247</td> <td>272.0</td> <td>4.23</td> <td>0.03</td> <td>0.62</td> <td>271.9</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 1000tps</td> <td>29844</td> <td>156</td> <td>271.5</td> <td>4.07</td> <td>0.03</td> <td>0.55</td> <td>271.4</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 1100tps</td> <td>32985</td> <td>15</td> <td>269.2</td> <td>3.86</td> <td>0.03</td> <td>0.51</td> <td>266.7</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 1200tps</td> <td>35935</td> <td>65</td> <td>271.5</td> <td>4.12</td> <td>0.03</td> <td>0.51</td> <td>269.9</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 1300tps</td> <td>38944</td> <td>56</td> <td>269.9</td> <td>4.14</td> <td>0.03</td> <td>0.48</td> <td>269.8</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 1400tps</td> <td>41574</td> <td>426</td> <td>269.2</td> <td>4.62</td> <td>0.03</td> <td>0.67</td> <td>268.7</td>
+                    </tr>
+                    <tr>
+                         <td>transferAsset - 1500tps</td> <td>44900</td> <td>100</td> <td>269.4</td> <td>4.18</td> <td>0.03</td> <td>0.52</td> <td>269.3</td>
+                    </tr>
+                </table>
+            </div>
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="Aquecimento-Ledger">
+                <h2>Benchmark round: Aquecimento-Ledger</h2>
+                <p>Populacao inicial do ledger</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 100
+</pre>
+                        <h3>Performance metrics for Aquecimento-Ledger</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>Aquecimento-Ledger</td> <td>1000</td> <td>0</td> <td>100.2</td> <td>1.10</td> <td>0.03</td> <td>0.26</td> <td>90.9</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for Aquecimento-Ledger</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 100tps">
+                <h2>Benchmark round: transferAsset - 100tps</h2>
+                <p>Leitura e escrita a 100 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 100
+</pre>
+                        <h3>Performance metrics for transferAsset - 100tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 100tps</td> <td>3000</td> <td>0</td> <td>100.1</td> <td>0.14</td> <td>0.03</td> <td>0.07</td> <td>99.9</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 100tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 200tps">
+                <h2>Benchmark round: transferAsset - 200tps</h2>
+                <p>Leitura e escrita a 200 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 200
+</pre>
+                        <h3>Performance metrics for transferAsset - 200tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 200tps</td> <td>6000</td> <td>0</td> <td>200.1</td> <td>1.70</td> <td>0.03</td> <td>0.19</td> <td>199.6</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 200tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 300tps">
+                <h2>Benchmark round: transferAsset - 300tps</h2>
+                <p>Leitura e escrita a 300 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 300
+</pre>
+                        <h3>Performance metrics for transferAsset - 300tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 300tps</td> <td>8924</td> <td>76</td> <td>276.0</td> <td>3.94</td> <td>0.03</td> <td>0.67</td> <td>275.6</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 300tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 400tps">
+                <h2>Benchmark round: transferAsset - 400tps</h2>
+                <p>Leitura e escrita a 400 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 400
+</pre>
+                        <h3>Performance metrics for transferAsset - 400tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 400tps</td> <td>11998</td> <td>2</td> <td>275.4</td> <td>3.77</td> <td>0.03</td> <td>0.62</td> <td>274.9</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 400tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 500tps">
+                <h2>Benchmark round: transferAsset - 500tps</h2>
+                <p>Leitura e escrita a 500 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 500
+</pre>
+                        <h3>Performance metrics for transferAsset - 500tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 500tps</td> <td>15000</td> <td>0</td> <td>276.0</td> <td>3.71</td> <td>0.03</td> <td>0.53</td> <td>275.7</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 500tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 600tps">
+                <h2>Benchmark round: transferAsset - 600tps</h2>
+                <p>Leitura e escrita a 600 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 600
+</pre>
+                        <h3>Performance metrics for transferAsset - 600tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 600tps</td> <td>18000</td> <td>0</td> <td>274.7</td> <td>3.76</td> <td>0.03</td> <td>0.55</td> <td>274.2</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 600tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 700tps">
+                <h2>Benchmark round: transferAsset - 700tps</h2>
+                <p>Leitura e escrita a 700 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 700
+</pre>
+                        <h3>Performance metrics for transferAsset - 700tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 700tps</td> <td>20997</td> <td>3</td> <td>274.1</td> <td>3.81</td> <td>0.03</td> <td>0.44</td> <td>268.4</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 700tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 800tps">
+                <h2>Benchmark round: transferAsset - 800tps</h2>
+                <p>Leitura e escrita a 800 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 800
+</pre>
+                        <h3>Performance metrics for transferAsset - 800tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 800tps</td> <td>23864</td> <td>136</td> <td>274.6</td> <td>4.21</td> <td>0.03</td> <td>0.44</td> <td>274.3</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 800tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 900tps">
+                <h2>Benchmark round: transferAsset - 900tps</h2>
+                <p>Leitura e escrita a 900 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 900
+</pre>
+                        <h3>Performance metrics for transferAsset - 900tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 900tps</td> <td>26753</td> <td>247</td> <td>272.0</td> <td>4.23</td> <td>0.03</td> <td>0.62</td> <td>271.9</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 900tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 1000tps">
+                <h2>Benchmark round: transferAsset - 1000tps</h2>
+                <p>Leitura e escrita a 1000 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 1000
+</pre>
+                        <h3>Performance metrics for transferAsset - 1000tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 1000tps</td> <td>29844</td> <td>156</td> <td>271.5</td> <td>4.07</td> <td>0.03</td> <td>0.55</td> <td>271.4</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 1000tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 1100tps">
+                <h2>Benchmark round: transferAsset - 1100tps</h2>
+                <p>Leitura e escrita a 1100 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 1100
+</pre>
+                        <h3>Performance metrics for transferAsset - 1100tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 1100tps</td> <td>32985</td> <td>15</td> <td>269.2</td> <td>3.86</td> <td>0.03</td> <td>0.51</td> <td>266.7</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 1100tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 1200tps">
+                <h2>Benchmark round: transferAsset - 1200tps</h2>
+                <p>Leitura e escrita a 1200 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 1200
+</pre>
+                        <h3>Performance metrics for transferAsset - 1200tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 1200tps</td> <td>35935</td> <td>65</td> <td>271.5</td> <td>4.12</td> <td>0.03</td> <td>0.51</td> <td>269.9</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 1200tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 1300tps">
+                <h2>Benchmark round: transferAsset - 1300tps</h2>
+                <p>Leitura e escrita a 1300 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 1300
+</pre>
+                        <h3>Performance metrics for transferAsset - 1300tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 1300tps</td> <td>38944</td> <td>56</td> <td>269.9</td> <td>4.14</td> <td>0.03</td> <td>0.48</td> <td>269.8</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 1300tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 1400tps">
+                <h2>Benchmark round: transferAsset - 1400tps</h2>
+                <p>Leitura e escrita a 1400 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 1400
+</pre>
+                        <h3>Performance metrics for transferAsset - 1400tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 1400tps</td> <td>41574</td> <td>426</td> <td>269.2</td> <td>4.62</td> <td>0.03</td> <td>0.67</td> <td>268.7</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 1400tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;" id="transferAsset - 1500tps">
+                <h2>Benchmark round: transferAsset - 1500tps</h2>
+                <p>Leitura e escrita a 1500 TPS (~30s)</p>
+                <pre style="overflow: visible;white-space: pre-wrap;max-height:100%;">rateControl:
+  type: fixed-rate
+  opts:
+    tps: 1500
+</pre>
+                        <h3>Performance metrics for transferAsset - 1500tps</h3>
+                            <table style="min-width: 100%;">
+                                <tr>
+                                     <th>Name</th> <th>Succ</th> <th>Fail</th> <th>Send Rate (TPS)</th> <th>Max Latency (s)</th> <th>Min Latency (s)</th> <th>Avg Latency (s)</th> <th>Throughput (TPS)</th>
+                                </tr>
+                                <tr>
+                                     <td>transferAsset - 1500tps</td> <td>44900</td> <td>100</td> <td>269.4</td> <td>4.18</td> <td>0.03</td> <td>0.52</td> <td>269.3</td>
+                                </tr>
+                            </table>
+                        <h3>Resource utilization for transferAsset - 1500tps</h3>
+            </div>
+
+            <div style="border-bottom: 1px solid #d9d9d9; padding-bottom: 10px;">
+                <h2>Test Environment</h2>
+                <h3>benchmark config</h3>
+                <pre id="benchmarkInfo" style="overflow: visible;white-space: pre-wrap;max-height:100%;">name: Benchmark Hyperledger Fabric - SmartBFT
+description: Teste para encontrar o ponto de saturação da rede SmartBFT
+workers:
+  number: 2
+rounds:
+  - label: Aquecimento-Ledger
+    description: Populacao inicial do ledger
+    txNumber: 1000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 100
+    workload:
+      module: workload&#x2F;warmup.js
+  - label: transferAsset - 100tps
+    description: Leitura e escrita a 100 TPS (~30s)
+    txNumber: 3000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 100
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 200tps
+    description: Leitura e escrita a 200 TPS (~30s)
+    txNumber: 6000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 200
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 300tps
+    description: Leitura e escrita a 300 TPS (~30s)
+    txNumber: 9000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 300
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 400tps
+    description: Leitura e escrita a 400 TPS (~30s)
+    txNumber: 12000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 400
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 500tps
+    description: Leitura e escrita a 500 TPS (~30s)
+    txNumber: 15000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 500
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 600tps
+    description: Leitura e escrita a 600 TPS (~30s)
+    txNumber: 18000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 600
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 700tps
+    description: Leitura e escrita a 700 TPS (~30s)
+    txNumber: 21000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 700
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 800tps
+    description: Leitura e escrita a 800 TPS (~30s)
+    txNumber: 24000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 800
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 900tps
+    description: Leitura e escrita a 900 TPS (~30s)
+    txNumber: 27000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 900
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 1000tps
+    description: Leitura e escrita a 1000 TPS (~30s)
+    txNumber: 30000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 1000
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 1100tps
+    description: Leitura e escrita a 1100 TPS (~30s)
+    txNumber: 33000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 1100
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 1200tps
+    description: Leitura e escrita a 1200 TPS (~30s)
+    txNumber: 36000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 1200
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 1300tps
+    description: Leitura e escrita a 1300 TPS (~30s)
+    txNumber: 39000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 1300
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 1400tps
+    description: Leitura e escrita a 1400 TPS (~30s)
+    txNumber: 42000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 1400
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+  - label: transferAsset - 1500tps
+    description: Leitura e escrita a 1500 TPS (~30s)
+    txNumber: 45000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 1500
+    workload:
+      module: workload&#x2F;transferAsset.js
+      arguments:
+        totalAssets: 1000
+</pre>
+                <h3>SUT</h3>
+                <pre id="sutdetails">not provided</pre>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

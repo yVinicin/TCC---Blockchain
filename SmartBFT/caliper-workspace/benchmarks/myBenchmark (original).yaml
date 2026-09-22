@@ -1,0 +1,17 @@
+test:
+  name: basic-contract-benchmark
+  description: Benchmark do contrato Basic - Rede SmartBFT
+  workers:
+    number: 2
+  rounds:
+    - label: createAsset
+      description: Criação de assets no chaincode basic
+      txNumber: 42000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 700
+      workload:
+        module: workload/createAsset.js
+        arguments:
+          assetSize: 100
