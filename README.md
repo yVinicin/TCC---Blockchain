@@ -1,4 +1,4 @@
-# ⛓️ TCC — Análise Comparativa de Mecanismos de Consenso no Hyperledger Fabric 3.0
+# ⛓️ TCC — Análise comparativa de desempenho dos mecanismos de consenso Raft e SmartBFT no Hyperledger Fabric 3.0
 
 > Trabalho de Conclusão de Curso: análise comparativa de desempenho entre os mecanismos de consenso **Raft** e **SmartBFT** no Hyperledger Fabric 3.0, sob diferentes cargas de trabalho e taxas de transação.
 
