@@ -17,7 +17,7 @@ A comparação avalia como cada algoritmo de consenso se comporta sob diferentes
 
 * **Chaincode único:** `basic`, escrito em Go, usado em ambas as topologias para garantir comparabilidade.
 * **Topologia equalizada:** 4 orderers / 2 organizações, montada a partir do `fabric-samples` test-network, com um perfil `ChannelUsingRaft` de 4 consenters EtcdRaft espelhando a topologia do SmartBFT. As duas topologias (`Raft/raft_network` e `SmartBFT/smartbft_network`) estão versionadas neste repositório já com todas as customizações aplicadas.
-* **Cargas de trabalho:** `CreateAsset`, `ReadAsset` e `TransferAsset`, testadas em três taxas-alvo de TPS: **50, 160 e 270** (270 TPS identificado como o teto de throughput do ambiente).
+* **Cargas de trabalho:** `CreateAsset`, `ReadAsset` e `TransferAsset`, testadas em quatro taxas-alvo de TPS: **50, 160 e 275 / 295** (275 / 295 TPS identificado como o teto de throughput do ambiente).
 * **Rounds:** 10 rounds completos por algoritmo de consenso, cada um com ~300 segundos de duração, precedidos por uma rodada de *warmup* para eliminar viés de cold-start.
 * **Independência estatística:** a rede é resetada (teardown/startup completo) entre cada round.
 * **Ferramenta de benchmark:** [Hyperledger Caliper](https://hyperledger-caliper.github.io/caliper/) 0.6, usando o binding `fabric:fabric-gateway` (SDK 1.5.0), com Node.js 18/20.
