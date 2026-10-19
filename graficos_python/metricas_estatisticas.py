@@ -227,8 +227,7 @@ def caliper_stats(df: pd.DataFrame, algorithm: str) -> dict:
     for metric in ("throughput", "avg_latency"):
         result[metric] = {}
         for (workload, tps), group in sub.groupby(["workload", "tps"]):
-            key = f"{workload} @ {tps} TPS"
-            result[metric][key] = stats(group[metric].to_numpy())
+            result[metric][(workload, int(tps))] = stats(group[metric].to_numpy())
     return result
 
 
@@ -257,11 +256,9 @@ def resource_stats(per_node: dict) -> dict:
 # FORMATAÇÃO DO RELATÓRIO TXT
 # ----------------------------------------------------------------------
 
-WORKLOADS_ORDER = [
-    "CreateAsset @ 50 TPS",  "CreateAsset @ 160 TPS",  "CreateAsset @ 270 TPS",
-    "ReadAsset @ 50 TPS",    "ReadAsset @ 160 TPS",    "ReadAsset @ 270 TPS",
-    "TransferAsset @ 50 TPS","TransferAsset @ 160 TPS","TransferAsset @ 270 TPS",
-]
+# Ordem dos workloads no relatório. Os níveis de TPS de cada workload/rede
+# são lidos dos próprios dados (não são mais fixos em 50/160/270).
+WORKLOAD_ORDER = ["CreateAsset", "ReadAsset", "TransferAsset"]
 
 def fmt(v, decimals=4):
     return f"{v:.{decimals}f}" if not np.isnan(v) else "N/A"
@@ -283,11 +280,13 @@ def section_caliper(algo_stats: dict, algorithm: str) -> list[str]:
     ]:
         lines.append(f"  [ {metric_label} ({unit}) ]")
         data = algo_stats[metric_key]
-        for scenario in WORKLOADS_ORDER:
-            if scenario not in data:
-                continue
-            s = data[scenario]
-            lines.append(f"  {scenario}:")
+        ordered = sorted(
+            data.keys(),
+            key=lambda k: (WORKLOAD_ORDER.index(k[0]), k[1]),
+        )
+        for workload, tps in ordered:
+            s = data[(workload, tps)]
+            lines.append(f"  {workload} @ {tps} TPS:")
             lines.append(f"      Média:          {fmt(s['mean'])} {unit}")
             lines.append(f"      Desvio Padrão:  {fmt(s['std'])}")
             lines.append(f"      Variância:      {fmt(s['var'])}")
@@ -385,4 +384,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

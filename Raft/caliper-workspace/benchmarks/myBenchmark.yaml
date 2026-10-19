@@ -42,13 +42,13 @@ test:
       workload:
         module: workload/createAsset.js
 
-    - label: createAsset(Escrita) - 270tps
-      description: Escrita pura a 270 TPS (~300s)
-      txNumber: 81000
+    - label: createAsset(Escrita) - 295tps
+      description: Escrita pura a 295 TPS (~300s)
+      txNumber: 88500
       rateControl:
         type: fixed-rate
         opts:
-          tps: 270
+          tps: 295
       workload:
         module: workload/createAsset.js
 
@@ -56,37 +56,37 @@ test:
     # LEITURA PURA — ReadAsset
     # txNumber = TPS x 300s
     # -------------------------------------------------------
-    - label: readAsset(Leitura) - 50tps
-      description: Leitura pura a 50 TPS (~300s)
-      txNumber: 15000
+    - label: readAsset(Leitura) - 100tps
+      description: Leitura pura a 100 TPS (~300s)
+      txNumber: 30000
       rateControl:
         type: fixed-rate
         opts:
-          tps: 50
+          tps: 100
       workload:
         module: workload/readAsset.js
         arguments:
           totalAssets: 1000
 
-    - label: readAsset(Leitura) - 160tps
-      description: Leitura pura a 160 TPS (~300s)
-      txNumber: 48000
+    - label: readAsset(Leitura) - 400tps
+      description: Leitura pura a 400 TPS (~300s)
+      txNumber: 120000
       rateControl:
         type: fixed-rate
         opts:
-          tps: 160
+          tps: 400
       workload:
         module: workload/readAsset.js
         arguments:
           totalAssets: 1000
 
-    - label: readAsset(Leitura) - 270tps
-      description: Leitura pura a 270 TPS (~300s)
-      txNumber: 81000
+    - label: readAsset(Leitura) - 680tps
+      description: Leitura pura a 680 TPS (~300s)
+      txNumber: 204000
       rateControl:
         type: fixed-rate
         opts:
-          tps: 270
+          tps: 680
       workload:
         module: workload/readAsset.js
         arguments:
@@ -120,13 +120,13 @@ test:
         arguments:
           totalAssets: 1000
 
-    - label: transferAsset(Leitura+Escrita) - 270tps
-      description: Leitura e escrita a 270 TPS (~300s)
-      txNumber: 81000
+    - label: transferAsset(Leitura+Escrita) - 295tps
+      description: Leitura e escrita a 295 TPS (~300s)
+      txNumber: 88500
       rateControl:
         type: fixed-rate
         opts:
-          tps: 270
+          tps: 295
       workload:
         module: workload/transferAsset.js
         arguments:

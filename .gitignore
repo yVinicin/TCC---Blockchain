@@ -1,17 +1,5 @@
-# Binários do Prometheus
-fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/prometheus
-fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/promtool
-
-# Ambientes virtuais Python
-venv/
-.venv/
-
-# Dependências Node.js
+# Node.js
 node_modules/
-
-# Binários do Prometheus
-fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/prometheus
-fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/promtool
 
 # Python
 venv/
@@ -19,13 +7,24 @@ venv/
 __pycache__/
 *.pyc
 
-# Node.js
-node_modules/
+# Binários e config baixados pelo install-fabric.sh (reinstaláveis, não versionar)
+Raft/raft_network/bin/
+Raft/raft_network/config/
+Raft/raft_network/builders/
+SmartBFT/smartbft_network/bin/
+SmartBFT/smartbft_network/config/
+SmartBFT/smartbft_network/builders/
 
-# Prometheus
-fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/prometheus
-fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/promtool
-fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/data/
+# Material criptográfico e artefatos gerados em tempo de execução (./network.sh up)
+**/crypto-config/
+**/organizations/peerOrganizations/
+**/organizations/ordererOrganizations/
+**/channel-artifacts/
+**/system-genesis-block/
+
+# Prometheus — binário completo baixado da internet
+fabric-monitoring/prometheus/prometheus-2.53.0.linux-amd64/
+!fabric-monitoring/prometheus/prometheus.yml
 
 # Grafana
 **/grafana_db/

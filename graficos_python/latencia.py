@@ -134,9 +134,8 @@ def build_dataframe_from_caliper_reports(reports_dir: str) -> pd.DataFrame:
     Varre reports_dir recursivamente em busca de report.html e
     extrai todas as linhas de todos os rounds (em memória, sem salvar CSV).
     """
-    html_paths = glob.glob(os.path.join(reports_dir, "**", "report.html"), recursive=True)
-    if not html_paths:
-        html_paths = glob.glob(os.path.join(reports_dir, "**", "*.html"), recursive=True)
+    # Somente os rounds normais (ignora a pasta "saturacao")
+    html_paths = glob.glob(os.path.join(reports_dir, "**", "round_*", "report.html"), recursive=True)
 
     if not html_paths:
         raise FileNotFoundError(
@@ -188,7 +187,14 @@ def summarize(df: pd.DataFrame, metric: str) -> pd.DataFrame:
             "ci95": margin,
             "n_rounds": len(values),
         })
-    return pd.DataFrame(records)
+    summary = pd.DataFrame(records)
+    # Nível de carga (0 = menor TPS, 1 = intermediário, 2 = maior) dentro de
+    # cada algoritmo/workload. Permite alinhar redes com TPS alvo diferentes.
+    summary["level"] = (
+        summary.groupby(["algorithm", "workload"])["tps"]
+        .rank(method="dense").astype(int) - 1
+    )
+    return summary
 
 
 # ----------------------------------------------------------------------
@@ -205,7 +211,7 @@ def plot_workload(summary: pd.DataFrame, workload: str, output_dir: str) -> str:
         if algo_data.empty:
             continue
         ax.errorbar(
-            algo_data["tps"],
+            algo_data["level"],
             algo_data["mean_value"],
             yerr=algo_data["ci95"],
             label=algorithm,
@@ -218,11 +224,29 @@ def plot_workload(summary: pd.DataFrame, workload: str, output_dir: str) -> str:
             elinewidth=1.5,
         )
 
-    ax.set_title(f"Latência Média vs TPS Alvo — {WORKLOAD_LABELS.get(workload, workload)}",
+    ax.set_title(f"Latência Média — {WORKLOAD_LABELS.get(workload, workload)}",
                  fontsize=13, fontweight="bold")
-    ax.set_xlabel("TPS Alvo", fontsize=11)
+    ax.set_xlabel("Nível de carga (TPS alvo)", fontsize=11)
     ax.set_ylabel("Latência Média (s)", fontsize=11)
-    ax.set_xticks(sorted(subset["tps"].unique()))
+
+    # Rótulo de cada nível: um único TPS se as redes coincidem,
+    # ou o TPS de cada rede quando diferem.
+    levels = sorted(subset["level"].unique())
+    labels = []
+    for lv in levels:
+        tps_by_algo = {
+            r.algorithm: int(r.tps)
+            for r in subset[subset["level"] == lv].itertuples()
+        }
+        if len(set(tps_by_algo.values())) == 1:
+            labels.append(f"{next(iter(tps_by_algo.values()))}")
+        else:
+            labels.append("\n".join(
+                f"{a}: {tps_by_algo[a]}" for a in ("Raft", "SmartBFT") if a in tps_by_algo
+            ))
+    ax.set_xticks(levels)
+    ax.set_xticklabels(labels, fontsize=10)
+    ax.margins(x=0.1)
     ax.legend(title="Algoritmo", fontsize=10)
     ax.grid(True, linestyle="--", alpha=0.4)
     fig.tight_layout()
@@ -255,4 +279,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

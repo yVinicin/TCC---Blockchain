@@ -26,7 +26,7 @@ WORKLOAD_NAME_MAP = {
 
 # Regex adaptado para extrair "<workload> - <tps>tps" da coluna "Name"
 # Ex: "transferAsset - 100tps" -> workload=transferAsset, tps=100
-ROW_NAME_RE = re.compile(r"^([a-zA-Z]+)\s*-\s*(\d+)\s*tps", re.IGNORECASE)
+ROW_NAME_RE = re.compile(r"^([a-zA-Z]+)(?:\([^)]*\))?\s*-\s*(\d+)\s*tps", re.IGNORECASE)
 
 ALGO_COLORS = {
     "Raft": "#2E86AB",
@@ -41,7 +41,7 @@ WORKLOADS = ["CreateAsset", "ReadAsset", "TransferAsset"]
 WORKLOAD_LABELS = {
     "CreateAsset": "CreateAsset (Escrita)",
     "ReadAsset": "ReadAsset (Leitura)",
-    "TransferAsset": "TransferAsset (Saturação)",
+    "TransferAsset": "TransferAsset (Leitura+Escrita)",
 }
 
 # ----------------------------------------------------------------------
@@ -131,9 +131,10 @@ def build_dataframe_from_caliper_reports(reports_dir: str) -> pd.DataFrame:
     Varre reports_dir recursivamente em busca de report.html.
     Mesmo que seja uma única pasta chamada 'saturacao', o glob encontrará o HTML.
     """
-    html_paths = glob.glob(os.path.join(reports_dir, "**", "report.html"), recursive=True)
+    # Restringe à pasta "saturacao" para não misturar com os rounds normais (TPS 50/160/270)
+    html_paths = glob.glob(os.path.join(reports_dir, "**", "saturacao", "report.html"), recursive=True)
     if not html_paths:
-        html_paths = glob.glob(os.path.join(reports_dir, "**", "*.html"), recursive=True)
+        html_paths = glob.glob(os.path.join(reports_dir, "**", "saturacao", "*.html"), recursive=True)
 
     if not html_paths:
         raise FileNotFoundError(
@@ -215,17 +216,19 @@ def plot_workload(summary: pd.DataFrame, workload: str, output_dir: str) -> str:
             elinewidth=1.5,
         )
 
-    ax.set_title(f"Throughput vs TPS Alvo — {WORKLOAD_LABELS.get(workload, workload)}",
+    ax.set_title(f"Saturação da vazão — {WORKLOAD_LABELS.get(workload, workload)}",
                  fontsize=13, fontweight="bold")
     ax.set_xlabel("TPS Alvo", fontsize=11)
-    ax.set_ylabel("Throughput (tx/s)", fontsize=11)
-    ax.set_xticks(sorted(subset["tps"].unique()))
+    ax.set_ylabel("Vazão (tx/s)", fontsize=11)
+    xticks = sorted(subset["tps"].unique())
+    ax.set_xticks(xticks)
+    ax.set_xticklabels(xticks, rotation=45, ha="right", fontsize=9)
     ax.legend(title="Algoritmo", fontsize=10)
     ax.grid(True, linestyle="--", alpha=0.4)
     fig.tight_layout()
 
     os.makedirs(output_dir, exist_ok=True)
-    out_path = os.path.join(output_dir, f"saturacao_throughput.png")
+    out_path = os.path.join(output_dir, f"saturacao_throughput_{workload}.png")
     fig.savefig(out_path, dpi=200)
     plt.close(fig)
     return out_path
