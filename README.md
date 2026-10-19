@@ -17,7 +17,7 @@ A comparação avalia como cada algoritmo de consenso se comporta sob diferentes
 
 * **Chaincode único:** `basic`, escrito em Go, usado em ambas as topologias para garantir comparabilidade.
 * **Topologia equalizada:** 4 orderers / 2 organizações, montada a partir do `fabric-samples` test-network, com um perfil `ChannelUsingRaft` de 4 consenters EtcdRaft espelhando a topologia do SmartBFT. As duas topologias (`Raft/raft_network` e `SmartBFT/smartbft_network`) estão versionadas neste repositório já com todas as customizações aplicadas.
-* **Cargas de trabalho:** `CreateAsset`, `ReadAsset` e `TransferAsset`, testadas em quatro taxas-alvo de TPS: **50, 160 e 275 / 295** (275 / 295 TPS identificado como o teto de throughput do ambiente).
+* **Cargas de trabalho:** `CreateAsset`, `ReadAsset` e `TransferAsset`, testadas em três taxas-alvo de TPS: **50, 160 e 270** (270 TPS identificado como o teto de throughput do ambiente).
 * **Rounds:** 10 rounds completos por algoritmo de consenso, cada um com ~300 segundos de duração, precedidos por uma rodada de *warmup* para eliminar viés de cold-start.
 * **Independência estatística:** a rede é resetada (teardown/startup completo) entre cada round.
 * **Ferramenta de benchmark:** [Hyperledger Caliper](https://hyperledger-caliper.github.io/caliper/) 0.6, usando o binding `fabric:fabric-gateway` (SDK 1.5.0), com Node.js 18/20.
@@ -60,6 +60,7 @@ TCC---Blockchain/
 | **Docker Engine** | 28.0.0 | versões ≥29.x apresentaram incompatibilidade (broken pipe no install de chaincode) |
 | **Node.js** | 18 ou 20 | exigido pelo SDK `fabric-gateway` 1.5.0 e pelo Caliper |
 | **Hyperledger Caliper** | 0.6 | instalado via `npm` dentro de cada `caliper-workspace` |
+| **Go** | 1.2x (compatível com Fabric 3.1.4) | necessário no host para compilar o chaincode `basic` durante o deploy feito pelo `rede.sh` |
 | **Python** | 3.x + `venv` | para os scripts de análise estatística e geração de gráficos |
 | **Prometheus** | 2.53.0 | baixado manualmente (binário, não versionado no repo) |
 | **cAdvisor** | v0.57.0 | roda via Docker |
@@ -77,13 +78,23 @@ cd TCC---Blockchain
 
 ### 2. Instale o Hyperledger Fabric (binários + imagens Docker)
 
+O `install-fabric.sh` precisa rodar **dentro de cada pasta de rede**, pois `bin/`, `config/` e `builders/` são gerados localmente ali (e não são versionados no repositório):
+
 ```bash
+# Raft
+cd Raft/raft_network
 curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh
 chmod +x install-fabric.sh
 ./install-fabric.sh docker binary
-```
+cd ../..
 
-Isso gera as pastas `bin/`, `config/` e `builders/` usadas por `raft_network/` e `smartbft_network/` (copie-as para dentro de cada uma, ou ajuste o `PATH`/variáveis conforme o script `install-fabric.sh` indicar).
+# SmartBFT
+cd SmartBFT/smartbft_network
+curl -sSLO https://raw.githubusercontent.com/hyperledger/fabric/main/scripts/install-fabric.sh
+chmod +x install-fabric.sh
+./install-fabric.sh docker binary
+cd ../..
+```
 
 ### 3. Instale as dependências Node.js do Caliper (em cada topologia)
 
@@ -112,6 +123,8 @@ cd ..
 ./bash-scripts/rede.sh down
 ```
 
+O `rede.sh` já cuida de todo o ciclo necessário: sobe a rede, cria o canal (`mychannel`) e compila/empacota/aprova/commita o chaincode `basic` para as duas organizações. Não é preciso nenhum passo manual adicional de deploy.
+
 ### 6. Suba o stack de monitoramento (Prometheus + cAdvisor + Grafana)
 
 ```bash
@@ -124,11 +137,7 @@ Acesse o Grafana (porta padrão `3000`) e importe o dashboard ID `14282`, ajusta
 ### 7. Execute o benchmark completo
 
 ```bash
-./bash-scripts/caliper-benchmark.sh raft
-```
-ou
-```bash
-./bash-scripts/caliper-benchmark.sh smartbft
+./bash-scripts/caliper-benchmark.sh
 ```
 
 Esse script cuida do teardown/startup da rede, espera de estabilização, execução do Caliper (10 rounds por TPS alvo) e arquivamento dos relatórios em `caliper-relatorios/`.
