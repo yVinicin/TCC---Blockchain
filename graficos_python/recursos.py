@@ -224,7 +224,10 @@ def plot_resources(avg_df: pd.DataFrame, algorithm: str, metric: str, output_dir
     ax.set_title(title, fontsize=13, fontweight="bold")
     ax.set_xlabel("Tempo relativo (min)", fontsize=11)
     ax.set_ylabel(ylabel, fontsize=11)
-    ax.legend(title="Nó", fontsize=9, loc="upper left")
+    legend_loc = "upper right" if metric == "ram" else "upper left"
+    if metric == "ram":
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.45)  # espaço livre p/ a legenda
+    ax.legend(title="Nó", fontsize=9, loc=legend_loc)
     ax.grid(True, linestyle="--", alpha=0.4)
     fig.tight_layout()
 
@@ -285,7 +288,10 @@ def plot_comparativo(
     ax.set_title(title, fontsize=13, fontweight="bold")
     ax.set_xlabel("Tempo relativo (min)", fontsize=11)
     ax.set_ylabel(ylabel, fontsize=11)
-    ax.legend(title="Algoritmo", fontsize=10)
+    legend_loc = "upper right" if metric == "ram" else "best"
+    if metric == "ram":
+        ax.set_ylim(top=ax.get_ylim()[1] * 1.15)  # espaço livre p/ a legenda
+    ax.legend(title="Algoritmo", fontsize=10, loc=legend_loc)
     ax.grid(True, linestyle="--", alpha=0.4)
     fig.tight_layout()
 
