@@ -1,0 +1,62 @@
+test:
+  name: Benchmark Hyperledger Fabric - TransferAsset
+  description: Desempenho isolado da operacao mista (TransferAsset)
+  workers:
+    number: 2
+  rounds:
+    # -------------------------------------------------------
+    # WARM-UP: popula o ledger com 1000 assets antes da
+    # bateria de transferencia. Necessario porque a rede e
+    # resetada entre operacoes (independencia estatistica).
+    # -------------------------------------------------------
+    - label: Aquecimento-Ledger (warmup)
+      description: Populacao inicial do ledger
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/warmup.js
+
+    # -------------------------------------------------------
+    # LEITURA + ESCRITA — TransferAsset (misto)
+    # txNumber = TPS x 300s
+    # Steps de 100 em 100 ate ultrapassar o ponto de saturacao
+    # (295 tps Raft / 275 tps SmartBFT -> 300 cobre ambos)
+    # -------------------------------------------------------
+    - label: transferAsset(Leitura+Escrita) - 100tps
+      description: Leitura e escrita a 100 TPS (~300s)
+      txNumber: 30000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset(Leitura+Escrita) - 200tps
+      description: Leitura e escrita a 200 TPS (~300s)
+      txNumber: 60000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 200
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: transferAsset(Leitura+Escrita) - 300tps
+      description: Leitura e escrita a 300 TPS (~300s) - acima do ponto de saturacao de ambos os protocolos
+      txNumber: 90000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 300
+      workload:
+        module: workload/transferAsset.js
+        arguments:
+          totalAssets: 1000

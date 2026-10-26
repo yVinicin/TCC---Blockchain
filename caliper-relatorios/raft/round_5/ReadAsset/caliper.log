@@ -1,0 +1,921 @@
+2026.10.23-03:13:03.218[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/vinicin/TCC/Raft/caliper-workspace
+2026.10.23-03:13:03.219[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/vinicin/TCC/Raft/caliper-workspace/benchmarks/ReadAsset-benchmark.yaml
+2026.10.23-03:13:03.219[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: /home/vinicin/TCC/Raft/caliper-workspace/networks/fabric-network-raft.yaml
+2026.10.23-03:13:03.219[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: fabric
+2026.10.23-03:13:03.221[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2026.10.23-03:13:03.222[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2026.10.23-03:13:03.222[32m info [39m [caliper] [caliper-engine] 	Skipping start commands due to benchmark flow conditioning
+2026.10.23-03:13:03.222[32m info [39m [caliper] [caliper-engine] 	Skipping initialization phase due to benchmark flow conditioning
+2026.10.23-03:13:03.222[32m info [39m [caliper] [caliper-engine] 	Skipping install smart contract phase due to benchmark flow conditioning
+2026.10.23-03:13:03.535[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.23-03:13:03.544[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.23-03:13:03.545[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as _Org2MSP_User1 for organization Org2MSP
+2026.10.23-03:13:03.546[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2026.10.23-03:13:03.547[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2026.10.23-03:13:03.549[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2026.10.23-03:13:03.550[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 2
+2026.10.23-03:13:03.553[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 2 of 2
+2026.10.23-03:13:03.555[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2026.10.23-03:13:03.555[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2026.10.23-03:13:03.555[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be connected...
+2026.10.23-03:13:03.727[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/vinicin/TCC/Raft/caliper-workspace
+2026.10.23-03:13:03.728[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/vinicin/TCC/Raft/caliper-workspace/benchmarks/ReadAsset-benchmark.yaml
+2026.10.23-03:13:03.728[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/vinicin/TCC/Raft/caliper-workspace/networks/fabric-network-raft.yaml
+2026.10.23-03:13:03.728[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.10.23-03:13:03.748[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/vinicin/TCC/Raft/caliper-workspace
+2026.10.23-03:13:03.748[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/vinicin/TCC/Raft/caliper-workspace/benchmarks/ReadAsset-benchmark.yaml
+2026.10.23-03:13:03.748[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/vinicin/TCC/Raft/caliper-workspace/networks/fabric-network-raft.yaml
+2026.10.23-03:13:03.748[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.10.23-03:13:03.760[32m info [39m [caliper] [worker-orchestrator] 	2 workers connected, progressing to worker assignment phase.
+2026.10.23-03:13:03.760[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2026.10.23-03:13:03.761[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be assigned...
+2026.10.23-03:13:03.771[32m info [39m [caliper] [worker-orchestrator] 	2 workers assigned, progressing to worker initialization phase.
+2026.10.23-03:13:03.771[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be ready...
+2026.10.23-03:13:03.772[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2026.10.23-03:13:03.772[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#1...
+2026.10.23-03:13:04.071[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.23-03:13:04.073[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.23-03:13:04.074[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as _Org2MSP_User1 for organization Org2MSP
+2026.10.23-03:13:04.076[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2026.10.23-03:13:04.094[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.23-03:13:04.099[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.23-03:13:04.100[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as _Org2MSP_User1 for organization Org2MSP
+2026.10.23-03:13:04.104[32m info [39m [caliper] [worker-message-handler] 	Worker#1 initialized
+2026.10.23-03:13:04.105[32m info [39m [caliper] [worker-orchestrator] 	2 workers ready, progressing to test preparation phase.
+2026.10.23-03:13:04.106[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (Aquecimento-Ledger (warmup))
+2026.10.23-03:13:04.107[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2026.10.23-03:13:04.108[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#0
+2026.10.23-03:13:04.149[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:04.151[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:04.152[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is starting...
+2026.10.23-03:13:04.153[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:13:04.153[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:13:04.153[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:04.153[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:13:04.154[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:13:04.154[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is completed
+2026.10.23-03:13:04.154[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#0
+2026.10.23-03:13:04.156[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:04.156[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2026.10.23-03:13:04.157[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:13:04.157[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:13:04.157[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:13:04.158[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:13:04.158[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2026.10.23-03:13:04.158[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2026.10.23-03:13:04.158[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:13:04.159[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:13:04.159[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2026.10.23-03:13:04.160[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#0
+2026.10.23-03:13:04.162[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:04.164[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:04.164[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:04.165[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:13:04.166[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:04.168[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:13:09.180[32m info [39m [caliper] [default-observer] 	[Aquecimento-Ledger (warmup) Round 0 Transaction Info] - Submitted: 402 Succ: 390 Fail:0 Unfinished:12
+2026.10.23-03:13:14.160[32m info [39m [caliper] [default-observer] 	[Aquecimento-Ledger (warmup) Round 0 Transaction Info] - Submitted: 902 Succ: 890 Fail:0 Unfinished:12
+2026.10.23-03:13:15.249[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:13:15.249[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:13:15.249[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:13:15.250[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:13:15.250[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2026.10.23-03:13:15.251[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:13:15.251[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:13:15.252[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:13:15.252[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:13:15.252[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#0
+2026.10.23-03:13:20.256[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:13:20.257[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:13:20.263[32m info [39m [caliper] [report-builder] 	
++-----------------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| Aquecimento-Ledger (warmup) | 1000 | 0    | 100.2           | 0.13            | 0.02            | 0.07            | 100.0            |
++-----------------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:13:20.264[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (Aquecimento-Ledger (warmup)) in 10.086 seconds
+2026.10.23-03:13:20.264[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:13:20.264[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-03:13:25.269[32m info [39m [caliper] [round-orchestrator] 	Started round 2 (readAsset(Leitura) - 100tps)
+2026.10.23-03:13:25.270[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#1
+2026.10.23-03:13:25.270[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#1
+2026.10.23-03:13:25.282[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:25.282[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:25.285[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:25.285[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:25.285[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is starting...
+2026.10.23-03:13:25.285[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is starting...
+2026.10.23-03:13:25.286[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:13:25.286[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:13:25.286[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:13:25.286[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:13:25.286[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:13:25.287[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is completed
+2026.10.23-03:13:25.287[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#1
+2026.10.23-03:13:25.287[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:13:25.287[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:13:25.287[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:13:25.287[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is completed
+2026.10.23-03:13:25.287[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#1
+2026.10.23-03:13:25.287[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:13:25.287[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:13:25.288[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#1
+2026.10.23-03:13:25.288[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#1
+2026.10.23-03:13:25.289[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:25.289[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:13:25.290[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:25.291[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:13:25.291[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:13:25.291[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:13:30.288[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 401 Succ: 400 Fail:0 Unfinished:1
+2026.10.23-03:13:35.289[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 902 Succ: 900 Fail:0 Unfinished:2
+2026.10.23-03:13:40.291[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 1402 Succ: 1400 Fail:0 Unfinished:2
+2026.10.23-03:13:45.292[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 1902 Succ: 1902 Fail:0 Unfinished:0
+2026.10.23-03:13:50.292[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 2402 Succ: 2402 Fail:0 Unfinished:0
+2026.10.23-03:13:55.293[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 2902 Succ: 2902 Fail:0 Unfinished:0
+2026.10.23-03:14:00.295[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 3402 Succ: 3402 Fail:0 Unfinished:0
+2026.10.23-03:14:05.295[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 3902 Succ: 3902 Fail:0 Unfinished:0
+2026.10.23-03:14:10.296[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 4402 Succ: 4402 Fail:0 Unfinished:0
+2026.10.23-03:14:15.297[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 4902 Succ: 4902 Fail:0 Unfinished:0
+2026.10.23-03:14:20.297[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 5402 Succ: 5402 Fail:0 Unfinished:0
+2026.10.23-03:14:25.298[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 5903 Succ: 5902 Fail:0 Unfinished:1
+2026.10.23-03:14:30.299[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 6403 Succ: 6402 Fail:0 Unfinished:1
+2026.10.23-03:14:35.300[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 6903 Succ: 6902 Fail:0 Unfinished:1
+2026.10.23-03:14:40.301[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 7403 Succ: 7402 Fail:0 Unfinished:1
+2026.10.23-03:14:45.302[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 7903 Succ: 7903 Fail:0 Unfinished:0
+2026.10.23-03:14:50.303[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 8403 Succ: 8403 Fail:0 Unfinished:0
+2026.10.23-03:14:55.305[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 8903 Succ: 8903 Fail:0 Unfinished:0
+2026.10.23-03:15:00.306[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 9403 Succ: 9403 Fail:0 Unfinished:0
+2026.10.23-03:15:05.306[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 9903 Succ: 9903 Fail:0 Unfinished:0
+2026.10.23-03:15:10.308[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 10404 Succ: 10404 Fail:0 Unfinished:0
+2026.10.23-03:15:15.309[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 10904 Succ: 10904 Fail:0 Unfinished:0
+2026.10.23-03:15:20.309[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 11404 Succ: 11404 Fail:0 Unfinished:0
+2026.10.23-03:15:25.310[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 11904 Succ: 11904 Fail:0 Unfinished:0
+2026.10.23-03:15:30.311[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 12404 Succ: 12404 Fail:0 Unfinished:0
+2026.10.23-03:15:35.312[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 12904 Succ: 12904 Fail:0 Unfinished:0
+2026.10.23-03:15:40.314[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 13404 Succ: 13404 Fail:0 Unfinished:0
+2026.10.23-03:15:45.315[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 13904 Succ: 13904 Fail:0 Unfinished:0
+2026.10.23-03:15:50.315[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 14404 Succ: 14404 Fail:0 Unfinished:0
+2026.10.23-03:15:55.316[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 14904 Succ: 14904 Fail:0 Unfinished:0
+2026.10.23-03:16:00.317[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 15404 Succ: 15404 Fail:0 Unfinished:0
+2026.10.23-03:16:05.318[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 15904 Succ: 15904 Fail:0 Unfinished:0
+2026.10.23-03:16:10.319[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 16404 Succ: 16404 Fail:0 Unfinished:0
+2026.10.23-03:16:15.320[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 16904 Succ: 16904 Fail:0 Unfinished:0
+2026.10.23-03:16:20.321[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 17404 Succ: 17404 Fail:0 Unfinished:0
+2026.10.23-03:16:25.322[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 17904 Succ: 17904 Fail:0 Unfinished:0
+2026.10.23-03:16:30.324[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 18404 Succ: 18404 Fail:0 Unfinished:0
+2026.10.23-03:16:35.325[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 18904 Succ: 18904 Fail:0 Unfinished:0
+2026.10.23-03:16:40.325[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 19404 Succ: 19404 Fail:0 Unfinished:0
+2026.10.23-03:16:45.326[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 19905 Succ: 19904 Fail:0 Unfinished:1
+2026.10.23-03:16:50.327[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 20405 Succ: 20405 Fail:0 Unfinished:0
+2026.10.23-03:16:55.328[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 20906 Succ: 20905 Fail:0 Unfinished:1
+2026.10.23-03:17:00.330[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 21406 Succ: 21405 Fail:0 Unfinished:1
+2026.10.23-03:17:05.331[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 21906 Succ: 21906 Fail:0 Unfinished:0
+2026.10.23-03:17:10.331[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 22406 Succ: 22405 Fail:0 Unfinished:1
+2026.10.23-03:17:15.333[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 22906 Succ: 22906 Fail:0 Unfinished:0
+2026.10.23-03:17:20.333[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 23406 Succ: 23406 Fail:0 Unfinished:0
+2026.10.23-03:17:25.334[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 23906 Succ: 23906 Fail:0 Unfinished:0
+2026.10.23-03:17:30.335[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 24406 Succ: 24406 Fail:0 Unfinished:0
+2026.10.23-03:17:35.336[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 24906 Succ: 24906 Fail:0 Unfinished:0
+2026.10.23-03:17:40.337[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 25406 Succ: 25406 Fail:0 Unfinished:0
+2026.10.23-03:17:45.338[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 25907 Succ: 25906 Fail:0 Unfinished:1
+2026.10.23-03:17:50.339[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 26407 Succ: 26407 Fail:0 Unfinished:0
+2026.10.23-03:17:55.340[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 26907 Succ: 26907 Fail:0 Unfinished:0
+2026.10.23-03:18:00.341[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 27407 Succ: 27407 Fail:0 Unfinished:0
+2026.10.23-03:18:05.342[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 27907 Succ: 27906 Fail:0 Unfinished:1
+2026.10.23-03:18:10.342[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 28407 Succ: 28406 Fail:0 Unfinished:1
+2026.10.23-03:18:15.343[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 28907 Succ: 28907 Fail:0 Unfinished:0
+2026.10.23-03:18:20.344[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 29407 Succ: 29406 Fail:0 Unfinished:1
+2026.10.23-03:18:25.345[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 100tps Round 1 Transaction Info] - Submitted: 29907 Succ: 29907 Fail:0 Unfinished:0
+2026.10.23-03:18:26.376[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:18:26.376[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:18:26.376[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:18:26.377[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:18:26.377[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:18:26.377[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:18:26.378[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:18:26.378[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#1
+2026.10.23-03:18:26.379[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:18:26.379[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#1
+2026.10.23-03:18:31.382[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:18:31.383[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:18:31.385[32m info [39m [caliper] [report-builder] 	
++-----------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 100tps | 30000 | 0    | 100.0           | 0.02            | 0.00            | 0.01            | 100.0            |
++-----------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:18:31.385[32m info [39m [caliper] [round-orchestrator] 	Finished round 2 (readAsset(Leitura) - 100tps) in 300.084 seconds
+2026.10.23-03:18:31.385[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:18:31.386[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-03:18:36.391[32m info [39m [caliper] [round-orchestrator] 	Started round 3 (readAsset(Leitura) - 200tps)
+2026.10.23-03:18:36.394[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#2
+2026.10.23-03:18:36.394[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#2
+2026.10.23-03:18:36.400[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:18:36.400[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:18:36.402[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:18:36.402[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:18:36.402[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is starting...
+2026.10.23-03:18:36.402[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is starting...
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:18:36.403[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is completed
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:18:36.403[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#2
+2026.10.23-03:18:36.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:18:36.403[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is completed
+2026.10.23-03:18:36.403[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#2
+2026.10.23-03:18:36.404[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:18:36.404[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:18:36.404[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#2
+2026.10.23-03:18:36.405[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#2
+2026.10.23-03:18:36.408[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:18:36.408[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:18:36.410[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:18:36.410[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:18:36.410[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:18:36.410[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:18:41.405[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 802 Succ: 800 Fail:0 Unfinished:2
+2026.10.23-03:18:46.406[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 1802 Succ: 1801 Fail:0 Unfinished:1
+2026.10.23-03:18:51.407[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 2802 Succ: 2800 Fail:0 Unfinished:2
+2026.10.23-03:18:56.408[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 3802 Succ: 3801 Fail:0 Unfinished:1
+2026.10.23-03:19:01.409[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 4803 Succ: 4801 Fail:0 Unfinished:2
+2026.10.23-03:19:06.410[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 5803 Succ: 5802 Fail:0 Unfinished:1
+2026.10.23-03:19:11.411[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 6803 Succ: 6801 Fail:0 Unfinished:2
+2026.10.23-03:19:16.412[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 7803 Succ: 7803 Fail:0 Unfinished:0
+2026.10.23-03:19:21.413[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 8803 Succ: 8803 Fail:0 Unfinished:0
+2026.10.23-03:19:26.414[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 9803 Succ: 9803 Fail:0 Unfinished:0
+2026.10.23-03:19:31.415[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 10803 Succ: 10803 Fail:0 Unfinished:0
+2026.10.23-03:19:36.416[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 11803 Succ: 11803 Fail:0 Unfinished:0
+2026.10.23-03:19:41.417[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 12803 Succ: 12802 Fail:0 Unfinished:1
+2026.10.23-03:19:46.419[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 13803 Succ: 13803 Fail:0 Unfinished:0
+2026.10.23-03:19:51.419[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 14803 Succ: 14803 Fail:0 Unfinished:0
+2026.10.23-03:19:56.420[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 15904 Succ: 15903 Fail:0 Unfinished:1
+2026.10.23-03:20:01.421[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 16805 Succ: 16803 Fail:0 Unfinished:2
+2026.10.23-03:20:06.422[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 17805 Succ: 17803 Fail:0 Unfinished:2
+2026.10.23-03:20:11.423[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 18805 Succ: 18804 Fail:0 Unfinished:1
+2026.10.23-03:20:16.424[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 19805 Succ: 19803 Fail:0 Unfinished:2
+2026.10.23-03:20:21.426[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 20905 Succ: 20904 Fail:0 Unfinished:1
+2026.10.23-03:20:26.426[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 21905 Succ: 21904 Fail:0 Unfinished:1
+2026.10.23-03:20:31.426[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 22905 Succ: 22904 Fail:0 Unfinished:1
+2026.10.23-03:20:36.426[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 23905 Succ: 23904 Fail:0 Unfinished:1
+2026.10.23-03:20:41.427[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 24905 Succ: 24904 Fail:0 Unfinished:1
+2026.10.23-03:20:46.427[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 25905 Succ: 25904 Fail:0 Unfinished:1
+2026.10.23-03:20:51.427[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 26805 Succ: 26804 Fail:0 Unfinished:1
+2026.10.23-03:20:56.428[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 27905 Succ: 27905 Fail:0 Unfinished:0
+2026.10.23-03:21:01.428[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 28806 Succ: 28805 Fail:0 Unfinished:1
+2026.10.23-03:21:06.429[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 29806 Succ: 29805 Fail:0 Unfinished:1
+2026.10.23-03:21:11.430[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 30807 Succ: 30805 Fail:0 Unfinished:2
+2026.10.23-03:21:16.431[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 31807 Succ: 31805 Fail:0 Unfinished:2
+2026.10.23-03:21:21.432[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 32807 Succ: 32806 Fail:0 Unfinished:1
+2026.10.23-03:21:26.433[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 33807 Succ: 33806 Fail:0 Unfinished:1
+2026.10.23-03:21:31.434[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 34807 Succ: 34806 Fail:0 Unfinished:1
+2026.10.23-03:21:36.436[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 35907 Succ: 35906 Fail:0 Unfinished:1
+2026.10.23-03:21:41.436[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 36907 Succ: 36906 Fail:0 Unfinished:1
+2026.10.23-03:21:46.435[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 37907 Succ: 37905 Fail:0 Unfinished:2
+2026.10.23-03:21:51.436[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 38907 Succ: 38907 Fail:0 Unfinished:0
+2026.10.23-03:21:56.437[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 39807 Succ: 39807 Fail:0 Unfinished:0
+2026.10.23-03:22:01.438[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 40908 Succ: 40906 Fail:0 Unfinished:2
+2026.10.23-03:22:06.438[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 41808 Succ: 41807 Fail:0 Unfinished:1
+2026.10.23-03:22:11.440[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 42908 Succ: 42907 Fail:0 Unfinished:1
+2026.10.23-03:22:16.440[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 43908 Succ: 43907 Fail:0 Unfinished:1
+2026.10.23-03:22:21.441[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 44908 Succ: 44907 Fail:0 Unfinished:1
+2026.10.23-03:22:26.441[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 45809 Succ: 45808 Fail:0 Unfinished:1
+2026.10.23-03:22:31.442[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 46809 Succ: 46808 Fail:0 Unfinished:1
+2026.10.23-03:22:36.443[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 47809 Succ: 47809 Fail:0 Unfinished:0
+2026.10.23-03:22:41.444[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 48809 Succ: 48808 Fail:0 Unfinished:1
+2026.10.23-03:22:46.445[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 49809 Succ: 49808 Fail:0 Unfinished:1
+2026.10.23-03:22:51.446[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 50809 Succ: 50809 Fail:0 Unfinished:0
+2026.10.23-03:22:56.448[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 51810 Succ: 51808 Fail:0 Unfinished:2
+2026.10.23-03:23:01.448[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 52910 Succ: 52909 Fail:0 Unfinished:1
+2026.10.23-03:23:06.449[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 53910 Succ: 53909 Fail:0 Unfinished:1
+2026.10.23-03:23:11.450[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 54910 Succ: 54910 Fail:0 Unfinished:0
+2026.10.23-03:23:16.450[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 55910 Succ: 55910 Fail:0 Unfinished:0
+2026.10.23-03:23:21.450[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 56910 Succ: 56910 Fail:0 Unfinished:0
+2026.10.23-03:23:26.451[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 57910 Succ: 57909 Fail:0 Unfinished:1
+2026.10.23-03:23:31.451[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 58910 Succ: 58909 Fail:0 Unfinished:1
+2026.10.23-03:23:36.451[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 200tps Round 2 Transaction Info] - Submitted: 59906 Succ: 59905 Fail:0 Unfinished:1
+2026.10.23-03:23:37.503[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:23:37.503[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:23:37.503[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:23:37.504[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:23:37.504[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:23:37.504[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#2
+2026.10.23-03:23:37.504[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:23:37.504[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:23:37.505[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:23:37.505[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#2
+2026.10.23-03:23:42.508[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:23:42.509[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:23:42.510[32m info [39m [caliper] [report-builder] 	
++-----------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 200tps | 60000 | 0    | 200.0           | 0.02            | 0.00            | 0.01            | 200.0            |
++-----------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:23:42.511[32m info [39m [caliper] [round-orchestrator] 	Finished round 3 (readAsset(Leitura) - 200tps) in 300.093 seconds
+2026.10.23-03:23:42.511[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:23:42.511[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-03:23:47.516[32m info [39m [caliper] [round-orchestrator] 	Started round 4 (readAsset(Leitura) - 300tps)
+2026.10.23-03:23:47.518[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#3
+2026.10.23-03:23:47.518[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#3
+2026.10.23-03:23:47.525[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:23:47.525[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:23:47.526[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:23:47.526[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 3 is starting...
+2026.10.23-03:23:47.527[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:23:47.527[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 3 is starting...
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:23:47.528[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 3 is completed
+2026.10.23-03:23:47.528[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#3
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:23:47.528[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:23:47.528[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 3 is completed
+2026.10.23-03:23:47.528[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#3
+2026.10.23-03:23:47.529[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:23:47.529[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:23:47.530[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#3
+2026.10.23-03:23:47.530[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#3
+2026.10.23-03:23:47.534[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:23:47.534[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:23:47.536[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:23:47.536[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:23:47.537[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:23:47.537[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:23:52.530[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 1201 Succ: 1200 Fail:0 Unfinished:1
+2026.10.23-03:23:57.531[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 2702 Succ: 2700 Fail:0 Unfinished:2
+2026.10.23-03:24:02.532[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 4202 Succ: 4200 Fail:0 Unfinished:2
+2026.10.23-03:24:07.533[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 5702 Succ: 5700 Fail:0 Unfinished:2
+2026.10.23-03:24:12.534[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 7202 Succ: 7200 Fail:0 Unfinished:2
+2026.10.23-03:24:17.535[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 8702 Succ: 8701 Fail:0 Unfinished:1
+2026.10.23-03:24:22.536[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 10202 Succ: 10199 Fail:0 Unfinished:3
+2026.10.23-03:24:27.537[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 11703 Succ: 11700 Fail:0 Unfinished:3
+2026.10.23-03:24:32.538[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 13203 Succ: 13202 Fail:0 Unfinished:1
+2026.10.23-03:24:37.539[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 14703 Succ: 14702 Fail:0 Unfinished:1
+2026.10.23-03:24:42.540[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 16204 Succ: 16202 Fail:0 Unfinished:2
+2026.10.23-03:24:47.541[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 17704 Succ: 17703 Fail:0 Unfinished:1
+2026.10.23-03:24:52.542[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 19204 Succ: 19204 Fail:0 Unfinished:0
+2026.10.23-03:24:57.543[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 20705 Succ: 20703 Fail:0 Unfinished:2
+2026.10.23-03:25:02.544[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 22206 Succ: 22204 Fail:0 Unfinished:2
+2026.10.23-03:25:07.545[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 23706 Succ: 23705 Fail:0 Unfinished:1
+2026.10.23-03:25:12.546[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 25206 Succ: 25205 Fail:0 Unfinished:1
+2026.10.23-03:25:17.547[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 26706 Succ: 26704 Fail:0 Unfinished:2
+2026.10.23-03:25:22.548[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 28206 Succ: 28204 Fail:0 Unfinished:2
+2026.10.23-03:25:27.549[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 29706 Succ: 29706 Fail:0 Unfinished:0
+2026.10.23-03:25:32.550[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 31206 Succ: 31205 Fail:0 Unfinished:1
+2026.10.23-03:25:37.551[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 32706 Succ: 32705 Fail:0 Unfinished:1
+2026.10.23-03:25:42.552[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 34207 Succ: 34206 Fail:0 Unfinished:1
+2026.10.23-03:25:47.553[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 35707 Succ: 35706 Fail:0 Unfinished:1
+2026.10.23-03:25:52.555[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 37208 Succ: 37206 Fail:0 Unfinished:2
+2026.10.23-03:25:57.555[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 38708 Succ: 38707 Fail:0 Unfinished:1
+2026.10.23-03:26:02.556[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 40208 Succ: 40207 Fail:0 Unfinished:1
+2026.10.23-03:26:07.557[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 41709 Succ: 41708 Fail:0 Unfinished:1
+2026.10.23-03:26:12.558[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 43209 Succ: 43208 Fail:0 Unfinished:1
+2026.10.23-03:26:17.559[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 44710 Succ: 44708 Fail:0 Unfinished:2
+2026.10.23-03:26:22.560[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 46210 Succ: 46208 Fail:0 Unfinished:2
+2026.10.23-03:26:27.561[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 47710 Succ: 47709 Fail:0 Unfinished:1
+2026.10.23-03:26:32.562[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 49210 Succ: 49210 Fail:0 Unfinished:0
+2026.10.23-03:26:37.563[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 50712 Succ: 50709 Fail:0 Unfinished:3
+2026.10.23-03:26:42.564[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 52212 Succ: 52210 Fail:0 Unfinished:2
+2026.10.23-03:26:47.565[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 53712 Succ: 53710 Fail:0 Unfinished:2
+2026.10.23-03:26:52.567[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 55212 Succ: 55211 Fail:0 Unfinished:1
+2026.10.23-03:26:57.567[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 56713 Succ: 56712 Fail:0 Unfinished:1
+2026.10.23-03:27:02.568[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 58213 Succ: 58212 Fail:0 Unfinished:1
+2026.10.23-03:27:07.569[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 59713 Succ: 59712 Fail:0 Unfinished:1
+2026.10.23-03:27:12.570[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 61214 Succ: 61213 Fail:0 Unfinished:1
+2026.10.23-03:27:17.571[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 62714 Succ: 62712 Fail:0 Unfinished:2
+2026.10.23-03:27:22.572[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 64214 Succ: 64213 Fail:0 Unfinished:1
+2026.10.23-03:27:27.573[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 65714 Succ: 65712 Fail:0 Unfinished:2
+2026.10.23-03:27:32.574[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 67214 Succ: 67213 Fail:0 Unfinished:1
+2026.10.23-03:27:37.575[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 68714 Succ: 68713 Fail:0 Unfinished:1
+2026.10.23-03:27:42.576[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 70214 Succ: 70213 Fail:0 Unfinished:1
+2026.10.23-03:27:47.577[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 71715 Succ: 71714 Fail:0 Unfinished:1
+2026.10.23-03:27:52.578[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 73215 Succ: 73214 Fail:0 Unfinished:1
+2026.10.23-03:27:57.579[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 74716 Succ: 74715 Fail:0 Unfinished:1
+2026.10.23-03:28:02.580[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 76217 Succ: 76214 Fail:0 Unfinished:3
+2026.10.23-03:28:07.581[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 77717 Succ: 77716 Fail:0 Unfinished:1
+2026.10.23-03:28:12.582[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 79217 Succ: 79217 Fail:0 Unfinished:0
+2026.10.23-03:28:17.583[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 80717 Succ: 80717 Fail:0 Unfinished:0
+2026.10.23-03:28:22.584[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 82219 Succ: 82217 Fail:0 Unfinished:2
+2026.10.23-03:28:27.585[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 83719 Succ: 83718 Fail:0 Unfinished:1
+2026.10.23-03:28:32.586[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 85219 Succ: 85217 Fail:0 Unfinished:2
+2026.10.23-03:28:37.587[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 86718 Succ: 86715 Fail:0 Unfinished:3
+2026.10.23-03:28:42.588[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 88220 Succ: 88220 Fail:0 Unfinished:0
+2026.10.23-03:28:47.589[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 300tps Round 3 Transaction Info] - Submitted: 89720 Succ: 89720 Fail:0 Unfinished:0
+2026.10.23-03:28:48.635[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:28:48.635[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:28:48.635[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:28:48.636[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:28:48.636[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#3
+2026.10.23-03:28:48.636[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:28:48.636[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:28:48.636[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:28:48.637[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:28:48.638[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#3
+2026.10.23-03:28:53.639[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:28:53.639[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:28:53.640[32m info [39m [caliper] [report-builder] 	
++-----------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 300tps | 90000 | 0    | 300.0           | 0.03            | 0.00            | 0.01            | 300.0            |
++-----------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:28:53.640[32m info [39m [caliper] [round-orchestrator] 	Finished round 4 (readAsset(Leitura) - 300tps) in 300.098 seconds
+2026.10.23-03:28:53.640[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:28:53.640[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-03:28:58.645[32m info [39m [caliper] [round-orchestrator] 	Started round 5 (readAsset(Leitura) - 400tps)
+2026.10.23-03:28:58.646[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#4
+2026.10.23-03:28:58.646[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#4
+2026.10.23-03:28:58.650[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:28:58.651[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:28:58.651[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 4 is starting...
+2026.10.23-03:28:58.653[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:28:58.653[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:28:58.653[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:28:58.653[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:28:58.653[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:28:58.653[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 4 is completed
+2026.10.23-03:28:58.653[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#4
+2026.10.23-03:28:58.655[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:28:58.656[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 4 is starting...
+2026.10.23-03:28:58.656[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:28:58.656[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:28:58.656[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:28:58.656[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:28:58.656[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 4 is completed
+2026.10.23-03:28:58.656[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#4
+2026.10.23-03:28:58.656[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:28:58.657[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:28:58.657[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#4
+2026.10.23-03:28:58.657[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#4
+2026.10.23-03:28:58.660[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:28:58.660[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:28:58.662[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:28:58.662[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:28:58.663[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:28:58.663[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:29:03.657[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 1600 Succ: 1600 Fail:0 Unfinished:0
+2026.10.23-03:29:08.658[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 3601 Succ: 3599 Fail:0 Unfinished:2
+2026.10.23-03:29:13.659[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 5601 Succ: 5598 Fail:0 Unfinished:3
+2026.10.23-03:29:18.660[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 7603 Succ: 7601 Fail:0 Unfinished:2
+2026.10.23-03:29:23.661[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 9603 Succ: 9601 Fail:0 Unfinished:2
+2026.10.23-03:29:28.662[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 11604 Succ: 11602 Fail:0 Unfinished:2
+2026.10.23-03:29:33.663[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 13604 Succ: 13602 Fail:0 Unfinished:2
+2026.10.23-03:29:38.664[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 15604 Succ: 15602 Fail:0 Unfinished:2
+2026.10.23-03:29:43.665[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 17605 Succ: 17605 Fail:0 Unfinished:0
+2026.10.23-03:29:48.666[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 19606 Succ: 19603 Fail:0 Unfinished:3
+2026.10.23-03:29:53.667[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 21606 Succ: 21604 Fail:0 Unfinished:2
+2026.10.23-03:29:58.668[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 23606 Succ: 23606 Fail:0 Unfinished:0
+2026.10.23-03:30:03.669[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 25608 Succ: 25605 Fail:0 Unfinished:3
+2026.10.23-03:30:08.670[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 27608 Succ: 27606 Fail:0 Unfinished:2
+2026.10.23-03:30:13.671[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 29608 Succ: 29606 Fail:0 Unfinished:2
+2026.10.23-03:30:18.672[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 31608 Succ: 31606 Fail:0 Unfinished:2
+2026.10.23-03:30:23.673[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 33609 Succ: 33608 Fail:0 Unfinished:1
+2026.10.23-03:30:28.674[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 35610 Succ: 35607 Fail:0 Unfinished:3
+2026.10.23-03:30:33.675[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 37610 Succ: 37609 Fail:0 Unfinished:1
+2026.10.23-03:30:38.676[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 39611 Succ: 39609 Fail:0 Unfinished:2
+2026.10.23-03:30:43.677[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 41611 Succ: 41609 Fail:0 Unfinished:2
+2026.10.23-03:30:48.678[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 43611 Succ: 43609 Fail:0 Unfinished:2
+2026.10.23-03:30:53.679[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 45613 Succ: 45611 Fail:0 Unfinished:2
+2026.10.23-03:30:58.680[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 47613 Succ: 47612 Fail:0 Unfinished:1
+2026.10.23-03:31:03.681[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 49613 Succ: 49611 Fail:0 Unfinished:2
+2026.10.23-03:31:08.682[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 51614 Succ: 51611 Fail:0 Unfinished:3
+2026.10.23-03:31:13.683[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 53614 Succ: 53612 Fail:0 Unfinished:2
+2026.10.23-03:31:18.684[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 55615 Succ: 55612 Fail:0 Unfinished:3
+2026.10.23-03:31:23.685[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 57615 Succ: 57611 Fail:0 Unfinished:4
+2026.10.23-03:31:28.686[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 59617 Succ: 59615 Fail:0 Unfinished:2
+2026.10.23-03:31:33.687[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 61617 Succ: 61616 Fail:0 Unfinished:1
+2026.10.23-03:31:38.688[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 63618 Succ: 63616 Fail:0 Unfinished:2
+2026.10.23-03:31:43.689[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 65618 Succ: 65616 Fail:0 Unfinished:2
+2026.10.23-03:31:48.690[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 67618 Succ: 67616 Fail:0 Unfinished:2
+2026.10.23-03:31:53.691[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 69618 Succ: 69614 Fail:0 Unfinished:4
+2026.10.23-03:31:58.692[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 71621 Succ: 71619 Fail:0 Unfinished:2
+2026.10.23-03:32:03.693[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 73621 Succ: 73619 Fail:0 Unfinished:2
+2026.10.23-03:32:08.694[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 75621 Succ: 75621 Fail:0 Unfinished:0
+2026.10.23-03:32:13.695[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 77622 Succ: 77622 Fail:0 Unfinished:0
+2026.10.23-03:32:18.696[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 79624 Succ: 79621 Fail:0 Unfinished:3
+2026.10.23-03:32:23.698[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 81625 Succ: 81623 Fail:0 Unfinished:2
+2026.10.23-03:32:28.698[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 83626 Succ: 83624 Fail:0 Unfinished:2
+2026.10.23-03:32:33.699[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 85626 Succ: 85624 Fail:0 Unfinished:2
+2026.10.23-03:32:38.700[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 87626 Succ: 87624 Fail:0 Unfinished:2
+2026.10.23-03:32:43.701[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 89627 Succ: 89626 Fail:0 Unfinished:1
+2026.10.23-03:32:48.702[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 91627 Succ: 91626 Fail:0 Unfinished:1
+2026.10.23-03:32:53.703[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 93627 Succ: 93626 Fail:0 Unfinished:1
+2026.10.23-03:32:58.704[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 95628 Succ: 95625 Fail:0 Unfinished:3
+2026.10.23-03:33:03.705[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 97628 Succ: 97626 Fail:0 Unfinished:2
+2026.10.23-03:33:08.706[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 99628 Succ: 99628 Fail:0 Unfinished:0
+2026.10.23-03:33:13.707[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 101629 Succ: 101628 Fail:0 Unfinished:1
+2026.10.23-03:33:18.708[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 103630 Succ: 103627 Fail:0 Unfinished:3
+2026.10.23-03:33:23.709[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 105630 Succ: 105629 Fail:0 Unfinished:1
+2026.10.23-03:33:28.710[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 107630 Succ: 107628 Fail:0 Unfinished:2
+2026.10.23-03:33:33.711[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 109630 Succ: 109629 Fail:0 Unfinished:1
+2026.10.23-03:33:38.712[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 111631 Succ: 111629 Fail:0 Unfinished:2
+2026.10.23-03:33:43.713[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 113632 Succ: 113630 Fail:0 Unfinished:2
+2026.10.23-03:33:48.714[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 115632 Succ: 115631 Fail:0 Unfinished:1
+2026.10.23-03:33:53.715[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 117632 Succ: 117631 Fail:0 Unfinished:1
+2026.10.23-03:33:58.716[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 400tps Round 4 Transaction Info] - Submitted: 119633 Succ: 119630 Fail:0 Unfinished:3
+2026.10.23-03:33:59.760[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:33:59.760[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:33:59.760[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:33:59.760[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:33:59.760[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:33:59.760[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:33:59.762[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:33:59.762[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:33:59.762[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#4
+2026.10.23-03:33:59.762[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#4
+2026.10.23-03:34:04.766[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:34:04.766[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:34:04.768[32m info [39m [caliper] [report-builder] 	
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ   | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 400tps | 120000 | 0    | 400.0           | 0.03            | 0.00            | 0.01            | 400.0            |
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:34:04.768[32m info [39m [caliper] [round-orchestrator] 	Finished round 5 (readAsset(Leitura) - 400tps) in 300.096 seconds
+2026.10.23-03:34:04.768[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:34:04.769[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-03:34:09.774[32m info [39m [caliper] [round-orchestrator] 	Started round 6 (readAsset(Leitura) - 500tps)
+2026.10.23-03:34:09.776[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#5
+2026.10.23-03:34:09.776[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#5
+2026.10.23-03:34:09.784[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:34:09.784[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:34:09.787[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:34:09.787[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 5 is starting...
+2026.10.23-03:34:09.787[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:34:09.787[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 5 is starting...
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:34:09.789[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 5 is completed
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:34:09.789[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#5
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:34:09.789[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:34:09.789[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 5 is completed
+2026.10.23-03:34:09.789[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#5
+2026.10.23-03:34:09.790[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:34:09.790[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:34:09.791[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#5
+2026.10.23-03:34:09.792[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#5
+2026.10.23-03:34:09.795[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:34:09.796[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:34:09.798[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:34:09.799[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:34:09.800[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:34:09.800[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:34:14.791[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 2002 Succ: 2000 Fail:0 Unfinished:2
+2026.10.23-03:34:19.792[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 4502 Succ: 4499 Fail:0 Unfinished:3
+2026.10.23-03:34:24.793[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 7002 Succ: 7001 Fail:0 Unfinished:1
+2026.10.23-03:34:29.794[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 9502 Succ: 9499 Fail:0 Unfinished:3
+2026.10.23-03:34:34.795[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 12003 Succ: 12000 Fail:0 Unfinished:3
+2026.10.23-03:34:39.796[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 14505 Succ: 14502 Fail:0 Unfinished:3
+2026.10.23-03:34:44.797[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 17007 Succ: 17003 Fail:0 Unfinished:4
+2026.10.23-03:34:49.798[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 19508 Succ: 19507 Fail:0 Unfinished:1
+2026.10.23-03:34:54.799[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 22008 Succ: 22005 Fail:0 Unfinished:3
+2026.10.23-03:34:59.800[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 24508 Succ: 24507 Fail:0 Unfinished:1
+2026.10.23-03:35:04.801[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 27008 Succ: 27004 Fail:0 Unfinished:4
+2026.10.23-03:35:09.802[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 29509 Succ: 29507 Fail:0 Unfinished:2
+2026.10.23-03:35:14.804[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 32011 Succ: 32010 Fail:0 Unfinished:1
+2026.10.23-03:35:19.804[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 34512 Succ: 34509 Fail:0 Unfinished:3
+2026.10.23-03:35:24.805[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 37012 Succ: 37010 Fail:0 Unfinished:2
+2026.10.23-03:35:29.806[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 39512 Succ: 39510 Fail:0 Unfinished:2
+2026.10.23-03:35:34.807[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 42012 Succ: 42012 Fail:0 Unfinished:0
+2026.10.23-03:35:39.808[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 44511 Succ: 44508 Fail:0 Unfinished:3
+2026.10.23-03:35:44.809[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 47015 Succ: 47013 Fail:0 Unfinished:2
+2026.10.23-03:35:49.809[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 49515 Succ: 49513 Fail:0 Unfinished:2
+2026.10.23-03:35:54.811[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 52016 Succ: 52013 Fail:0 Unfinished:3
+2026.10.23-03:35:59.811[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 54516 Succ: 54514 Fail:0 Unfinished:2
+2026.10.23-03:36:04.812[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 57017 Succ: 57014 Fail:0 Unfinished:3
+2026.10.23-03:36:09.813[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 59517 Succ: 59515 Fail:0 Unfinished:2
+2026.10.23-03:36:14.814[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 62018 Succ: 62016 Fail:0 Unfinished:2
+2026.10.23-03:36:19.815[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 64520 Succ: 64517 Fail:0 Unfinished:3
+2026.10.23-03:36:24.816[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 67020 Succ: 67019 Fail:0 Unfinished:1
+2026.10.23-03:36:29.817[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 69522 Succ: 69519 Fail:0 Unfinished:3
+2026.10.23-03:36:34.818[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 72024 Succ: 72020 Fail:0 Unfinished:4
+2026.10.23-03:36:39.819[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 74524 Succ: 74524 Fail:0 Unfinished:0
+2026.10.23-03:36:44.820[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 77026 Succ: 77024 Fail:0 Unfinished:2
+2026.10.23-03:36:49.821[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 79528 Succ: 79525 Fail:0 Unfinished:3
+2026.10.23-03:36:54.822[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 82028 Succ: 82027 Fail:0 Unfinished:1
+2026.10.23-03:36:59.823[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 84530 Succ: 84528 Fail:0 Unfinished:2
+2026.10.23-03:37:04.824[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 87031 Succ: 87028 Fail:0 Unfinished:3
+2026.10.23-03:37:09.825[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 89532 Succ: 89530 Fail:0 Unfinished:2
+2026.10.23-03:37:14.826[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 92032 Succ: 92031 Fail:0 Unfinished:1
+2026.10.23-03:37:19.827[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 94534 Succ: 94532 Fail:0 Unfinished:2
+2026.10.23-03:37:24.828[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 97036 Succ: 97035 Fail:0 Unfinished:1
+2026.10.23-03:37:29.829[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 99537 Succ: 99536 Fail:0 Unfinished:1
+2026.10.23-03:37:34.830[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 102037 Succ: 102034 Fail:0 Unfinished:3
+2026.10.23-03:37:39.831[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 104539 Succ: 104536 Fail:0 Unfinished:3
+2026.10.23-03:37:44.832[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 107040 Succ: 107037 Fail:0 Unfinished:3
+2026.10.23-03:37:49.833[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 109540 Succ: 109539 Fail:0 Unfinished:1
+2026.10.23-03:37:54.833[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 112040 Succ: 112038 Fail:0 Unfinished:2
+2026.10.23-03:37:59.834[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 114541 Succ: 114538 Fail:0 Unfinished:3
+2026.10.23-03:38:04.835[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 117042 Succ: 117041 Fail:0 Unfinished:1
+2026.10.23-03:38:09.837[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 119543 Succ: 119540 Fail:0 Unfinished:3
+2026.10.23-03:38:14.838[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 122043 Succ: 122041 Fail:0 Unfinished:2
+2026.10.23-03:38:19.838[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 124544 Succ: 124541 Fail:0 Unfinished:3
+2026.10.23-03:38:24.839[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 127045 Succ: 127043 Fail:0 Unfinished:2
+2026.10.23-03:38:29.840[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 129546 Succ: 129544 Fail:0 Unfinished:2
+2026.10.23-03:38:34.841[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 132048 Succ: 132046 Fail:0 Unfinished:2
+2026.10.23-03:38:39.842[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 134551 Succ: 134548 Fail:0 Unfinished:3
+2026.10.23-03:38:44.843[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 137051 Succ: 137048 Fail:0 Unfinished:3
+2026.10.23-03:38:49.844[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 139552 Succ: 139550 Fail:0 Unfinished:2
+2026.10.23-03:38:54.845[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 142054 Succ: 142054 Fail:0 Unfinished:0
+2026.10.23-03:38:59.846[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 144556 Succ: 144554 Fail:0 Unfinished:2
+2026.10.23-03:39:04.847[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 147056 Succ: 147055 Fail:0 Unfinished:1
+2026.10.23-03:39:09.848[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 500tps Round 5 Transaction Info] - Submitted: 149558 Succ: 149555 Fail:0 Unfinished:3
+2026.10.23-03:39:10.899[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:39:10.900[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:39:10.900[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:39:10.901[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:39:10.901[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#5
+2026.10.23-03:39:10.902[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:39:10.902[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:39:10.902[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:39:10.903[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:39:10.903[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#5
+2026.10.23-03:39:15.906[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:39:15.907[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:39:15.908[32m info [39m [caliper] [report-builder] 	
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ   | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 500tps | 150000 | 0    | 500.0           | 0.02            | 0.00            | 0.01            | 500.0            |
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:39:15.908[32m info [39m [caliper] [round-orchestrator] 	Finished round 6 (readAsset(Leitura) - 500tps) in 300.102 seconds
+2026.10.23-03:39:15.908[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:39:15.908[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-03:39:20.913[32m info [39m [caliper] [round-orchestrator] 	Started round 7 (readAsset(Leitura) - 600tps)
+2026.10.23-03:39:20.915[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#6
+2026.10.23-03:39:20.915[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#6
+2026.10.23-03:39:20.922[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:39:20.923[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:39:20.924[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 6 is starting...
+2026.10.23-03:39:20.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:39:20.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:39:20.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:39:20.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:39:20.924[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 6 is completed
+2026.10.23-03:39:20.924[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#6
+2026.10.23-03:39:20.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:39:20.927[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:39:20.927[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 6 is starting...
+2026.10.23-03:39:20.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:39:20.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:39:20.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:39:20.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:39:20.928[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 6 is completed
+2026.10.23-03:39:20.929[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#6
+2026.10.23-03:39:20.929[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:39:20.929[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:39:20.930[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#6
+2026.10.23-03:39:20.930[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#6
+2026.10.23-03:39:20.932[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:39:20.932[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:39:20.935[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:39:20.935[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:39:20.935[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:39:20.935[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:39:25.930[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 2401 Succ: 2398 Fail:0 Unfinished:3
+2026.10.23-03:39:30.931[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 5402 Succ: 5399 Fail:0 Unfinished:3
+2026.10.23-03:39:35.932[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 8402 Succ: 8398 Fail:0 Unfinished:4
+2026.10.23-03:39:40.933[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 11402 Succ: 11400 Fail:0 Unfinished:2
+2026.10.23-03:39:45.934[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 14404 Succ: 14401 Fail:0 Unfinished:3
+2026.10.23-03:39:50.935[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 17406 Succ: 17404 Fail:0 Unfinished:2
+2026.10.23-03:39:55.936[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 20408 Succ: 20404 Fail:0 Unfinished:4
+2026.10.23-03:40:00.937[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 23409 Succ: 23407 Fail:0 Unfinished:2
+2026.10.23-03:40:05.938[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 26409 Succ: 26407 Fail:0 Unfinished:2
+2026.10.23-03:40:10.939[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 29410 Succ: 29407 Fail:0 Unfinished:3
+2026.10.23-03:40:15.940[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 32410 Succ: 32408 Fail:0 Unfinished:2
+2026.10.23-03:40:20.941[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 35411 Succ: 35409 Fail:0 Unfinished:2
+2026.10.23-03:40:25.942[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 38413 Succ: 38409 Fail:0 Unfinished:4
+2026.10.23-03:40:30.943[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 41413 Succ: 41409 Fail:0 Unfinished:4
+2026.10.23-03:40:35.944[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 44414 Succ: 44411 Fail:0 Unfinished:3
+2026.10.23-03:40:40.945[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 47414 Succ: 47410 Fail:0 Unfinished:4
+2026.10.23-03:40:45.946[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 50416 Succ: 50414 Fail:0 Unfinished:2
+2026.10.23-03:40:50.947[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 53415 Succ: 53412 Fail:0 Unfinished:3
+2026.10.23-03:40:55.948[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 56419 Succ: 56417 Fail:0 Unfinished:2
+2026.10.23-03:41:00.949[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 59420 Succ: 59417 Fail:0 Unfinished:3
+2026.10.23-03:41:05.950[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 62421 Succ: 62418 Fail:0 Unfinished:3
+2026.10.23-03:41:10.951[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 65422 Succ: 65418 Fail:0 Unfinished:4
+2026.10.23-03:41:15.952[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 68423 Succ: 68421 Fail:0 Unfinished:2
+2026.10.23-03:41:20.953[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 71423 Succ: 71420 Fail:0 Unfinished:3
+2026.10.23-03:41:25.954[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 74425 Succ: 74422 Fail:0 Unfinished:3
+2026.10.23-03:41:30.955[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 77426 Succ: 77423 Fail:0 Unfinished:3
+2026.10.23-03:41:35.956[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 80427 Succ: 80423 Fail:0 Unfinished:4
+2026.10.23-03:41:40.957[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 83429 Succ: 83428 Fail:0 Unfinished:1
+2026.10.23-03:41:45.958[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 86432 Succ: 86428 Fail:0 Unfinished:4
+2026.10.23-03:41:50.959[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 89430 Succ: 89427 Fail:0 Unfinished:3
+2026.10.23-03:41:55.960[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 92432 Succ: 92428 Fail:0 Unfinished:4
+2026.10.23-03:42:00.961[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 95434 Succ: 95431 Fail:0 Unfinished:3
+2026.10.23-03:42:05.962[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 98434 Succ: 98432 Fail:0 Unfinished:2
+2026.10.23-03:42:10.963[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 101435 Succ: 101433 Fail:0 Unfinished:2
+2026.10.23-03:42:15.964[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 104435 Succ: 104433 Fail:0 Unfinished:2
+2026.10.23-03:42:20.965[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 107437 Succ: 107434 Fail:0 Unfinished:3
+2026.10.23-03:42:25.966[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 110436 Succ: 110433 Fail:0 Unfinished:3
+2026.10.23-03:42:30.967[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 113436 Succ: 113434 Fail:0 Unfinished:2
+2026.10.23-03:42:35.968[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 116437 Succ: 116435 Fail:0 Unfinished:2
+2026.10.23-03:42:40.969[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 119438 Succ: 119435 Fail:0 Unfinished:3
+2026.10.23-03:42:45.970[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 122440 Succ: 122437 Fail:0 Unfinished:3
+2026.10.23-03:42:50.971[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 125438 Succ: 125435 Fail:0 Unfinished:3
+2026.10.23-03:42:55.972[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 128444 Succ: 128440 Fail:0 Unfinished:4
+2026.10.23-03:43:00.973[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 131445 Succ: 131442 Fail:0 Unfinished:3
+2026.10.23-03:43:05.974[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 134446 Succ: 134442 Fail:0 Unfinished:4
+2026.10.23-03:43:10.975[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 137447 Succ: 137443 Fail:0 Unfinished:4
+2026.10.23-03:43:15.976[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 140449 Succ: 140445 Fail:0 Unfinished:4
+2026.10.23-03:43:20.977[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 143450 Succ: 143447 Fail:0 Unfinished:3
+2026.10.23-03:43:25.979[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 146452 Succ: 146449 Fail:0 Unfinished:3
+2026.10.23-03:43:30.979[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 149452 Succ: 149450 Fail:0 Unfinished:2
+2026.10.23-03:43:35.980[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 152452 Succ: 152451 Fail:0 Unfinished:1
+2026.10.23-03:43:40.982[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 155452 Succ: 155449 Fail:0 Unfinished:3
+2026.10.23-03:43:45.982[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 158455 Succ: 158451 Fail:0 Unfinished:4
+2026.10.23-03:43:50.983[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 161456 Succ: 161453 Fail:0 Unfinished:3
+2026.10.23-03:43:55.984[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 164457 Succ: 164454 Fail:0 Unfinished:3
+2026.10.23-03:44:00.985[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 167457 Succ: 167455 Fail:0 Unfinished:2
+2026.10.23-03:44:05.986[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 170460 Succ: 170456 Fail:0 Unfinished:4
+2026.10.23-03:44:10.987[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 173460 Succ: 173458 Fail:0 Unfinished:2
+2026.10.23-03:44:15.988[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 176462 Succ: 176458 Fail:0 Unfinished:4
+2026.10.23-03:44:20.990[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 600tps Round 6 Transaction Info] - Submitted: 179462 Succ: 179461 Fail:0 Unfinished:1
+2026.10.23-03:44:22.044[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:44:22.044[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:44:22.044[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:44:22.045[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:44:22.045[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#6
+2026.10.23-03:44:22.045[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:44:22.045[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:44:22.046[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:44:22.047[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:44:22.047[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#6
+2026.10.23-03:44:27.050[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:44:27.050[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:44:27.051[32m info [39m [caliper] [report-builder] 	
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ   | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 600tps | 180000 | 0    | 600.0           | 0.02            | 0.00            | 0.01            | 600.0            |
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:44:27.052[32m info [39m [caliper] [round-orchestrator] 	Finished round 7 (readAsset(Leitura) - 600tps) in 300.109 seconds
+2026.10.23-03:44:27.052[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:44:27.052[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-03:44:32.057[32m info [39m [caliper] [round-orchestrator] 	Started round 8 (readAsset(Leitura) - 700tps)
+2026.10.23-03:44:32.059[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#7
+2026.10.23-03:44:32.059[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#7
+2026.10.23-03:44:32.068[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:44:32.069[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:44:32.072[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:44:32.072[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 7 is starting...
+2026.10.23-03:44:32.072[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:44:32.072[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 7 is starting...
+2026.10.23-03:44:32.073[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:44:32.073[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:44:32.073[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:44:32.073[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:44:32.073[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 7 is completed
+2026.10.23-03:44:32.073[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#7
+2026.10.23-03:44:32.074[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:44:32.074[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:44:32.074[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:44:32.074[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:44:32.074[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 7 is completed
+2026.10.23-03:44:32.074[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#7
+2026.10.23-03:44:32.074[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-03:44:32.075[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-03:44:32.075[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#7
+2026.10.23-03:44:32.076[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#7
+2026.10.23-03:44:32.079[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:44:32.080[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-03:44:32.083[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:44:32.083[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-03:44:32.084[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-03:44:32.084[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-03:44:37.075[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 2698 Succ: 2695 Fail:0 Unfinished:3
+2026.10.23-03:44:42.076[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 6142 Succ: 6138 Fail:0 Unfinished:4
+2026.10.23-03:44:47.077[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 9558 Succ: 9554 Fail:0 Unfinished:4
+2026.10.23-03:44:52.078[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 13021 Succ: 13018 Fail:0 Unfinished:3
+2026.10.23-03:44:57.079[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 16460 Succ: 16457 Fail:0 Unfinished:3
+2026.10.23-03:45:02.080[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 19863 Succ: 19859 Fail:0 Unfinished:4
+2026.10.23-03:45:07.081[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 23307 Succ: 23305 Fail:0 Unfinished:2
+2026.10.23-03:45:12.082[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 26713 Succ: 26710 Fail:0 Unfinished:3
+2026.10.23-03:45:17.083[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 30216 Succ: 30212 Fail:0 Unfinished:4
+2026.10.23-03:45:22.084[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 33652 Succ: 33650 Fail:0 Unfinished:2
+2026.10.23-03:45:27.085[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 37098 Succ: 37095 Fail:0 Unfinished:3
+2026.10.23-03:45:32.086[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 40511 Succ: 40508 Fail:0 Unfinished:3
+2026.10.23-03:45:37.087[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 43904 Succ: 43900 Fail:0 Unfinished:4
+2026.10.23-03:45:42.088[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 47366 Succ: 47363 Fail:0 Unfinished:3
+2026.10.23-03:45:47.089[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 50758 Succ: 50754 Fail:0 Unfinished:4
+2026.10.23-03:45:52.089[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 54171 Succ: 54167 Fail:0 Unfinished:4
+2026.10.23-03:45:57.090[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 57551 Succ: 57547 Fail:0 Unfinished:4
+2026.10.23-03:46:02.091[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 60976 Succ: 60973 Fail:0 Unfinished:3
+2026.10.23-03:46:07.092[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 64400 Succ: 64399 Fail:0 Unfinished:1
+2026.10.23-03:46:12.093[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 67829 Succ: 67827 Fail:0 Unfinished:2
+2026.10.23-03:46:17.094[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 71252 Succ: 71248 Fail:0 Unfinished:4
+2026.10.23-03:46:22.095[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 74698 Succ: 74694 Fail:0 Unfinished:4
+2026.10.23-03:46:27.096[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 78135 Succ: 78132 Fail:0 Unfinished:3
+2026.10.23-03:46:32.097[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 81554 Succ: 81550 Fail:0 Unfinished:4
+2026.10.23-03:46:37.098[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 84976 Succ: 84974 Fail:0 Unfinished:2
+2026.10.23-03:46:42.099[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 88401 Succ: 88397 Fail:0 Unfinished:4
+2026.10.23-03:46:47.100[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 91805 Succ: 91801 Fail:0 Unfinished:4
+2026.10.23-03:46:52.101[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 95261 Succ: 95258 Fail:0 Unfinished:3
+2026.10.23-03:46:57.102[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 98668 Succ: 98664 Fail:0 Unfinished:4
+2026.10.23-03:47:02.103[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 102090 Succ: 102088 Fail:0 Unfinished:2
+2026.10.23-03:47:07.104[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 105536 Succ: 105532 Fail:0 Unfinished:4
+2026.10.23-03:47:12.105[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 108951 Succ: 108947 Fail:0 Unfinished:4
+2026.10.23-03:47:17.106[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 112393 Succ: 112390 Fail:0 Unfinished:3
+2026.10.23-03:47:22.107[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 115856 Succ: 115852 Fail:0 Unfinished:4
+2026.10.23-03:47:27.108[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 119270 Succ: 119267 Fail:0 Unfinished:3
+2026.10.23-03:47:32.109[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 122691 Succ: 122689 Fail:0 Unfinished:2
+2026.10.23-03:47:37.110[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 126105 Succ: 126101 Fail:0 Unfinished:4
+2026.10.23-03:47:42.111[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 129509 Succ: 129507 Fail:0 Unfinished:2
+2026.10.23-03:47:47.112[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 132936 Succ: 132933 Fail:0 Unfinished:3
+2026.10.23-03:47:52.113[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 136363 Succ: 136359 Fail:0 Unfinished:4
+2026.10.23-03:47:57.114[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 139793 Succ: 139790 Fail:0 Unfinished:3
+2026.10.23-03:48:02.116[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 143238 Succ: 143236 Fail:0 Unfinished:2
+2026.10.23-03:48:07.116[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 146697 Succ: 146693 Fail:0 Unfinished:4
+2026.10.23-03:48:12.117[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 150148 Succ: 150144 Fail:0 Unfinished:4
+2026.10.23-03:48:17.118[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 153579 Succ: 153575 Fail:0 Unfinished:4
+2026.10.23-03:48:22.119[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 157009 Succ: 157006 Fail:0 Unfinished:3
+2026.10.23-03:48:27.119[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 160423 Succ: 160421 Fail:0 Unfinished:2
+2026.10.23-03:48:32.120[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 163852 Succ: 163848 Fail:0 Unfinished:4
+2026.10.23-03:48:37.121[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 167246 Succ: 167243 Fail:0 Unfinished:3
+2026.10.23-03:48:42.122[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 170657 Succ: 170653 Fail:0 Unfinished:4
+2026.10.23-03:48:47.123[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 174055 Succ: 174053 Fail:0 Unfinished:2
+2026.10.23-03:48:52.124[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 177451 Succ: 177449 Fail:0 Unfinished:2
+2026.10.23-03:48:57.125[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 180852 Succ: 180848 Fail:0 Unfinished:4
+2026.10.23-03:49:02.126[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 184288 Succ: 184285 Fail:0 Unfinished:3
+2026.10.23-03:49:07.127[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 187671 Succ: 187667 Fail:0 Unfinished:4
+2026.10.23-03:49:12.127[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 191116 Succ: 191112 Fail:0 Unfinished:4
+2026.10.23-03:49:17.128[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 194519 Succ: 194517 Fail:0 Unfinished:2
+2026.10.23-03:49:22.129[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 197963 Succ: 197959 Fail:0 Unfinished:4
+2026.10.23-03:49:27.130[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 201377 Succ: 201375 Fail:0 Unfinished:2
+2026.10.23-03:49:32.131[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 204814 Succ: 204811 Fail:0 Unfinished:3
+2026.10.23-03:49:36.391[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:49:36.391[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:49:36.392[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:49:36.392[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:49:36.392[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#7
+2026.10.23-03:49:37.133[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:49:42.133[32m info [39m [caliper] [default-observer] 	[readAsset(Leitura) - 700tps Round 7 Transaction Info] - Submitted: 104632 Succ: 104630 Fail:0 Unfinished:2
+2026.10.23-03:49:43.425[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-03:49:43.425[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-03:49:43.425[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-03:49:43.425[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-03:49:43.425[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#7
+2026.10.23-03:49:48.427[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-03:49:48.427[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-03:49:48.428[32m info [39m [caliper] [report-builder] 	
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ   | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 700tps | 210000 | 0    | 676.9           | 0.02            | 0.00            | 0.00            | 676.9            |
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:49:48.428[32m info [39m [caliper] [round-orchestrator] 	Finished round 8 (readAsset(Leitura) - 700tps) in 310.341 seconds
+2026.10.23-03:49:48.428[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:49:48.428[32m info [39m [caliper] [report-builder] 	### All test results ###
+2026.10.23-03:49:48.430[32m info [39m [caliper] [report-builder] 	
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ   | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| Aquecimento-Ledger (warmup) | 1000   | 0    | 100.2           | 0.13            | 0.02            | 0.07            | 100.0            |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 100tps | 30000  | 0    | 100.0           | 0.02            | 0.00            | 0.01            | 100.0            |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 200tps | 60000  | 0    | 200.0           | 0.02            | 0.00            | 0.01            | 200.0            |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 300tps | 90000  | 0    | 300.0           | 0.03            | 0.00            | 0.01            | 300.0            |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 400tps | 120000 | 0    | 400.0           | 0.03            | 0.00            | 0.01            | 400.0            |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 500tps | 150000 | 0    | 500.0           | 0.02            | 0.00            | 0.01            | 500.0            |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 600tps | 180000 | 0    | 600.0           | 0.02            | 0.00            | 0.01            | 600.0            |
+|-----------------------------|--------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| readAsset(Leitura) - 700tps | 210000 | 0    | 676.9           | 0.02            | 0.00            | 0.00            | 676.9            |
++-----------------------------+--------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-03:49:48.441[32m info [39m [caliper] [report-builder] 	Generated report with path /home/vinicin/TCC/Raft/caliper-workspace/report.html
+2026.10.23-03:49:48.441[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-03:49:48.441[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2026.10.23-03:49:48.441[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 2204.335 seconds. Total rounds: 8. Successful rounds: 8. Failed rounds: 0.
+2026.10.23-03:49:48.441[32m info [39m [caliper] [caliper-engine] 	Skipping end command due to benchmark flow conditioning
+2026.10.23-03:49:48.442[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished!
+2026.10.23-03:49:48.442[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is exiting
+2026.10.23-03:49:48.442[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting

@@ -1,0 +1,405 @@
+2026.10.23-04:08:30.050[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/vinicin/TCC/Raft/caliper-workspace
+2026.10.23-04:08:30.050[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/vinicin/TCC/Raft/caliper-workspace/benchmarks/CreateAsset-benchmark.yaml
+2026.10.23-04:08:30.050[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: /home/vinicin/TCC/Raft/caliper-workspace/networks/fabric-network-raft.yaml
+2026.10.23-04:08:30.050[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: fabric
+2026.10.23-04:08:30.053[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2026.10.23-04:08:30.054[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2026.10.23-04:08:30.054[32m info [39m [caliper] [caliper-engine] 	Skipping start commands due to benchmark flow conditioning
+2026.10.23-04:08:30.054[32m info [39m [caliper] [caliper-engine] 	Skipping initialization phase due to benchmark flow conditioning
+2026.10.23-04:08:30.054[32m info [39m [caliper] [caliper-engine] 	Skipping install smart contract phase due to benchmark flow conditioning
+2026.10.23-04:08:30.384[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.23-04:08:30.395[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.23-04:08:30.396[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as _Org2MSP_User1 for organization Org2MSP
+2026.10.23-04:08:30.397[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2026.10.23-04:08:30.398[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2026.10.23-04:08:30.400[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2026.10.23-04:08:30.400[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 2
+2026.10.23-04:08:30.403[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 2 of 2
+2026.10.23-04:08:30.404[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2026.10.23-04:08:30.405[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2026.10.23-04:08:30.405[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be connected...
+2026.10.23-04:08:30.558[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/vinicin/TCC/Raft/caliper-workspace
+2026.10.23-04:08:30.558[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/vinicin/TCC/Raft/caliper-workspace/benchmarks/CreateAsset-benchmark.yaml
+2026.10.23-04:08:30.558[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/vinicin/TCC/Raft/caliper-workspace/networks/fabric-network-raft.yaml
+2026.10.23-04:08:30.558[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.10.23-04:08:30.558[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/vinicin/TCC/Raft/caliper-workspace
+2026.10.23-04:08:30.559[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/vinicin/TCC/Raft/caliper-workspace/benchmarks/CreateAsset-benchmark.yaml
+2026.10.23-04:08:30.559[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/vinicin/TCC/Raft/caliper-workspace/networks/fabric-network-raft.yaml
+2026.10.23-04:08:30.559[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.10.23-04:08:30.571[32m info [39m [caliper] [worker-orchestrator] 	2 workers connected, progressing to worker assignment phase.
+2026.10.23-04:08:30.571[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2026.10.23-04:08:30.571[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be assigned...
+2026.10.23-04:08:30.577[32m info [39m [caliper] [worker-orchestrator] 	2 workers assigned, progressing to worker initialization phase.
+2026.10.23-04:08:30.577[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be ready...
+2026.10.23-04:08:30.577[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#1...
+2026.10.23-04:08:30.578[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2026.10.23-04:08:30.879[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.23-04:08:30.881[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.23-04:08:30.882[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.23-04:08:30.883[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as _Org2MSP_User1 for organization Org2MSP
+2026.10.23-04:08:30.884[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.23-04:08:30.884[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as _Org2MSP_User1 for organization Org2MSP
+2026.10.23-04:08:30.886[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2026.10.23-04:08:30.886[32m info [39m [caliper] [worker-message-handler] 	Worker#1 initialized
+2026.10.23-04:08:30.887[32m info [39m [caliper] [worker-orchestrator] 	2 workers ready, progressing to test preparation phase.
+2026.10.23-04:08:30.887[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (createAsset(Escrita) - 100tps)
+2026.10.23-04:08:30.887[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2026.10.23-04:08:30.888[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#0
+2026.10.23-04:08:30.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:08:30.924[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:08:30.926[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:08:30.926[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:08:30.927[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is starting...
+2026.10.23-04:08:30.927[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2026.10.23-04:08:30.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:08:30.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:08:30.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:08:30.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:08:30.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:08:30.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:08:30.928[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:08:30.929[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is completed
+2026.10.23-04:08:30.929[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#0
+2026.10.23-04:08:30.929[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:08:30.929[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2026.10.23-04:08:30.929[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2026.10.23-04:08:30.929[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-04:08:30.930[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-04:08:30.930[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2026.10.23-04:08:30.930[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#0
+2026.10.23-04:08:30.932[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:08:30.932[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:08:30.933[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:08:30.934[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:08:30.934[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-04:08:30.935[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-04:08:35.946[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 400 Succ: 390 Fail:0 Unfinished:10
+2026.10.23-04:08:40.932[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 901 Succ: 890 Fail:0 Unfinished:11
+2026.10.23-04:08:45.932[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 1402 Succ: 1390 Fail:0 Unfinished:12
+2026.10.23-04:08:50.933[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 1902 Succ: 1900 Fail:0 Unfinished:2
+2026.10.23-04:08:55.935[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 2402 Succ: 2400 Fail:0 Unfinished:2
+2026.10.23-04:09:00.935[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 2903 Succ: 2900 Fail:0 Unfinished:3
+2026.10.23-04:09:05.936[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 3404 Succ: 3400 Fail:0 Unfinished:4
+2026.10.23-04:09:10.938[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 3904 Succ: 3900 Fail:0 Unfinished:4
+2026.10.23-04:09:15.940[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 4404 Succ: 4400 Fail:0 Unfinished:4
+2026.10.23-04:09:20.940[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 4904 Succ: 4900 Fail:0 Unfinished:4
+2026.10.23-04:09:25.941[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 5404 Succ: 5380 Fail:0 Unfinished:24
+2026.10.23-04:09:30.942[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 5906 Succ: 5840 Fail:0 Unfinished:66
+2026.10.23-04:09:35.943[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 6406 Succ: 6400 Fail:0 Unfinished:6
+2026.10.23-04:09:40.944[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 6908 Succ: 6900 Fail:0 Unfinished:8
+2026.10.23-04:09:45.946[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 7408 Succ: 7400 Fail:0 Unfinished:8
+2026.10.23-04:09:50.947[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 7908 Succ: 7900 Fail:0 Unfinished:8
+2026.10.23-04:09:55.948[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 8408 Succ: 8400 Fail:0 Unfinished:8
+2026.10.23-04:10:00.948[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 8908 Succ: 8900 Fail:0 Unfinished:8
+2026.10.23-04:10:05.949[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 9408 Succ: 9400 Fail:0 Unfinished:8
+2026.10.23-04:10:10.950[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 9908 Succ: 9900 Fail:0 Unfinished:8
+2026.10.23-04:10:15.951[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 10410 Succ: 10400 Fail:0 Unfinished:10
+2026.10.23-04:10:20.952[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 10910 Succ: 10900 Fail:0 Unfinished:10
+2026.10.23-04:10:25.953[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 11410 Succ: 11400 Fail:0 Unfinished:10
+2026.10.23-04:10:30.954[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 11910 Succ: 11900 Fail:0 Unfinished:10
+2026.10.23-04:10:35.955[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 12410 Succ: 12400 Fail:0 Unfinished:10
+2026.10.23-04:10:40.957[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 12910 Succ: 12900 Fail:0 Unfinished:10
+2026.10.23-04:10:43.804[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [CreateAsset] using arguments [asset_w1_6644_1792739443795,blue,10,Caliper,100],  with error: EndorseError: 9 FAILED_PRECONDITION: no combination of peers can be derived which satisfy the endorsement policy: no peer combination can satisfy the endorsement policy
+Details:
+2026.10.23-04:10:45.957[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 13410 Succ: 13350 Fail:1 Unfinished:59
+2026.10.23-04:10:50.958[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 13910 Succ: 13820 Fail:1 Unfinished:89
+2026.10.23-04:10:55.960[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 14410 Succ: 14400 Fail:1 Unfinished:9
+2026.10.23-04:11:00.961[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 14911 Succ: 14900 Fail:1 Unfinished:10
+2026.10.23-04:11:05.961[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 15411 Succ: 15400 Fail:1 Unfinished:10
+2026.10.23-04:11:10.962[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 15911 Succ: 15900 Fail:1 Unfinished:10
+2026.10.23-04:11:15.964[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 16412 Succ: 16400 Fail:1 Unfinished:11
+2026.10.23-04:11:20.964[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 16912 Succ: 16900 Fail:1 Unfinished:11
+2026.10.23-04:11:25.965[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 17412 Succ: 17400 Fail:1 Unfinished:11
+2026.10.23-04:11:30.966[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 17912 Succ: 17900 Fail:1 Unfinished:11
+2026.10.23-04:11:35.967[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 18412 Succ: 18400 Fail:1 Unfinished:11
+2026.10.23-04:11:40.968[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 18913 Succ: 18900 Fail:1 Unfinished:12
+2026.10.23-04:11:45.969[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 19413 Succ: 19400 Fail:1 Unfinished:12
+2026.10.23-04:11:50.970[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 19914 Succ: 19900 Fail:1 Unfinished:13
+2026.10.23-04:11:55.971[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 20414 Succ: 20406 Fail:1 Unfinished:7
+2026.10.23-04:12:00.972[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 20914 Succ: 20900 Fail:1 Unfinished:13
+2026.10.23-04:12:05.975[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 21415 Succ: 21400 Fail:1 Unfinished:14
+2026.10.23-04:12:10.976[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 21915 Succ: 21854 Fail:1 Unfinished:60
+2026.10.23-04:12:15.976[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 22415 Succ: 22408 Fail:1 Unfinished:6
+2026.10.23-04:12:20.977[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 22916 Succ: 22910 Fail:1 Unfinished:5
+2026.10.23-04:12:25.978[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 23417 Succ: 23410 Fail:1 Unfinished:6
+2026.10.23-04:12:30.979[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 23917 Succ: 23910 Fail:1 Unfinished:6
+2026.10.23-04:12:35.980[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 24417 Succ: 24410 Fail:1 Unfinished:6
+2026.10.23-04:12:40.981[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 24918 Succ: 24910 Fail:1 Unfinished:7
+2026.10.23-04:12:45.982[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 25418 Succ: 25410 Fail:1 Unfinished:7
+2026.10.23-04:12:50.983[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 25918 Succ: 25910 Fail:1 Unfinished:7
+2026.10.23-04:12:55.984[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 26418 Succ: 26410 Fail:1 Unfinished:7
+2026.10.23-04:13:00.985[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 26919 Succ: 26910 Fail:1 Unfinished:8
+2026.10.23-04:13:05.986[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 27419 Succ: 27410 Fail:1 Unfinished:8
+2026.10.23-04:13:10.987[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 27919 Succ: 27910 Fail:1 Unfinished:8
+2026.10.23-04:13:15.988[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 28419 Succ: 28410 Fail:1 Unfinished:8
+2026.10.23-04:13:20.989[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 28920 Succ: 28910 Fail:1 Unfinished:9
+2026.10.23-04:13:25.991[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 29420 Succ: 29340 Fail:1 Unfinished:79
+2026.10.23-04:13:30.992[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 100tps Round 0 Transaction Info] - Submitted: 29921 Succ: 29830 Fail:1 Unfinished:90
+2026.10.23-04:13:34.137[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:13:34.138[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:13:34.138[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:13:34.138[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:13:34.139[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#0
+2026.10.23-04:13:34.142[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:13:34.143[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:13:34.143[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:13:34.144[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:13:34.144[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2026.10.23-04:13:39.148[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-04:13:39.149[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-04:13:39.155[32m info [39m [caliper] [report-builder] 	
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                          | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| createAsset(Escrita) - 100tps | 29999 | 1    | 100.0           | 2.27            | 0.02            | 0.15            | 99.3             |
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-04:13:39.156[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (createAsset(Escrita) - 100tps) in 302.208 seconds
+2026.10.23-04:13:39.156[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-04:13:39.156[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-04:13:44.161[32m info [39m [caliper] [round-orchestrator] 	Started round 2 (createAsset(Escrita) - 200tps)
+2026.10.23-04:13:44.162[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#1
+2026.10.23-04:13:44.162[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#1
+2026.10.23-04:13:44.168[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:13:44.169[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:13:44.170[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:13:44.170[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is starting...
+2026.10.23-04:13:44.171[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:13:44.171[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is starting...
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:13:44.172[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is completed
+2026.10.23-04:13:44.172[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#1
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:13:44.172[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:13:44.172[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is completed
+2026.10.23-04:13:44.172[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#1
+2026.10.23-04:13:44.173[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-04:13:44.173[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-04:13:44.173[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#1
+2026.10.23-04:13:44.173[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#1
+2026.10.23-04:13:44.175[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:13:44.176[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:13:44.176[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:13:44.176[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-04:13:44.178[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:13:44.179[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-04:13:49.174[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 802 Succ: 790 Fail:0 Unfinished:12
+2026.10.23-04:13:54.175[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 1803 Succ: 1795 Fail:0 Unfinished:8
+2026.10.23-04:13:59.176[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 2804 Succ: 2790 Fail:0 Unfinished:14
+2026.10.23-04:14:04.177[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 3805 Succ: 3790 Fail:0 Unfinished:15
+2026.10.23-04:14:09.177[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 4807 Succ: 4800 Fail:0 Unfinished:7
+2026.10.23-04:14:14.178[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 5809 Succ: 5800 Fail:0 Unfinished:9
+2026.10.23-04:14:19.179[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 6810 Succ: 6800 Fail:0 Unfinished:10
+2026.10.23-04:14:24.180[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 7810 Succ: 7510 Fail:0 Unfinished:300
+2026.10.23-04:14:29.181[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 8811 Succ: 8800 Fail:0 Unfinished:11
+2026.10.23-04:14:34.182[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 9813 Succ: 9805 Fail:0 Unfinished:8
+2026.10.23-04:14:39.183[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 10814 Succ: 10800 Fail:0 Unfinished:14
+2026.10.23-04:14:44.184[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 11816 Succ: 11806 Fail:0 Unfinished:10
+2026.10.23-04:14:49.185[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 12818 Succ: 12804 Fail:0 Unfinished:14
+2026.10.23-04:14:54.186[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 13818 Succ: 13810 Fail:0 Unfinished:8
+2026.10.23-04:14:59.187[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 14819 Succ: 14810 Fail:0 Unfinished:9
+2026.10.23-04:15:04.189[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 15820 Succ: 15690 Fail:0 Unfinished:130
+2026.10.23-04:15:09.189[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 16824 Succ: 16645 Fail:0 Unfinished:179
+2026.10.23-04:15:14.190[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 17827 Succ: 17820 Fail:0 Unfinished:7
+2026.10.23-04:15:19.191[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 18829 Succ: 18820 Fail:0 Unfinished:9
+2026.10.23-04:15:24.192[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 19829 Succ: 19820 Fail:0 Unfinished:9
+2026.10.23-04:15:29.194[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 20831 Succ: 20820 Fail:0 Unfinished:11
+2026.10.23-04:15:34.195[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 21832 Succ: 21820 Fail:0 Unfinished:12
+2026.10.23-04:15:39.196[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 22833 Succ: 22820 Fail:0 Unfinished:13
+2026.10.23-04:15:44.197[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 23834 Succ: 23760 Fail:0 Unfinished:74
+2026.10.23-04:15:49.198[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 24832 Succ: 24730 Fail:0 Unfinished:102
+2026.10.23-04:15:54.199[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 25839 Succ: 25830 Fail:0 Unfinished:9
+2026.10.23-04:15:59.200[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 26840 Succ: 26830 Fail:0 Unfinished:10
+2026.10.23-04:16:04.201[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 27841 Succ: 27830 Fail:0 Unfinished:11
+2026.10.23-04:16:09.202[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 28842 Succ: 28830 Fail:0 Unfinished:12
+2026.10.23-04:16:14.203[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 29842 Succ: 29830 Fail:0 Unfinished:12
+2026.10.23-04:16:19.204[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 30843 Succ: 30835 Fail:0 Unfinished:8
+2026.10.23-04:16:24.205[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 31845 Succ: 31830 Fail:0 Unfinished:15
+2026.10.23-04:16:29.206[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 32846 Succ: 32560 Fail:0 Unfinished:286
+2026.10.23-04:16:34.207[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 33848 Succ: 33840 Fail:0 Unfinished:8
+2026.10.23-04:16:39.207[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 34849 Succ: 34840 Fail:0 Unfinished:9
+2026.10.23-04:16:44.208[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 35849 Succ: 35840 Fail:0 Unfinished:9
+2026.10.23-04:16:49.210[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 36850 Succ: 36840 Fail:0 Unfinished:10
+2026.10.23-04:16:54.211[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 37850 Succ: 37840 Fail:0 Unfinished:10
+2026.10.23-04:16:59.211[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 38852 Succ: 38840 Fail:0 Unfinished:12
+2026.10.23-04:17:04.212[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 39853 Succ: 39840 Fail:0 Unfinished:13
+2026.10.23-04:17:09.212[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 40854 Succ: 40840 Fail:0 Unfinished:14
+2026.10.23-04:17:14.213[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 41864 Succ: 41740 Fail:0 Unfinished:124
+2026.10.23-04:17:19.215[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 42878 Succ: 42632 Fail:0 Unfinished:246
+2026.10.23-04:17:24.216[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 43879 Succ: 43870 Fail:0 Unfinished:9
+2026.10.23-04:17:29.217[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 44880 Succ: 44870 Fail:0 Unfinished:10
+2026.10.23-04:17:34.217[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 45881 Succ: 45870 Fail:0 Unfinished:11
+2026.10.23-04:17:39.218[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 46881 Succ: 46870 Fail:0 Unfinished:11
+2026.10.23-04:17:44.218[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 47882 Succ: 47870 Fail:0 Unfinished:12
+2026.10.23-04:17:49.219[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 48883 Succ: 48875 Fail:0 Unfinished:8
+2026.10.23-04:17:54.220[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 49877 Succ: 49560 Fail:0 Unfinished:317
+2026.10.23-04:17:59.221[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 50890 Succ: 50459 Fail:0 Unfinished:431
+2026.10.23-04:18:04.221[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 51892 Succ: 51880 Fail:0 Unfinished:12
+2026.10.23-04:18:09.222[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 52892 Succ: 52880 Fail:0 Unfinished:12
+2026.10.23-04:18:14.223[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 53893 Succ: 53880 Fail:0 Unfinished:13
+2026.10.23-04:18:19.224[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 54895 Succ: 54880 Fail:0 Unfinished:15
+2026.10.23-04:18:24.223[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 55895 Succ: 55885 Fail:0 Unfinished:10
+2026.10.23-04:18:29.224[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 56895 Succ: 56885 Fail:0 Unfinished:10
+2026.10.23-04:18:34.225[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 57896 Succ: 57890 Fail:0 Unfinished:6
+2026.10.23-04:18:39.226[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 58899 Succ: 58788 Fail:0 Unfinished:111
+2026.10.23-04:18:44.228[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 200tps Round 1 Transaction Info] - Submitted: 59903 Succ: 59890 Fail:0 Unfinished:13
+2026.10.23-04:18:45.275[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:18:45.276[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:18:45.276[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:18:45.277[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:18:45.277[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:18:45.277[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:18:45.277[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:18:45.277[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#1
+2026.10.23-04:18:45.279[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:18:45.279[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#1
+2026.10.23-04:18:50.283[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-04:18:50.283[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-04:18:50.285[32m info [39m [caliper] [report-builder] 	
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                          | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| createAsset(Escrita) - 200tps | 60000 | 0    | 200.0           | 3.73            | 0.02            | 0.28            | 200.0            |
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-04:18:50.286[32m info [39m [caliper] [round-orchestrator] 	Finished round 2 (createAsset(Escrita) - 200tps) in 300.099 seconds
+2026.10.23-04:18:50.286[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-04:18:50.286[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.23-04:18:55.291[32m info [39m [caliper] [round-orchestrator] 	Started round 3 (createAsset(Escrita) - 300tps)
+2026.10.23-04:18:55.293[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#2
+2026.10.23-04:18:55.294[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#2
+2026.10.23-04:18:55.303[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:18:55.303[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:18:55.304[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:18:55.304[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is starting...
+2026.10.23-04:18:55.306[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:18:55.306[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:18:55.306[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:18:55.306[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:18:55.306[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:18:55.306[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is completed
+2026.10.23-04:18:55.306[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#2
+2026.10.23-04:18:55.306[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is starting...
+2026.10.23-04:18:55.307[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:18:55.307[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:18:55.307[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:18:55.307[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:18:55.308[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is completed
+2026.10.23-04:18:55.308[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#2
+2026.10.23-04:18:55.308[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.23-04:18:55.308[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.23-04:18:55.309[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#2
+2026.10.23-04:18:55.309[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#2
+2026.10.23-04:18:55.313[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:18:55.313[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.23-04:18:55.316[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:18:55.316[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.23-04:18:55.316[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user _Org2MSP_User1
+2026.10.23-04:18:55.317[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.23-04:19:00.309[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 1153 Succ: 1140 Fail:0 Unfinished:13
+2026.10.23-04:19:05.310[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 2656 Succ: 2640 Fail:0 Unfinished:16
+2026.10.23-04:19:10.311[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 4126 Succ: 4110 Fail:0 Unfinished:16
+2026.10.23-04:19:15.313[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 5579 Succ: 5566 Fail:0 Unfinished:13
+2026.10.23-04:19:20.314[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 7089 Succ: 6466 Fail:0 Unfinished:623
+2026.10.23-04:19:25.315[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 8582 Succ: 8000 Fail:0 Unfinished:582
+2026.10.23-04:19:30.315[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 9993 Succ: 9982 Fail:0 Unfinished:11
+2026.10.23-04:19:35.316[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 11511 Succ: 11497 Fail:0 Unfinished:14
+2026.10.23-04:19:40.316[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 13030 Succ: 13017 Fail:0 Unfinished:13
+2026.10.23-04:19:45.317[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 14579 Succ: 14565 Fail:0 Unfinished:14
+2026.10.23-04:19:50.318[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 16157 Succ: 15604 Fail:0 Unfinished:553
+2026.10.23-04:19:55.319[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 17535 Succ: 17145 Fail:0 Unfinished:390
+2026.10.23-04:20:00.320[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 18971 Succ: 18960 Fail:0 Unfinished:11
+2026.10.23-04:20:05.320[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 20454 Succ: 20439 Fail:0 Unfinished:15
+2026.10.23-04:20:10.321[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 21989 Succ: 21974 Fail:0 Unfinished:15
+2026.10.23-04:20:15.321[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 23497 Succ: 23478 Fail:0 Unfinished:19
+2026.10.23-04:20:20.322[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 25050 Succ: 24700 Fail:0 Unfinished:350
+2026.10.23-04:20:25.322[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 26477 Succ: 26294 Fail:0 Unfinished:183
+2026.10.23-04:20:30.323[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 27918 Succ: 27788 Fail:0 Unfinished:130
+2026.10.23-04:20:35.324[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 29416 Succ: 29406 Fail:0 Unfinished:10
+2026.10.23-04:20:40.324[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 30957 Succ: 30943 Fail:0 Unfinished:14
+2026.10.23-04:20:45.324[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 32483 Succ: 32465 Fail:0 Unfinished:18
+2026.10.23-04:20:50.324[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 34068 Succ: 33860 Fail:0 Unfinished:208
+2026.10.23-04:20:55.325[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 35445 Succ: 35429 Fail:0 Unfinished:16
+2026.10.23-04:21:00.326[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 36988 Succ: 36976 Fail:0 Unfinished:12
+2026.10.23-04:21:05.326[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 38499 Succ: 38485 Fail:0 Unfinished:14
+2026.10.23-04:21:10.326[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 40022 Succ: 40011 Fail:0 Unfinished:11
+2026.10.23-04:21:15.327[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 41526 Succ: 41511 Fail:0 Unfinished:15
+2026.10.23-04:21:20.328[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 43111 Succ: 42580 Fail:0 Unfinished:531
+2026.10.23-04:21:25.329[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 44487 Succ: 44050 Fail:0 Unfinished:437
+2026.10.23-04:21:30.329[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 45906 Succ: 45890 Fail:0 Unfinished:16
+2026.10.23-04:21:35.328[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 47416 Succ: 47400 Fail:0 Unfinished:16
+2026.10.23-04:21:40.329[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 48921 Succ: 48910 Fail:0 Unfinished:11
+2026.10.23-04:21:45.330[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 50445 Succ: 50430 Fail:0 Unfinished:15
+2026.10.23-04:21:50.331[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 51970 Succ: 51680 Fail:0 Unfinished:290
+2026.10.23-04:21:55.331[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 53360 Succ: 53344 Fail:0 Unfinished:16
+2026.10.23-04:22:00.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 54930 Succ: 53806 Fail:0 Unfinished:1124
+2026.10.23-04:22:05.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 56215 Succ: 56202 Fail:0 Unfinished:13
+2026.10.23-04:22:10.333[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 57734 Succ: 57720 Fail:0 Unfinished:14
+2026.10.23-04:22:15.333[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 59278 Succ: 59263 Fail:0 Unfinished:15
+2026.10.23-04:22:20.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 60803 Succ: 60694 Fail:0 Unfinished:109
+2026.10.23-04:22:25.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 62268 Succ: 62242 Fail:0 Unfinished:26
+2026.10.23-04:22:30.333[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 63725 Succ: 63713 Fail:0 Unfinished:12
+2026.10.23-04:22:35.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 65239 Succ: 65224 Fail:0 Unfinished:15
+2026.10.23-04:22:40.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 66717 Succ: 66704 Fail:0 Unfinished:13
+2026.10.23-04:22:45.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 68204 Succ: 68186 Fail:0 Unfinished:18
+2026.10.23-04:22:50.332[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 69721 Succ: 69257 Fail:0 Unfinished:464
+2026.10.23-04:22:55.335[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 71021 Succ: 70735 Fail:0 Unfinished:286
+2026.10.23-04:23:00.334[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 72445 Succ: 72191 Fail:0 Unfinished:254
+2026.10.23-04:23:05.335[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 73990 Succ: 73978 Fail:0 Unfinished:12
+2026.10.23-04:23:10.336[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 75483 Succ: 75468 Fail:0 Unfinished:15
+2026.10.23-04:23:15.337[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 76986 Succ: 76968 Fail:0 Unfinished:18
+2026.10.23-04:23:20.338[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 78502 Succ: 78310 Fail:0 Unfinished:192
+2026.10.23-04:23:25.339[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 79834 Succ: 79811 Fail:0 Unfinished:23
+2026.10.23-04:23:30.340[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 81460 Succ: 80210 Fail:0 Unfinished:1250
+2026.10.23-04:23:35.341[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 82805 Succ: 82790 Fail:0 Unfinished:15
+2026.10.23-04:23:40.342[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 84291 Succ: 84275 Fail:0 Unfinished:16
+2026.10.23-04:23:45.343[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 85791 Succ: 85776 Fail:0 Unfinished:15
+2026.10.23-04:23:50.344[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 87221 Succ: 87205 Fail:0 Unfinished:16
+2026.10.23-04:23:55.344[32m info [39m [caliper] [default-observer] 	[createAsset(Escrita) - 300tps Round 2 Transaction Info] - Submitted: 88652 Succ: 88597 Fail:0 Unfinished:55
+2026.10.23-04:23:59.743[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:23:59.743[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:23:59.743[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:23:59.744[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:23:59.744[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#2
+2026.10.23-04:24:00.345[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-04:24:00.713[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.23-04:24:00.713[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user _Org2MSP_User1
+2026.10.23-04:24:00.714[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.23-04:24:00.715[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org2.example.com
+2026.10.23-04:24:00.715[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#2
+2026.10.23-04:24:05.716[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.23-04:24:05.717[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.23-04:24:05.718[32m info [39m [caliper] [report-builder] 	
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                          | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| createAsset(Escrita) - 300tps | 90000 | 0    | 295.8           | 5.00            | 0.02            | 0.57            | 295.7            |
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-04:24:05.718[32m info [39m [caliper] [round-orchestrator] 	Finished round 3 (createAsset(Escrita) - 300tps) in 304.397 seconds
+2026.10.23-04:24:05.718[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-04:24:05.719[32m info [39m [caliper] [report-builder] 	### All test results ###
+2026.10.23-04:24:05.720[32m info [39m [caliper] [report-builder] 	
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                          | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| createAsset(Escrita) - 100tps | 29999 | 1    | 100.0           | 2.27            | 0.02            | 0.15            | 99.3             |
+|-------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| createAsset(Escrita) - 200tps | 60000 | 0    | 200.0           | 3.73            | 0.02            | 0.28            | 200.0            |
+|-------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| createAsset(Escrita) - 300tps | 90000 | 0    | 295.8           | 5.00            | 0.02            | 0.57            | 295.7            |
++-------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.23-04:24:05.735[32m info [39m [caliper] [report-builder] 	Generated report with path /home/vinicin/TCC/Raft/caliper-workspace/report.html
+2026.10.23-04:24:05.735[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.23-04:24:05.735[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2026.10.23-04:24:05.735[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 934.848 seconds. Total rounds: 3. Successful rounds: 3. Failed rounds: 0.
+2026.10.23-04:24:05.735[32m info [39m [caliper] [caliper-engine] 	Skipping end command due to benchmark flow conditioning
+2026.10.23-04:24:05.735[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished!
+2026.10.23-04:24:05.736[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting
+2026.10.23-04:24:05.736[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is exiting

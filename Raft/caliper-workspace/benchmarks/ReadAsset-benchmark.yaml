@@ -1,0 +1,110 @@
+test:
+  name: Benchmark Hyperledger Fabric - ReadAsset
+  description: Desempenho isolado da operacao de leitura (ReadAsset)
+  workers:
+    number: 2
+  rounds:
+    # -------------------------------------------------------
+    # WARM-UP: popula o ledger com 1000 assets antes da
+    # bateria de leitura. Necessario porque a rede e resetada
+    # entre operacoes (independencia estatistica).
+    # -------------------------------------------------------
+    - label: Aquecimento-Ledger (warmup)
+      description: Populacao inicial do ledger
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/warmup.js
+
+    # -------------------------------------------------------
+    # LEITURA PURA — ReadAsset
+    # txNumber = TPS x 300s
+    # Steps de 100 em 100 ate ultrapassar o ponto de saturacao
+    # (680 tps Raft / 700 tps SmartBFT -> 700 cobre ambos)
+    # -------------------------------------------------------
+    - label: readAsset(Leitura) - 100tps
+      description: Leitura pura a 100 TPS (~300s)
+      txNumber: 30000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 200tps
+      description: Leitura pura a 200 TPS (~300s)
+      txNumber: 60000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 200
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 300tps
+      description: Leitura pura a 300 TPS (~300s)
+      txNumber: 90000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 300
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 400tps
+      description: Leitura pura a 400 TPS (~300s)
+      txNumber: 120000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 400
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 500tps
+      description: Leitura pura a 500 TPS (~300s)
+      txNumber: 150000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 500
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 600tps
+      description: Leitura pura a 600 TPS (~300s)
+      txNumber: 180000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 600
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000
+
+    - label: readAsset(Leitura) - 700tps
+      description: Leitura pura a 700 TPS (~300s) - acima do ponto de saturacao de ambos os protocolos
+      txNumber: 210000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 700
+      workload:
+        module: workload/readAsset.js
+        arguments:
+          totalAssets: 1000

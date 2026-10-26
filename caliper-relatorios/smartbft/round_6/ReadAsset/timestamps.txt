@@ -1,0 +1,4 @@
+round=6
+operation=ReadAsset
+start=2026-10-24T05:25:34-0300
+end=2026-10-24T06:02:17-0300

@@ -1,0 +1,41 @@
+test:
+  name: Benchmark Hyperledger Fabric - CreateAsset
+  description: Desempenho isolado da operacao de escrita (CreateAsset)
+  workers:
+    number: 2
+  rounds:
+    # -------------------------------------------------------
+    # ESCRITA PURA — CreateAsset
+    # txNumber = TPS x 300s
+    # Steps de 100 em 100 ate ultrapassar o ponto de saturacao
+    # (295 tps Raft / 275 tps SmartBFT -> 300 cobre ambos)
+    # -------------------------------------------------------
+    - label: createAsset(Escrita) - 100tps
+      description: Escrita pura a 100 TPS (~300s)
+      txNumber: 30000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 100
+      workload:
+        module: workload/createAsset.js
+
+    - label: createAsset(Escrita) - 200tps
+      description: Escrita pura a 200 TPS (~300s)
+      txNumber: 60000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 200
+      workload:
+        module: workload/createAsset.js
+
+    - label: createAsset(Escrita) - 300tps
+      description: Escrita pura a 300 TPS (~300s) - acima do ponto de saturacao de ambos os protocolos
+      txNumber: 90000
+      rateControl:
+        type: fixed-rate
+        opts:
+          tps: 300
+      workload:
+        module: workload/createAsset.js

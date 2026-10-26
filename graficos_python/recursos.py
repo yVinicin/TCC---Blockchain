@@ -12,6 +12,15 @@ import matplotlib.pyplot as plt
 REPORTS_DIR = "../caliper-relatorios"
 OUTPUT_DIR  = "graficos_recursos"
 
+# Operações executadas separadamente em cada round:
+# round_N/<Operacao>/{CPU.csv,Memory.csv}
+WORKLOADS = ["CreateAsset", "ReadAsset", "TransferAsset"]
+WORKLOAD_LABELS = {
+    "CreateAsset": "CreateAsset (Escrita)",
+    "ReadAsset": "ReadAsset (Leitura)",
+    "TransferAsset": "TransferAsset (Leitura + Escrita)",
+}
+
 # Nós que queremos plotar (devem bater com fragmentos dos nomes das colunas)
 NODE_FILTERS = [
     "peer0.org1.example.com",
@@ -137,13 +146,13 @@ def load_csv(path: str, metric: str) -> pd.DataFrame | None:
     return result
 
 
-def load_all_rounds(reports_dir: str, algorithm: str, metric: str) -> list[pd.DataFrame]:
+def load_all_rounds(reports_dir: str, algorithm: str, operation: str, metric: str) -> list[pd.DataFrame]:
     """
-    Carrega todos os rounds de um algoritmo para a métrica escolhida.
+    Carrega todos os rounds de um algoritmo + operação para a métrica escolhida.
     Retorna lista de DataFrames (um por round), cada um com time_min + 6 colunas de node.
     """
     filename = "CPU.csv" if metric == "cpu" else "Memory.csv"
-    pattern  = os.path.join(reports_dir, algorithm.lower(), "round_*", filename)
+    pattern  = os.path.join(reports_dir, algorithm.lower(), "round_*", operation, filename)
     paths    = sorted(glob.glob(pattern))
 
     if not paths:
@@ -158,7 +167,7 @@ def load_all_rounds(reports_dir: str, algorithm: str, metric: str) -> list[pd.Da
         if df is not None:
             dfs.append(df)
 
-    print(f"[+] {algorithm}: {len(dfs)} rounds carregados para {metric.upper()}.")
+    print(f"[+] {algorithm}/{operation}: {len(dfs)} rounds carregados para {metric.upper()}.")
     return dfs
 
 
@@ -192,9 +201,9 @@ def average_rounds(dfs: list[pd.DataFrame]) -> pd.DataFrame:
 # PLOTAGEM
 # ----------------------------------------------------------------------
 
-def plot_resources(avg_df: pd.DataFrame, algorithm: str, metric: str, output_dir: str) -> str:
+def plot_resources(avg_df: pd.DataFrame, algorithm: str, operation: str, metric: str, output_dir: str) -> str:
     """
-    Plota um gráfico com 6 linhas (uma por node) para o algoritmo e métrica dados.
+    Plota um gráfico com 6 linhas (uma por node) para o algoritmo, operação e métrica dados.
     """
     fig, ax = plt.subplots(figsize=(10, 6))
 
@@ -212,13 +221,14 @@ def plot_resources(avg_df: pd.DataFrame, algorithm: str, metric: str, output_dir
             linewidth=1.8,
         )
 
+    op_label = WORKLOAD_LABELS.get(operation, operation)
     if metric == "cpu":
         ylabel = "CPU (%)"
-        title  = f"Consumo de CPU por Nó — {algorithm}"
+        title  = f"Consumo de CPU por Nó — {algorithm} — {op_label}"
         suffix = "cpu"
     else:
         ylabel = "RAM (MB)"
-        title  = f"Consumo de RAM por Nó — {algorithm}"
+        title  = f"Consumo de RAM por Nó — {algorithm} — {op_label}"
         suffix = "ram"
 
     ax.set_title(title, fontsize=13, fontweight="bold")
@@ -232,7 +242,7 @@ def plot_resources(avg_df: pd.DataFrame, algorithm: str, metric: str, output_dir
     fig.tight_layout()
 
     os.makedirs(output_dir, exist_ok=True)
-    out_path = os.path.join(output_dir, f"{suffix}_{algorithm.lower()}.png")
+    out_path = os.path.join(output_dir, f"{suffix}_{algorithm.lower()}_{operation.lower()}.png")
     fig.savefig(out_path, dpi=200)
     plt.close(fig)
     return out_path
@@ -257,6 +267,7 @@ def aggregate_network(avg_df: pd.DataFrame, metric: str) -> np.ndarray:
 def plot_comparativo(
     avg_raft: pd.DataFrame,
     avg_smartbft: pd.DataFrame,
+    operation: str,
     metric: str,
     output_dir: str,
 ) -> str:
@@ -276,13 +287,14 @@ def plot_comparativo(
     ax.plot(time_min, raft_vals,     label="Raft",     color="#2E86AB", linewidth=2)
     ax.plot(time_min, smartbft_vals, label="SmartBFT", color="#C73E1D", linewidth=2)
 
+    op_label = WORKLOAD_LABELS.get(operation, operation)
     if metric == "cpu":
         ylabel  = "CPU médio da rede (%)"
-        title   = "Consumo de CPU — Raft vs SmartBFT (média dos nós)"
+        title   = f"Consumo de CPU — Raft vs SmartBFT (média dos nós) — {op_label}"
         suffix  = "cpu_comparativo"
     else:
         ylabel  = "RAM total da rede (MB)"
-        title   = "Consumo de RAM — Raft vs SmartBFT (soma dos nós)"
+        title   = f"Consumo de RAM — Raft vs SmartBFT (soma dos nós) — {op_label}"
         suffix  = "ram_comparativo"
 
     ax.set_title(title, fontsize=13, fontweight="bold")
@@ -296,7 +308,7 @@ def plot_comparativo(
     fig.tight_layout()
 
     os.makedirs(output_dir, exist_ok=True)
-    out_path = os.path.join(output_dir, f"{suffix}.png")
+    out_path = os.path.join(output_dir, f"{suffix}_{operation.lower()}.png")
     fig.savefig(out_path, dpi=200)
     plt.close(fig)
     return out_path
@@ -308,32 +320,34 @@ def plot_comparativo(
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    avg_cache = {}  # guarda avg_df por (algorithm, metric) para reusar no comparativo
+    avg_cache = {}  # guarda avg_df por (algorithm, operation, metric) para reusar no comparativo
 
-    # Gráficos por nó (4 imagens)
-    for metric in ("cpu", "ram"):
-        for algorithm in ("Raft", "SmartBFT"):
-            try:
-                dfs = load_all_rounds(REPORTS_DIR, algorithm, metric)
-            except FileNotFoundError as e:
-                print(f"[!] {e}")
+    # Gráficos por nó (6 nós x 2 métricas x 2 algoritmos x 3 operações = 12 imagens)
+    for operation in WORKLOADS:
+        for metric in ("cpu", "ram"):
+            for algorithm in ("Raft", "SmartBFT"):
+                try:
+                    dfs = load_all_rounds(REPORTS_DIR, algorithm, operation, metric)
+                except FileNotFoundError as e:
+                    print(f"[!] {e}")
+                    continue
+
+                avg_df = average_rounds(dfs)
+                avg_cache[(algorithm, operation, metric)] = avg_df
+
+                out_path = plot_resources(avg_df, algorithm, operation, metric, OUTPUT_DIR)
+                print(f"[+] Gráfico salvo em: {out_path}")
+
+    # Gráficos comparativos (2 métricas x 3 operações = 6 imagens)
+    for operation in WORKLOADS:
+        for metric in ("cpu", "ram"):
+            raft_df     = avg_cache.get(("Raft",     operation, metric))
+            smartbft_df = avg_cache.get(("SmartBFT", operation, metric))
+            if raft_df is None or smartbft_df is None:
+                print(f"[!] Dados insuficientes para o comparativo de {operation}/{metric.upper()}, pulando.")
                 continue
-
-            avg_df = average_rounds(dfs)
-            avg_cache[(algorithm, metric)] = avg_df
-
-            out_path = plot_resources(avg_df, algorithm, metric, OUTPUT_DIR)
+            out_path = plot_comparativo(raft_df, smartbft_df, operation, metric, OUTPUT_DIR)
             print(f"[+] Gráfico salvo em: {out_path}")
-
-    # Gráficos comparativos (2 imagens)
-    for metric in ("cpu", "ram"):
-        raft_df     = avg_cache.get(("Raft",     metric))
-        smartbft_df = avg_cache.get(("SmartBFT", metric))
-        if raft_df is None or smartbft_df is None:
-            print(f"[!] Dados insuficientes para o comparativo de {metric.upper()}, pulando.")
-            continue
-        out_path = plot_comparativo(raft_df, smartbft_df, metric, OUTPUT_DIR)
-        print(f"[+] Gráfico salvo em: {out_path}")
 
 
 if __name__ == "__main__":

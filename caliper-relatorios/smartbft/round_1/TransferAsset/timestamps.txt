@@ -1,0 +1,4 @@
+round=1
+operation=TransferAsset
+start=2026-10-23T23:58:41-0300
+end=2026-10-24T00:15:07-0300

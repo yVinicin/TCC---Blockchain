@@ -8,57 +8,81 @@
 Rede Raft:
 
   [ Throughput (tx/s) ]
-  CreateAsset @ 50 TPS:
-      Média:          50.0000 tx/s
-      Desvio Padrão:  0.0000
-      Variância:      0.0000
-  CreateAsset @ 160 TPS:
-      Média:          159.9500 tx/s
-      Desvio Padrão:  0.1581
-      Variância:      0.0250
-  CreateAsset @ 295 TPS:
-      Média:          293.2800 tx/s
-      Desvio Padrão:  0.9998
-      Variância:      0.9996
+  CreateAsset @ 100 TPS:
+      Média:          99.9300 tx/s
+      Desvio Padrão:  0.2214
+      Variância:      0.0490
+  CreateAsset @ 200 TPS:
+      Média:          199.9000 tx/s
+      Desvio Padrão:  0.3162
+      Variância:      0.1000
+  CreateAsset @ 300 TPS:
+      Média:          293.4400 tx/s
+      Desvio Padrão:  1.3193
+      Variância:      1.7404
   ReadAsset @ 100 TPS:
       Média:          100.0000 tx/s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 200 TPS:
+      Média:          200.0000 tx/s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 300 TPS:
+      Média:          300.0000 tx/s
       Desvio Padrão:  0.0000
       Variância:      0.0000
   ReadAsset @ 400 TPS:
       Média:          400.0000 tx/s
       Desvio Padrão:  0.0000
       Variância:      0.0000
-  ReadAsset @ 680 TPS:
-      Média:          677.5400 tx/s
-      Desvio Padrão:  3.5362
-      Variância:      12.5049
-  TransferAsset @ 50 TPS:
-      Média:          50.0000 tx/s
+  ReadAsset @ 500 TPS:
+      Média:          500.0000 tx/s
       Desvio Padrão:  0.0000
       Variância:      0.0000
-  TransferAsset @ 160 TPS:
-      Média:          159.9700 tx/s
-      Desvio Padrão:  0.0949
-      Variância:      0.0090
-  TransferAsset @ 295 TPS:
-      Média:          292.2900 tx/s
-      Desvio Padrão:  1.5989
-      Variância:      2.5566
+  ReadAsset @ 600 TPS:
+      Média:          600.0000 tx/s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 700 TPS:
+      Média:          683.2100 tx/s
+      Desvio Padrão:  7.4056
+      Variância:      54.8432
+  TransferAsset @ 100 TPS:
+      Média:          99.9300 tx/s
+      Desvio Padrão:  0.2214
+      Variância:      0.0490
+  TransferAsset @ 200 TPS:
+      Média:          199.5800 tx/s
+      Desvio Padrão:  0.7099
+      Variância:      0.5040
+  TransferAsset @ 300 TPS:
+      Média:          293.4800 tx/s
+      Desvio Padrão:  2.5581
+      Variância:      6.5440
 
   [ Latência Média (s) ]
-  CreateAsset @ 50 TPS:
-      Média:          0.1300 s
+  CreateAsset @ 100 TPS:
+      Média:          0.1240 s
+      Desvio Padrão:  0.0126
+      Variância:      0.0002
+  CreateAsset @ 200 TPS:
+      Média:          0.2750 s
+      Desvio Padrão:  0.0158
+      Variância:      0.0002
+  CreateAsset @ 300 TPS:
+      Média:          0.5450 s
+      Desvio Padrão:  0.0523
+      Variância:      0.0027
+  ReadAsset @ 100 TPS:
+      Média:          0.0100 s
       Desvio Padrão:  0.0000
       Variância:      0.0000
-  CreateAsset @ 160 TPS:
-      Média:          0.2220 s
-      Desvio Padrão:  0.0162
-      Variância:      0.0003
-  CreateAsset @ 295 TPS:
-      Média:          0.5580 s
-      Desvio Padrão:  0.0379
-      Variância:      0.0014
-  ReadAsset @ 100 TPS:
+  ReadAsset @ 200 TPS:
+      Média:          0.0100 s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 300 TPS:
       Média:          0.0100 s
       Desvio Padrão:  0.0000
       Variância:      0.0000
@@ -66,191 +90,447 @@ Rede Raft:
       Média:          0.0100 s
       Desvio Padrão:  0.0000
       Variância:      0.0000
-  ReadAsset @ 680 TPS:
+  ReadAsset @ 500 TPS:
+      Média:          0.0100 s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 600 TPS:
+      Média:          0.0100 s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 700 TPS:
       Média:          0.0060 s
       Desvio Padrão:  0.0052
       Variância:      0.0000
-  TransferAsset @ 50 TPS:
-      Média:          0.1300 s
-      Desvio Padrão:  0.0000
-      Variância:      0.0000
-  TransferAsset @ 160 TPS:
-      Média:          0.2250 s
-      Desvio Padrão:  0.0196
-      Variância:      0.0004
-  TransferAsset @ 295 TPS:
-      Média:          0.5560 s
-      Desvio Padrão:  0.0303
-      Variância:      0.0009
+  TransferAsset @ 100 TPS:
+      Média:          0.1200 s
+      Desvio Padrão:  0.0082
+      Variância:      0.0001
+  TransferAsset @ 200 TPS:
+      Média:          0.2840 s
+      Desvio Padrão:  0.0165
+      Variância:      0.0003
+  TransferAsset @ 300 TPS:
+      Média:          0.5390 s
+      Desvio Padrão:  0.0412
+      Variância:      0.0017
 
-  [ CPU (%) ]
+  [ CPU (%) — CreateAsset ]
   peer0.org1:
     Consumo médio temporal:
-      Média:          81.7489 %
-      Desvio Padrão:  2.4349
-      Variância:      5.9288
+      Média:          95.1010 %
+      Desvio Padrão:  5.4601
+      Variância:      29.8126
     Pico máximo:
-      Média:          143.3000 %
-      Desvio Padrão:  3.8887
-      Variância:      15.1222
+      Média:          140.6000 %
+      Desvio Padrão:  4.3256
+      Variância:      18.7111
   peer0.org2:
     Consumo médio temporal:
-      Média:          37.6737 %
-      Desvio Padrão:  1.3081
-      Variância:      1.7111
+      Média:          60.8612 %
+      Desvio Padrão:  3.1775
+      Variância:      10.0963
     Pico máximo:
-      Média:          91.2300 %
-      Desvio Padrão:  2.1077
-      Variância:      4.4423
+      Média:          90.7000 %
+      Desvio Padrão:  2.3171
+      Variância:      5.3689
   orderer:
     Consumo médio temporal:
-      Média:          9.1369 %
-      Desvio Padrão:  0.5393
-      Variância:      0.2908
+      Média:          14.9410 %
+      Desvio Padrão:  0.4988
+      Variância:      0.2488
     Pico máximo:
-      Média:          23.1200 %
-      Desvio Padrão:  1.0174
-      Variância:      1.0351
+      Média:          22.7700 %
+      Desvio Padrão:  0.7973
+      Variância:      0.6357
   orderer2:
     Consumo médio temporal:
-      Média:          5.9037 %
-      Desvio Padrão:  0.4198
-      Variância:      0.1762
+      Média:          9.7595 %
+      Desvio Padrão:  0.6327
+      Variância:      0.4003
     Pico máximo:
-      Média:          15.1200 %
-      Desvio Padrão:  0.7671
-      Variância:      0.5884
+      Média:          15.0300 %
+      Desvio Padrão:  0.8744
+      Variância:      0.7646
   orderer3:
     Consumo médio temporal:
-      Média:          6.1415 %
-      Desvio Padrão:  0.4686
-      Variância:      0.2196
+      Média:          9.7942 %
+      Desvio Padrão:  0.6586
+      Variância:      0.4337
     Pico máximo:
-      Média:          16.1700 %
-      Desvio Padrão:  0.6977
-      Variância:      0.4868
+      Média:          15.1800 %
+      Desvio Padrão:  0.8351
+      Variância:      0.6973
   orderer4:
     Consumo médio temporal:
-      Média:          6.3141 %
-      Desvio Padrão:  0.3843
-      Variância:      0.1477
+      Média:          10.3523 %
+      Desvio Padrão:  0.8514
+      Variância:      0.7249
     Pico máximo:
-      Média:          16.5800 %
-      Desvio Padrão:  1.0465
-      Variância:      1.0951
+      Média:          16.0200 %
+      Desvio Padrão:  1.5120
+      Variância:      2.2862
 
-  [ RAM (MB) ]
+  [ RAM (MB) — CreateAsset ]
   peer0.org1:
     Consumo médio temporal:
-      Média:          308.0520 MB
-      Desvio Padrão:  9.8930
-      Variância:      97.8706
+      Média:          337.1937 MB
+      Desvio Padrão:  24.3879
+      Variância:      594.7699
     Pico máximo:
-      Média:          493.7744 MB
-      Desvio Padrão:  52.7018
-      Variância:      2777.4763
+      Média:          547.7761 MB
+      Desvio Padrão:  70.0887
+      Variância:      4912.4225
   peer0.org2:
     Consumo médio temporal:
-      Média:          278.0312 MB
-      Desvio Padrão:  11.1532
-      Variância:      124.3938
+      Média:          331.4531 MB
+      Desvio Padrão:  24.6032
+      Variância:      605.3162
     Pico máximo:
-      Média:          483.4984 MB
-      Desvio Padrão:  55.3232
-      Variância:      3060.6617
+      Média:          536.3466 MB
+      Desvio Padrão:  78.4998
+      Variância:      6162.2129
   orderer:
     Consumo médio temporal:
-      Média:          177.9046 MB
-      Desvio Padrão:  8.4704
-      Variância:      71.7471
+      Média:          222.8176 MB
+      Desvio Padrão:  18.9115
+      Variância:      357.6437
     Pico máximo:
-      Média:          335.0200 MB
-      Desvio Padrão:  45.7658
-      Variância:      2094.5086
+      Média:          374.5513 MB
+      Desvio Padrão:  59.5155
+      Variância:      3542.0889
   orderer2:
     Consumo médio temporal:
-      Média:          164.6541 MB
-      Desvio Padrão:  8.6215
-      Variância:      74.3303
+      Média:          205.9466 MB
+      Desvio Padrão:  16.5728
+      Variância:      274.6575
     Pico máximo:
-      Média:          305.9745 MB
-      Desvio Padrão:  40.0288
-      Variância:      1602.3061
+      Média:          346.6592 MB
+      Desvio Padrão:  52.5480
+      Variância:      2761.2891
   orderer3:
     Consumo médio temporal:
-      Média:          165.4687 MB
-      Desvio Padrão:  8.2883
-      Variância:      68.6960
+      Média:          206.9152 MB
+      Desvio Padrão:  16.5655
+      Variância:      274.4172
     Pico máximo:
-      Média:          310.4834 MB
-      Desvio Padrão:  41.6638
-      Variância:      1735.8723
+      Média:          348.5467 MB
+      Desvio Padrão:  52.7475
+      Variância:      2782.3020
   orderer4:
     Consumo médio temporal:
-      Média:          164.8068 MB
-      Desvio Padrão:  7.3416
-      Variância:      53.8988
+      Média:          207.9606 MB
+      Desvio Padrão:  15.9734
+      Variância:      255.1480
     Pico máximo:
-      Média:          307.6522 MB
-      Desvio Padrão:  36.9579
-      Variância:      1365.8866
+      Média:          350.3292 MB
+      Desvio Padrão:  51.1083
+      Variância:      2612.0609
+
+  [ CPU (%) — ReadAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          69.9279 %
+      Desvio Padrão:  2.7692
+      Variância:      7.6686
+    Pico máximo:
+      Média:          111.8000 %
+      Desvio Padrão:  4.3410
+      Variância:      18.8444
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          4.7553 %
+      Desvio Padrão:  0.1996
+      Variância:      0.0399
+    Pico máximo:
+      Média:          67.6500 %
+      Desvio Padrão:  2.8438
+      Variância:      8.0872
+  orderer:
+    Consumo médio temporal:
+      Média:          1.2080 %
+      Desvio Padrão:  0.0839
+      Variância:      0.0070
+    Pico máximo:
+      Média:          16.6500 %
+      Desvio Padrão:  1.1501
+      Variância:      1.3228
+  orderer2:
+    Consumo médio temporal:
+      Média:          0.7535 %
+      Desvio Padrão:  0.0539
+      Variância:      0.0029
+    Pico máximo:
+      Média:          11.0140 %
+      Desvio Padrão:  0.7901
+      Variância:      0.6242
+  orderer3:
+    Consumo médio temporal:
+      Média:          0.7696 %
+      Desvio Padrão:  0.0573
+      Variância:      0.0033
+    Pico máximo:
+      Média:          11.2800 %
+      Desvio Padrão:  0.8522
+      Variância:      0.7262
+  orderer4:
+    Consumo médio temporal:
+      Média:          0.8087 %
+      Desvio Padrão:  0.0533
+      Variância:      0.0028
+    Pico máximo:
+      Média:          11.9400 %
+      Desvio Padrão:  1.0814
+      Variância:      1.1693
+
+  [ RAM (MB) — ReadAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          133.0315 MB
+      Desvio Padrão:  3.5315
+      Variância:      12.4716
+    Pico máximo:
+      Média:          473.8515 MB
+      Desvio Padrão:  13.9149
+      Variância:      193.6240
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          95.8437 MB
+      Desvio Padrão:  2.4091
+      Variância:      5.8039
+    Pico máximo:
+      Média:          468.2940 MB
+      Desvio Padrão:  11.2088
+      Variância:      125.6375
+  orderer:
+    Consumo médio temporal:
+      Média:          60.9391 MB
+      Desvio Padrão:  3.0113
+      Variância:      9.0680
+    Pico máximo:
+      Média:          261.3051 MB
+      Desvio Padrão:  8.0132
+      Variância:      64.2115
+  orderer2:
+    Consumo médio temporal:
+      Média:          47.0402 MB
+      Desvio Padrão:  2.8991
+      Variância:      8.4049
+    Pico máximo:
+      Média:          234.8810 MB
+      Desvio Padrão:  9.9844
+      Variância:      99.6891
+  orderer3:
+    Consumo médio temporal:
+      Média:          47.1544 MB
+      Desvio Padrão:  2.4357
+      Variância:      5.9325
+    Pico máximo:
+      Média:          235.8247 MB
+      Desvio Padrão:  8.2779
+      Variância:      68.5240
+  orderer4:
+    Consumo médio temporal:
+      Média:          48.1756 MB
+      Desvio Padrão:  1.0854
+      Variância:      1.1781
+    Pico máximo:
+      Média:          239.8093 MB
+      Desvio Padrão:  8.8844
+      Variância:      78.9327
+
+  [ CPU (%) — TransferAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          92.6877 %
+      Desvio Padrão:  2.5593
+      Variância:      6.5499
+    Pico máximo:
+      Média:          141.2000 %
+      Desvio Padrão:  3.7357
+      Variância:      13.9556
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          52.4335 %
+      Desvio Padrão:  1.4186
+      Variância:      2.0124
+    Pico máximo:
+      Média:          88.8400 %
+      Desvio Padrão:  1.8265
+      Variância:      3.3360
+  orderer:
+    Consumo médio temporal:
+      Média:          13.2415 %
+      Desvio Padrão:  0.8438
+      Variância:      0.7120
+    Pico máximo:
+      Média:          23.4400 %
+      Desvio Padrão:  1.4789
+      Variância:      2.1871
+  orderer2:
+    Consumo médio temporal:
+      Média:          8.7470 %
+      Desvio Padrão:  0.3228
+      Variância:      0.1042
+    Pico máximo:
+      Média:          15.7000 %
+      Desvio Padrão:  0.4497
+      Variância:      0.2022
+  orderer3:
+    Consumo médio temporal:
+      Média:          8.5604 %
+      Desvio Padrão:  0.5644
+      Variância:      0.3186
+    Pico máximo:
+      Média:          15.3600 %
+      Desvio Padrão:  1.0113
+      Variância:      1.0227
+  orderer4:
+    Consumo médio temporal:
+      Média:          8.5081 %
+      Desvio Padrão:  0.5508
+      Variância:      0.3034
+    Pico máximo:
+      Média:          15.2700 %
+      Desvio Padrão:  0.9821
+      Variância:      0.9646
+
+  [ RAM (MB) — TransferAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          290.3279 MB
+      Desvio Padrão:  4.3128
+      Variância:      18.6004
+    Pico máximo:
+      Média:          346.0301 MB
+      Desvio Padrão:  6.5763
+      Variância:      43.2475
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          275.4694 MB
+      Desvio Padrão:  2.3466
+      Variância:      5.5067
+    Pico máximo:
+      Média:          323.2760 MB
+      Desvio Padrão:  2.7984
+      Variância:      7.8310
+  orderer:
+    Consumo médio temporal:
+      Média:          183.9522 MB
+      Desvio Padrão:  2.8171
+      Variância:      7.9363
+    Pico máximo:
+      Média:          227.5410 MB
+      Desvio Padrão:  4.8432
+      Variância:      23.4562
+  orderer2:
+    Consumo médio temporal:
+      Média:          168.6917 MB
+      Desvio Padrão:  2.9062
+      Variância:      8.4457
+    Pico máximo:
+      Média:          199.4392 MB
+      Desvio Padrão:  4.3319
+      Variância:      18.7650
+  orderer3:
+    Consumo médio temporal:
+      Média:          168.8992 MB
+      Desvio Padrão:  1.9887
+      Variância:      3.9551
+    Pico máximo:
+      Média:          200.1732 MB
+      Desvio Padrão:  4.4884
+      Variância:      20.1455
+  orderer4:
+    Consumo médio temporal:
+      Média:          168.8626 MB
+      Desvio Padrão:  2.3922
+      Variância:      5.7228
+    Pico máximo:
+      Média:          202.2703 MB
+      Desvio Padrão:  3.2956
+      Variância:      10.8607
 
 ------------------------------------------------------------
 
 Rede SmartBFT:
 
   [ Throughput (tx/s) ]
-  CreateAsset @ 50 TPS:
-      Média:          50.0000 tx/s
+  CreateAsset @ 100 TPS:
+      Média:          100.0000 tx/s
       Desvio Padrão:  0.0000
       Variância:      0.0000
-  CreateAsset @ 160 TPS:
-      Média:          159.9700 tx/s
-      Desvio Padrão:  0.0675
-      Variância:      0.0046
-  CreateAsset @ 275 TPS:
-      Média:          271.3200 tx/s
-      Desvio Padrão:  1.9612
-      Variância:      3.8462
+  CreateAsset @ 200 TPS:
+      Média:          199.6100 tx/s
+      Desvio Padrão:  0.4458
+      Variância:      0.1988
+  CreateAsset @ 300 TPS:
+      Média:          270.1700 tx/s
+      Desvio Padrão:  2.9383
+      Variância:      8.6334
   ReadAsset @ 100 TPS:
       Média:          100.0000 tx/s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 200 TPS:
+      Média:          200.0000 tx/s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 300 TPS:
+      Média:          300.0000 tx/s
       Desvio Padrão:  0.0000
       Variância:      0.0000
   ReadAsset @ 400 TPS:
       Média:          400.0000 tx/s
       Desvio Padrão:  0.0000
       Variância:      0.0000
+  ReadAsset @ 500 TPS:
+      Média:          500.0000 tx/s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 600 TPS:
+      Média:          600.0000 tx/s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
   ReadAsset @ 700 TPS:
-      Média:          673.8800 tx/s
-      Desvio Padrão:  9.8889
-      Variância:      97.7907
-  TransferAsset @ 50 TPS:
-      Média:          50.0000 tx/s
-      Desvio Padrão:  0.0000
-      Variância:      0.0000
-  TransferAsset @ 160 TPS:
-      Média:          160.0000 tx/s
-      Desvio Padrão:  0.0000
-      Variância:      0.0000
-  TransferAsset @ 275 TPS:
-      Média:          272.1800 tx/s
-      Desvio Padrão:  1.6904
-      Variância:      2.8573
+      Média:          681.3700 tx/s
+      Desvio Padrão:  8.0494
+      Variância:      64.7934
+  TransferAsset @ 100 TPS:
+      Média:          99.8800 tx/s
+      Desvio Padrão:  0.1751
+      Variância:      0.0307
+  TransferAsset @ 200 TPS:
+      Média:          199.9400 tx/s
+      Desvio Padrão:  0.0966
+      Variância:      0.0093
+  TransferAsset @ 300 TPS:
+      Média:          273.2800 tx/s
+      Desvio Padrão:  2.5931
+      Variância:      6.7240
 
   [ Latência Média (s) ]
-  CreateAsset @ 50 TPS:
-      Média:          0.1060 s
-      Desvio Padrão:  0.0052
-      Variância:      0.0000
-  CreateAsset @ 160 TPS:
-      Média:          0.2650 s
-      Desvio Padrão:  0.0158
+  CreateAsset @ 100 TPS:
+      Média:          0.1750 s
+      Desvio Padrão:  0.0135
       Variância:      0.0002
-  CreateAsset @ 275 TPS:
-      Média:          0.6480 s
-      Desvio Padrão:  0.0374
-      Variância:      0.0014
+  CreateAsset @ 200 TPS:
+      Média:          0.4000 s
+      Desvio Padrão:  0.0327
+      Variância:      0.0011
+  CreateAsset @ 300 TPS:
+      Média:          0.7130 s
+      Desvio Padrão:  0.0462
+      Variância:      0.0021
   ReadAsset @ 100 TPS:
+      Média:          0.0100 s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 200 TPS:
+      Média:          0.0100 s
+      Desvio Padrão:  0.0000
+      Variância:      0.0000
+  ReadAsset @ 300 TPS:
       Média:          0.0100 s
       Desvio Padrão:  0.0000
       Variância:      0.0000
@@ -258,133 +538,365 @@ Rede SmartBFT:
       Média:          0.0100 s
       Desvio Padrão:  0.0000
       Variância:      0.0000
-  ReadAsset @ 700 TPS:
+  ReadAsset @ 500 TPS:
       Média:          0.0100 s
       Desvio Padrão:  0.0000
       Variância:      0.0000
-  TransferAsset @ 50 TPS:
-      Média:          0.1010 s
-      Desvio Padrão:  0.0032
+  ReadAsset @ 600 TPS:
+      Média:          0.0040 s
+      Desvio Padrão:  0.0052
       Variância:      0.0000
-  TransferAsset @ 160 TPS:
-      Média:          0.2710 s
-      Desvio Padrão:  0.0129
+  ReadAsset @ 700 TPS:
+      Média:          0.0020 s
+      Desvio Padrão:  0.0042
+      Variância:      0.0000
+  TransferAsset @ 100 TPS:
+      Média:          0.1730 s
+      Desvio Padrão:  0.0125
       Variância:      0.0002
-  TransferAsset @ 275 TPS:
-      Média:          0.6960 s
-      Desvio Padrão:  0.0255
+  TransferAsset @ 200 TPS:
+      Média:          0.3970 s
+      Desvio Padrão:  0.0254
       Variância:      0.0006
+  TransferAsset @ 300 TPS:
+      Média:          0.7310 s
+      Desvio Padrão:  0.0615
+      Variância:      0.0038
 
-  [ CPU (%) ]
+  [ CPU (%) — CreateAsset ]
   peer0.org1:
     Consumo médio temporal:
-      Média:          92.3153 %
-      Desvio Padrão:  3.3530
-      Variância:      11.2427
+      Média:          111.5784 %
+      Desvio Padrão:  3.8034
+      Variância:      14.4661
     Pico máximo:
-      Média:          154.4000 %
-      Desvio Padrão:  2.4585
-      Variância:      6.0444
+      Média:          154.5000 %
+      Desvio Padrão:  3.2404
+      Variância:      10.5000
   peer0.org2:
     Consumo médio temporal:
-      Média:          39.2949 %
-      Desvio Padrão:  1.7507
-      Variância:      3.0651
+      Média:          63.1198 %
+      Desvio Padrão:  2.4938
+      Variância:      6.2191
     Pico máximo:
-      Média:          87.0900 %
-      Desvio Padrão:  2.0658
-      Variância:      4.2677
+      Média:          87.3900 %
+      Desvio Padrão:  1.9232
+      Variância:      3.6988
   orderer:
     Consumo médio temporal:
-      Média:          24.9758 %
-      Desvio Padrão:  2.0729
-      Variância:      4.2971
+      Média:          39.4743 %
+      Desvio Padrão:  3.7923
+      Variância:      14.3818
     Pico máximo:
-      Média:          58.9100 %
-      Desvio Padrão:  5.8402
-      Variância:      34.1077
+      Média:          55.4400 %
+      Desvio Padrão:  6.5168
+      Variância:      42.4693
   orderer2:
     Consumo médio temporal:
-      Média:          24.4572 %
-      Desvio Padrão:  2.4169
-      Variância:      5.8413
+      Média:          40.0252 %
+      Desvio Padrão:  3.8533
+      Variância:      14.8481
     Pico máximo:
-      Média:          57.3100 %
-      Desvio Padrão:  4.3059
-      Variância:      18.5410
+      Média:          55.3000 %
+      Desvio Padrão:  6.6039
+      Variância:      43.6111
   orderer3:
     Consumo médio temporal:
-      Média:          25.4803 %
-      Desvio Padrão:  2.4273
-      Variância:      5.8916
+      Média:          38.3747 %
+      Desvio Padrão:  3.9897
+      Variância:      15.9180
     Pico máximo:
-      Média:          57.9200 %
-      Desvio Padrão:  3.8363
-      Variância:      14.7173
+      Média:          52.4100 %
+      Desvio Padrão:  6.5836
+      Variância:      43.3432
   orderer4:
     Consumo médio temporal:
-      Média:          24.9591 %
-      Desvio Padrão:  2.8305
-      Variância:      8.0115
+      Média:          37.7783 %
+      Desvio Padrão:  3.5973
+      Variância:      12.9409
     Pico máximo:
-      Média:          56.7500 %
-      Desvio Padrão:  5.5060
-      Variância:      30.3161
+      Média:          51.9000 %
+      Desvio Padrão:  5.9003
+      Variância:      34.8133
 
-  [ RAM (MB) ]
+  [ RAM (MB) — CreateAsset ]
   peer0.org1:
     Consumo médio temporal:
-      Média:          305.6829 MB
-      Desvio Padrão:  11.7997
-      Variância:      139.2325
+      Média:          334.9312 MB
+      Desvio Padrão:  18.5652
+      Variância:      344.6653
     Pico máximo:
-      Média:          508.4545 MB
-      Desvio Padrão:  58.4710
-      Variância:      3418.8581
+      Média:          532.4669 MB
+      Desvio Padrão:  61.6609
+      Variância:      3802.0623
   peer0.org2:
     Consumo médio temporal:
-      Média:          269.7195 MB
-      Desvio Padrão:  10.4803
-      Variância:      109.8357
+      Média:          328.1610 MB
+      Desvio Padrão:  18.4979
+      Variância:      342.1738
     Pico máximo:
-      Média:          489.1607 MB
-      Desvio Padrão:  58.9906
-      Variância:      3479.8932
+      Média:          523.5540 MB
+      Desvio Padrão:  65.4538
+      Variância:      4284.1982
   orderer:
     Consumo médio temporal:
-      Média:          158.9600 MB
-      Desvio Padrão:  6.2336
-      Variância:      38.8581
+      Média:          193.8648 MB
+      Desvio Padrão:  11.5215
+      Variância:      132.7448
     Pico máximo:
-      Média:          289.0924 MB
-      Desvio Padrão:  34.1572
-      Variância:      1166.7162
+      Média:          325.1634 MB
+      Desvio Padrão:  43.0199
+      Variância:      1850.7102
   orderer2:
     Consumo médio temporal:
-      Média:          150.8644 MB
-      Desvio Padrão:  6.0947
-      Variância:      37.1457
+      Média:          188.9245 MB
+      Desvio Padrão:  11.0609
+      Variância:      122.3425
     Pico máximo:
-      Média:          276.9289 MB
-      Desvio Padrão:  34.7191
-      Variância:      1205.4190
+      Média:          312.8951 MB
+      Desvio Padrão:  41.2860
+      Variância:      1704.5362
   orderer3:
     Consumo médio temporal:
-      Média:          152.2153 MB
-      Desvio Padrão:  6.1870
-      Variância:      38.2795
+      Média:          187.8855 MB
+      Desvio Padrão:  9.6657
+      Variância:      93.4261
     Pico máximo:
-      Média:          283.2204 MB
-      Desvio Padrão:  37.7308
-      Variância:      1423.6110
+      Média:          312.9999 MB
+      Desvio Padrão:  39.2536
+      Variância:      1540.8434
   orderer4:
     Consumo médio temporal:
-      Média:          152.4539 MB
-      Desvio Padrão:  5.1303
-      Variância:      26.3195
+      Média:          188.0858 MB
+      Desvio Padrão:  10.5539
+      Variância:      111.3849
     Pico máximo:
-      Média:          284.3738 MB
-      Desvio Padrão:  35.7057
-      Variância:      1274.8959
+      Média:          312.0562 MB
+      Desvio Padrão:  39.3653
+      Variância:      1549.6273
+
+  [ CPU (%) — ReadAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          69.8825 %
+      Desvio Padrão:  2.8566
+      Variância:      8.1600
+    Pico máximo:
+      Média:          116.9000 %
+      Desvio Padrão:  5.1305
+      Variância:      26.3222
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          4.8421 %
+      Desvio Padrão:  0.2286
+      Variância:      0.0522
+    Pico máximo:
+      Média:          66.6200 %
+      Desvio Padrão:  2.0927
+      Variância:      4.3796
+  orderer:
+    Consumo médio temporal:
+      Média:          2.6637 %
+      Desvio Padrão:  0.3073
+      Variância:      0.0944
+    Pico máximo:
+      Média:          40.9500 %
+      Desvio Padrão:  5.6327
+      Variância:      31.7272
+  orderer2:
+    Consumo médio temporal:
+      Média:          2.4189 %
+      Desvio Padrão:  0.3175
+      Variância:      0.1008
+    Pico máximo:
+      Média:          41.2100 %
+      Desvio Padrão:  5.5884
+      Variância:      31.2299
+  orderer3:
+    Consumo médio temporal:
+      Média:          2.3076 %
+      Desvio Padrão:  0.3187
+      Variância:      0.1016
+    Pico máximo:
+      Média:          39.4800 %
+      Desvio Padrão:  5.3524
+      Variância:      28.6484
+  orderer4:
+    Consumo médio temporal:
+      Média:          2.2186 %
+      Desvio Padrão:  0.2832
+      Variância:      0.0802
+    Pico máximo:
+      Média:          38.2600 %
+      Desvio Padrão:  4.5233
+      Variância:      20.4604
+
+  [ RAM (MB) — ReadAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          133.4045 MB
+      Desvio Padrão:  3.0667
+      Variância:      9.4045
+    Pico máximo:
+      Média:          493.8793 MB
+      Desvio Padrão:  18.9067
+      Variância:      357.4634
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          96.4431 MB
+      Desvio Padrão:  2.3984
+      Variância:      5.7524
+    Pico máximo:
+      Média:          490.1044 MB
+      Desvio Padrão:  21.1640
+      Variância:      447.9166
+  orderer:
+    Consumo médio temporal:
+      Média:          49.8057 MB
+      Desvio Padrão:  2.3482
+      Variância:      5.5142
+    Pico máximo:
+      Média:          223.9758 MB
+      Desvio Padrão:  10.6499
+      Variância:      113.4207
+  orderer2:
+    Consumo médio temporal:
+      Média:          42.5970 MB
+      Desvio Padrão:  2.5935
+      Variância:      6.7264
+    Pico máximo:
+      Média:          216.7407 MB
+      Desvio Padrão:  12.4074
+      Variância:      153.9438
+  orderer3:
+    Consumo médio temporal:
+      Média:          42.4063 MB
+      Desvio Padrão:  2.0255
+      Variância:      4.1028
+    Pico máximo:
+      Média:          213.8046 MB
+      Desvio Padrão:  13.7026
+      Variância:      187.7599
+  orderer4:
+    Consumo médio temporal:
+      Média:          42.4911 MB
+      Desvio Padrão:  2.4214
+      Variância:      5.8631
+    Pico máximo:
+      Média:          217.0552 MB
+      Desvio Padrão:  13.0874
+      Variância:      171.2795
+
+  [ CPU (%) — TransferAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          108.0277 %
+      Desvio Padrão:  1.9449
+      Variância:      3.7826
+    Pico máximo:
+      Média:          154.7000 %
+      Desvio Padrão:  3.1287
+      Variância:      9.7889
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          54.9899 %
+      Desvio Padrão:  1.1544
+      Variância:      1.3326
+    Pico máximo:
+      Média:          86.2600 %
+      Desvio Padrão:  2.0775
+      Variância:      4.3160
+  orderer:
+    Consumo médio temporal:
+      Média:          34.3488 %
+      Desvio Padrão:  3.9619
+      Variância:      15.6967
+    Pico máximo:
+      Média:          55.0400 %
+      Desvio Padrão:  6.9527
+      Variância:      48.3404
+  orderer2:
+    Consumo médio temporal:
+      Média:          33.9942 %
+      Desvio Padrão:  3.1507
+      Variância:      9.9269
+    Pico máximo:
+      Média:          52.9700 %
+      Desvio Padrão:  5.0597
+      Variância:      25.6001
+  orderer3:
+    Consumo médio temporal:
+      Média:          33.9607 %
+      Desvio Padrão:  3.9147
+      Variância:      15.3251
+    Pico máximo:
+      Média:          52.7500 %
+      Desvio Padrão:  6.4870
+      Variância:      42.0806
+  orderer4:
+    Consumo médio temporal:
+      Média:          33.1337 %
+      Desvio Padrão:  3.9570
+      Variância:      15.6575
+    Pico máximo:
+      Média:          51.4500 %
+      Desvio Padrão:  6.3628
+      Variância:      40.4850
+
+  [ RAM (MB) — TransferAsset ]
+  peer0.org1:
+    Consumo médio temporal:
+      Média:          287.7774 MB
+      Desvio Padrão:  2.0642
+      Variância:      4.2611
+    Pico máximo:
+      Média:          343.9329 MB
+      Desvio Padrão:  7.7528
+      Variância:      60.1066
+  peer0.org2:
+    Consumo médio temporal:
+      Média:          273.1572 MB
+      Desvio Padrão:  3.5903
+      Variância:      12.8900
+    Pico máximo:
+      Média:          317.8234 MB
+      Desvio Padrão:  7.4384
+      Variância:      55.3299
+  orderer:
+    Consumo médio temporal:
+      Média:          162.0056 MB
+      Desvio Padrão:  1.3090
+      Variância:      1.7134
+    Pico máximo:
+      Média:          190.9457 MB
+      Desvio Padrão:  5.0518
+      Variância:      25.5209
+  orderer2:
+    Consumo médio temporal:
+      Média:          154.3068 MB
+      Desvio Padrão:  2.7369
+      Variância:      7.4906
+    Pico máximo:
+      Média:          178.6774 MB
+      Desvio Padrão:  3.3232
+      Variância:      11.0440
+  orderer3:
+    Consumo médio temporal:
+      Média:          154.6879 MB
+      Desvio Padrão:  2.6503
+      Variância:      7.0242
+    Pico máximo:
+      Média:          178.8871 MB
+      Desvio Padrão:  2.7164
+      Variância:      7.3789
+  orderer4:
+    Consumo médio temporal:
+      Média:          155.6331 MB
+      Desvio Padrão:  1.5995
+      Variância:      2.5584
+    Pico máximo:
+      Média:          180.8794 MB
+      Desvio Padrão:  3.3616
+      Variância:      11.3005
 
 ------------------------------------------------------------

@@ -139,7 +139,8 @@ def parse_report_html(html_path: str) -> list[dict]:
 
 
 def load_caliper_data(reports_dir: str) -> pd.DataFrame:
-    paths = glob.glob(os.path.join(reports_dir, "**", "round_*", "report.html"), recursive=True)
+    # round_N/<Operacao>/report.html
+    paths = glob.glob(os.path.join(reports_dir, "**", "round_*", "*", "report.html"), recursive=True)
     rows = []
     for p in sorted(paths):
         try:
@@ -174,12 +175,13 @@ def load_resource_csv(path: str, metric: str) -> pd.DataFrame | None:
     return result  # dict: node_key -> array de valores ao longo do tempo
 
 
-def load_resource_rounds(reports_dir: str, algorithm: str, metric: str):
+def load_resource_rounds(reports_dir: str, algorithm: str, operation: str, metric: str):
     """
-    Retorna dict: node_key -> lista de arrays (um array por round).
+    Retorna dict: node_key -> lista de arrays (um array por round),
+    para uma operação específica.
     """
     filename = "CPU.csv" if metric == "cpu" else "Memory.csv"
-    pattern  = os.path.join(reports_dir, algorithm.lower(), "round_*", filename)
+    pattern  = os.path.join(reports_dir, algorithm.lower(), "round_*", operation, filename)
     paths    = sorted(glob.glob(pattern))
 
     if not paths:
@@ -197,7 +199,7 @@ def load_resource_rounds(reports_dir: str, algorithm: str, metric: str):
             else:
                 per_node[node_key].append(vals)
 
-    print(f"[+] {algorithm}: {len(paths)} rounds carregados para {metric.upper()}.")
+    print(f"[+] {algorithm}/{operation}: {len(paths)} rounds carregados para {metric.upper()}.")
     return per_node
 
 
@@ -295,11 +297,11 @@ def section_caliper(algo_stats: dict, algorithm: str) -> list[str]:
     return lines
 
 
-def section_resource(node_stats: dict, algorithm: str, metric: str) -> list[str]:
+def section_resource(node_stats: dict, algorithm: str, operation: str, metric: str) -> list[str]:
     lines = []
     unit = "%" if metric == "cpu" else "MB"
     label = "CPU" if metric == "cpu" else "RAM"
-    lines.append(f"  [ {label} ({unit}) ]")
+    lines.append(f"  [ {label} ({unit}) — {operation} ]")
 
     for node_key in NODE_FILTERS:
         if node_key not in node_stats:
@@ -330,18 +332,20 @@ def main():
     print("[*] Carregando report.html...")
     caliper_df = load_caliper_data(REPORTS_DIR)
 
-    # --- CPU e RAM ---
+    # --- CPU e RAM (uma pasta por operação) ---
     resource_data = {}
     for algorithm in ("Raft", "SmartBFT"):
         resource_data[algorithm] = {}
-        for metric in ("cpu", "ram"):
-            try:
-                resource_data[algorithm][metric] = load_resource_rounds(
-                    REPORTS_DIR, algorithm, metric
-                )
-            except FileNotFoundError as e:
-                print(f"[!] {e}")
-                resource_data[algorithm][metric] = {}
+        for operation in WORKLOAD_ORDER:
+            resource_data[algorithm][operation] = {}
+            for metric in ("cpu", "ram"):
+                try:
+                    resource_data[algorithm][operation][metric] = load_resource_rounds(
+                        REPORTS_DIR, algorithm, operation, metric
+                    )
+                except FileNotFoundError as e:
+                    print(f"[!] {e}")
+                    resource_data[algorithm][operation][metric] = {}
 
     # --- Montar relatório ---
     output = []
@@ -363,18 +367,19 @@ def main():
             output.append("  [!] Dados do Caliper não encontrados.")
             output.append("")
 
-        # CPU e RAM
-        for metric in ("cpu", "ram"):
-            per_node = resource_data[algorithm].get(metric, {})
-            if per_node:
-                node_stats = resource_stats(per_node)
-                output.extend(section_resource(node_stats, algorithm, metric))
-            else:
-                unit  = "%" if metric == "cpu" else "MB"
-                label = "CPU" if metric == "cpu" else "RAM"
-                output.append(f"  [ {label} ({unit}) ]")
-                output.append(f"  [!] Dados não encontrados.")
-                output.append("")
+        # CPU e RAM, uma operação por vez
+        for operation in WORKLOAD_ORDER:
+            for metric in ("cpu", "ram"):
+                per_node = resource_data[algorithm].get(operation, {}).get(metric, {})
+                if per_node:
+                    node_stats = resource_stats(per_node)
+                    output.extend(section_resource(node_stats, algorithm, operation, metric))
+                else:
+                    unit  = "%" if metric == "cpu" else "MB"
+                    label = "CPU" if metric == "cpu" else "RAM"
+                    output.append(f"  [ {label} ({unit}) — {operation} ]")
+                    output.append(f"  [!] Dados não encontrados.")
+                    output.append("")
 
         output.append("-" * 60)
         output.append("")
@@ -384,3 +389,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

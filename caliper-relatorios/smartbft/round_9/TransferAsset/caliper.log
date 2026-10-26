@@ -1,0 +1,893 @@
+2026.10.24-09:42:35.158[32m info [39m [caliper] [cli-launch-manager] 	Set workspace path: /home/vinicin/TCC/SmartBFT/caliper-workspace
+2026.10.24-09:42:35.159[32m info [39m [caliper] [cli-launch-manager] 	Set benchmark configuration path: /home/vinicin/TCC/SmartBFT/caliper-workspace/benchmarks/TransferAsset-benchmark.yaml
+2026.10.24-09:42:35.159[32m info [39m [caliper] [cli-launch-manager] 	Set network configuration path: /home/vinicin/TCC/SmartBFT/caliper-workspace/networks/fabric-network-smartbft.yaml
+2026.10.24-09:42:35.159[32m info [39m [caliper] [cli-launch-manager] 	Set SUT type: fabric
+2026.10.24-09:42:35.161[32m info [39m [caliper] [benchmark-validator] 	No observer specified, will default to `none`
+2026.10.24-09:42:35.162[32m info [39m [caliper] [caliper-engine] 	Starting benchmark flow
+2026.10.24-09:42:35.162[32m info [39m [caliper] [caliper-engine] 	Skipping start commands due to benchmark flow conditioning
+2026.10.24-09:42:35.162[32m info [39m [caliper] [caliper-engine] 	Skipping initialization phase due to benchmark flow conditioning
+2026.10.24-09:42:35.162[32m info [39m [caliper] [caliper-engine] 	Skipping install smart contract phase due to benchmark flow conditioning
+2026.10.24-09:42:35.464[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.24-09:42:35.475[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.24-09:42:35.477[32m info [39m [caliper] [monitor.js] 	No resource monitors specified
+2026.10.24-09:42:35.478[32m info [39m [caliper] [default-observer] 	Observer interval set to 5000 milliseconds
+2026.10.24-09:42:35.480[32m info [39m [caliper] [round-orchestrator] 	Preparing worker connections
+2026.10.24-09:42:35.480[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 1 of 2
+2026.10.24-09:42:35.484[32m info [39m [caliper] [worker-orchestrator] 	Launching worker 2 of 2
+2026.10.24-09:42:35.485[32m info [39m [caliper] [worker-orchestrator] 	Messenger not configured, entering configure phase...
+2026.10.24-09:42:35.485[32m info [39m [caliper] [worker-orchestrator] 	No existing workers detected, entering worker launch phase...
+2026.10.24-09:42:35.486[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be connected...
+2026.10.24-09:42:35.668[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/vinicin/TCC/SmartBFT/caliper-workspace
+2026.10.24-09:42:35.669[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/vinicin/TCC/SmartBFT/caliper-workspace/benchmarks/TransferAsset-benchmark.yaml
+2026.10.24-09:42:35.669[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/vinicin/TCC/SmartBFT/caliper-workspace/networks/fabric-network-smartbft.yaml
+2026.10.24-09:42:35.669[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.10.24-09:42:35.743[32m info [39m [caliper] [cli-launch-worker] 	Set workspace path: /home/vinicin/TCC/SmartBFT/caliper-workspace
+2026.10.24-09:42:35.744[32m info [39m [caliper] [cli-launch-worker] 	Set benchmark configuration path: /home/vinicin/TCC/SmartBFT/caliper-workspace/benchmarks/TransferAsset-benchmark.yaml
+2026.10.24-09:42:35.744[32m info [39m [caliper] [cli-launch-worker] 	Set network configuration path: /home/vinicin/TCC/SmartBFT/caliper-workspace/networks/fabric-network-smartbft.yaml
+2026.10.24-09:42:35.744[32m info [39m [caliper] [cli-launch-worker] 	Set SUT type: fabric
+2026.10.24-09:42:35.755[32m info [39m [caliper] [worker-orchestrator] 	2 workers connected, progressing to worker assignment phase.
+2026.10.24-09:42:35.755[32m info [39m [caliper] [worker-orchestrator] 	Workers currently unassigned, awaiting index assignment...
+2026.10.24-09:42:35.756[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be assigned...
+2026.10.24-09:42:35.786[32m info [39m [caliper] [worker-orchestrator] 	2 workers assigned, progressing to worker initialization phase.
+2026.10.24-09:42:35.787[32m info [39m [caliper] [worker-orchestrator] 	Waiting for 2 workers to be ready...
+2026.10.24-09:42:35.787[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#0...
+2026.10.24-09:42:35.787[32m info [39m [caliper] [worker-message-handler] 	Initializing Worker#1...
+2026.10.24-09:42:36.089[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.24-09:42:36.094[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.24-09:42:36.099[32m info [39m [caliper] [worker-message-handler] 	Worker#0 initialized
+2026.10.24-09:42:36.205[32m info [39m [caliper] [FabricConnectorFactory] 	Initializing peer gateway connector compatible with installed fabric-gateway SDK: 1.5.0
+2026.10.24-09:42:36.214[32m info [39m [caliper] [IdentityManager] 	Adding User1 (admin=false) as User1 for organization Org1MSP
+2026.10.24-09:42:36.215[32m info [39m [caliper] [worker-message-handler] 	Worker#1 initialized
+2026.10.24-09:42:36.216[32m info [39m [caliper] [worker-orchestrator] 	2 workers ready, progressing to test preparation phase.
+2026.10.24-09:42:36.216[32m info [39m [caliper] [round-orchestrator] 	Started round 1 (Aquecimento-Ledger (warmup))
+2026.10.24-09:42:36.218[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#0
+2026.10.24-09:42:36.218[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#0
+2026.10.24-09:42:36.246[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:36.247[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is starting...
+2026.10.24-09:42:36.250[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:42:36.250[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:42:36.251[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 0 is completed
+2026.10.24-09:42:36.251[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#0
+2026.10.24-09:42:36.267[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:36.267[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is starting...
+2026.10.24-09:42:36.269[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:42:36.270[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:42:36.270[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 0 is completed
+2026.10.24-09:42:36.271[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#0
+2026.10.24-09:42:36.272[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.24-09:42:36.272[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.24-09:42:36.275[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#0
+2026.10.24-09:42:36.275[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#0
+2026.10.24-09:42:36.277[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:36.278[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.24-09:42:36.279[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:36.281[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.24-09:42:41.289[32m info [39m [caliper] [default-observer] 	[Aquecimento-Ledger (warmup) Round 0 Transaction Info] - Submitted: 401 Succ: 390 Fail:0 Unfinished:11
+2026.10.24-09:42:46.274[32m info [39m [caliper] [default-observer] 	[Aquecimento-Ledger (warmup) Round 0 Transaction Info] - Submitted: 902 Succ: 896 Fail:0 Unfinished:6
+2026.10.24-09:42:47.369[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:42:47.369[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:42:47.369[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:42:47.369[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:42:47.370[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#0
+2026.10.24-09:42:47.370[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#0
+2026.10.24-09:42:52.376[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.24-09:42:52.378[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.24-09:42:52.383[32m info [39m [caliper] [report-builder] 	
++-----------------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                        | Succ | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------|------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| Aquecimento-Ledger (warmup) | 1000 | 0    | 100.2           | 0.15            | 0.03            | 0.07            | 99.6             |
++-----------------------------+------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.24-09:42:52.384[32m info [39m [caliper] [round-orchestrator] 	Finished round 1 (Aquecimento-Ledger (warmup)) in 10.088 seconds
+2026.10.24-09:42:52.384[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.24-09:42:52.384[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.24-09:42:57.389[32m info [39m [caliper] [round-orchestrator] 	Started round 2 (transferAsset(Leitura+Escrita) - 100tps)
+2026.10.24-09:42:57.390[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#1
+2026.10.24-09:42:57.390[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#1
+2026.10.24-09:42:57.401[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:57.401[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is starting...
+2026.10.24-09:42:57.402[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:57.402[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is starting...
+2026.10.24-09:42:57.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:42:57.403[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:42:57.403[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 1 is completed
+2026.10.24-09:42:57.403[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#1
+2026.10.24-09:42:57.404[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:42:57.404[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:42:57.404[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 1 is completed
+2026.10.24-09:42:57.404[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#1
+2026.10.24-09:42:57.404[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.24-09:42:57.404[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.24-09:42:57.405[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#1
+2026.10.24-09:42:57.405[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#1
+2026.10.24-09:42:57.408[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:57.408[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:42:57.408[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.24-09:42:57.408[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.24-09:43:02.406[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 402 Succ: 394 Fail:0 Unfinished:8
+2026.10.24-09:43:07.407[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 902 Succ: 894 Fail:0 Unfinished:8
+2026.10.24-09:43:12.408[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 1403 Succ: 1396 Fail:0 Unfinished:7
+2026.10.24-09:43:17.409[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 1903 Succ: 1898 Fail:0 Unfinished:5
+2026.10.24-09:43:22.410[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 2404 Succ: 2398 Fail:0 Unfinished:6
+2026.10.24-09:43:27.411[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 2904 Succ: 2880 Fail:0 Unfinished:24
+2026.10.24-09:43:32.412[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 3404 Succ: 3396 Fail:0 Unfinished:8
+2026.10.24-09:43:37.413[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 3906 Succ: 3900 Fail:0 Unfinished:6
+2026.10.24-09:43:42.414[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 4406 Succ: 4394 Fail:0 Unfinished:12
+2026.10.24-09:43:47.416[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 4906 Succ: 4898 Fail:0 Unfinished:8
+2026.10.24-09:43:52.415[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 5406 Succ: 5402 Fail:0 Unfinished:4
+2026.10.24-09:43:57.416[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 5908 Succ: 5900 Fail:0 Unfinished:8
+2026.10.24-09:44:02.417[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 6408 Succ: 6400 Fail:0 Unfinished:8
+2026.10.24-09:44:07.418[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 6908 Succ: 6902 Fail:0 Unfinished:6
+2026.10.24-09:44:12.419[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 7407 Succ: 7364 Fail:0 Unfinished:43
+2026.10.24-09:44:17.420[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 7912 Succ: 7838 Fail:0 Unfinished:74
+2026.10.24-09:44:22.420[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 8413 Succ: 8405 Fail:0 Unfinished:8
+2026.10.24-09:44:27.421[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 8913 Succ: 8903 Fail:0 Unfinished:10
+2026.10.24-09:44:32.421[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 9413 Succ: 9405 Fail:0 Unfinished:8
+2026.10.24-09:44:37.422[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 9914 Succ: 9907 Fail:0 Unfinished:7
+2026.10.24-09:44:42.423[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 10414 Succ: 10411 Fail:0 Unfinished:3
+2026.10.24-09:44:47.424[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 10914 Succ: 10905 Fail:0 Unfinished:9
+2026.10.24-09:44:52.425[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 11415 Succ: 11409 Fail:0 Unfinished:6
+2026.10.24-09:44:57.426[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 11915 Succ: 11908 Fail:0 Unfinished:7
+2026.10.24-09:45:02.427[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 12417 Succ: 12332 Fail:0 Unfinished:85
+2026.10.24-09:45:07.428[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 12918 Succ: 12833 Fail:0 Unfinished:85
+2026.10.24-09:45:12.429[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 13419 Succ: 13413 Fail:0 Unfinished:6
+2026.10.24-09:45:17.430[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 13919 Succ: 13912 Fail:0 Unfinished:7
+2026.10.24-09:45:22.431[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 14420 Succ: 14411 Fail:0 Unfinished:9
+2026.10.24-09:45:27.432[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 14920 Succ: 14911 Fail:0 Unfinished:9
+2026.10.24-09:45:32.432[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 15420 Succ: 15415 Fail:0 Unfinished:5
+2026.10.24-09:45:37.434[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 15920 Succ: 15914 Fail:0 Unfinished:6
+2026.10.24-09:45:42.434[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 16421 Succ: 16416 Fail:0 Unfinished:5
+2026.10.24-09:45:47.434[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 16922 Succ: 16914 Fail:0 Unfinished:8
+2026.10.24-09:45:52.435[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 17422 Succ: 17342 Fail:0 Unfinished:80
+2026.10.24-09:45:57.436[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 17922 Succ: 17827 Fail:0 Unfinished:95
+2026.10.24-09:46:02.436[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 18422 Succ: 18416 Fail:0 Unfinished:6
+2026.10.24-09:46:07.436[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 18922 Succ: 18916 Fail:0 Unfinished:6
+2026.10.24-09:46:12.437[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 19423 Succ: 19416 Fail:0 Unfinished:7
+2026.10.24-09:46:17.438[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 19923 Succ: 19915 Fail:0 Unfinished:8
+2026.10.24-09:46:22.438[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 20424 Succ: 20419 Fail:0 Unfinished:5
+2026.10.24-09:46:27.439[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 20925 Succ: 20919 Fail:0 Unfinished:6
+2026.10.24-09:46:32.440[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 21425 Succ: 21417 Fail:0 Unfinished:8
+2026.10.24-09:46:37.440[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 21926 Succ: 21918 Fail:0 Unfinished:8
+2026.10.24-09:46:42.441[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 22426 Succ: 22338 Fail:0 Unfinished:88
+2026.10.24-09:46:47.442[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 22927 Succ: 22830 Fail:0 Unfinished:97
+2026.10.24-09:46:52.442[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 23427 Succ: 23420 Fail:0 Unfinished:7
+2026.10.24-09:46:57.442[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 23927 Succ: 23918 Fail:0 Unfinished:9
+2026.10.24-09:47:02.443[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 24427 Succ: 24421 Fail:0 Unfinished:6
+2026.10.24-09:47:07.443[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 24927 Succ: 24921 Fail:0 Unfinished:6
+2026.10.24-09:47:12.444[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 25429 Succ: 25424 Fail:0 Unfinished:5
+2026.10.24-09:47:17.445[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 25929 Succ: 25922 Fail:0 Unfinished:7
+2026.10.24-09:47:22.446[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 26429 Succ: 26425 Fail:0 Unfinished:4
+2026.10.24-09:47:27.446[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 26929 Succ: 26922 Fail:0 Unfinished:7
+2026.10.24-09:47:32.448[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 27431 Succ: 27377 Fail:0 Unfinished:54
+2026.10.24-09:47:37.449[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 27932 Succ: 27804 Fail:0 Unfinished:128
+2026.10.24-09:47:42.450[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 28432 Succ: 28426 Fail:0 Unfinished:6
+2026.10.24-09:47:47.451[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 28932 Succ: 28926 Fail:0 Unfinished:6
+2026.10.24-09:47:52.452[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 29432 Succ: 29423 Fail:0 Unfinished:9
+2026.10.24-09:47:57.453[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 100tps Round 1 Transaction Info] - Submitted: 29933 Succ: 29925 Fail:0 Unfinished:8
+2026.10.24-09:47:58.491[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:47:58.491[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:47:58.491[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#1
+2026.10.24-09:47:58.494[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:47:58.494[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:47:58.495[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#1
+2026.10.24-09:48:03.497[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.24-09:48:03.498[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.24-09:48:03.500[32m info [39m [caliper] [report-builder] 	
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                                    | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transferAsset(Leitura+Escrita) - 100tps | 30000 | 0    | 100.0           | 1.64            | 0.03            | 0.17            | 100.0            |
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.24-09:48:03.501[32m info [39m [caliper] [round-orchestrator] 	Finished round 2 (transferAsset(Leitura+Escrita) - 100tps) in 300.084 seconds
+2026.10.24-09:48:03.501[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.24-09:48:03.501[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.24-09:48:08.507[32m info [39m [caliper] [round-orchestrator] 	Started round 3 (transferAsset(Leitura+Escrita) - 200tps)
+2026.10.24-09:48:08.507[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#2
+2026.10.24-09:48:08.507[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#2
+2026.10.24-09:48:08.511[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:48:08.511[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is starting...
+2026.10.24-09:48:08.513[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:48:08.513[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:48:08.513[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 2 is completed
+2026.10.24-09:48:08.513[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#2
+2026.10.24-09:48:08.514[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:48:08.515[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is starting...
+2026.10.24-09:48:08.516[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:48:08.516[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:48:08.516[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 2 is completed
+2026.10.24-09:48:08.516[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#2
+2026.10.24-09:48:08.517[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.24-09:48:08.517[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.24-09:48:08.518[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#2
+2026.10.24-09:48:08.518[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#2
+2026.10.24-09:48:08.520[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:48:08.521[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:48:08.521[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.24-09:48:08.521[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.24-09:48:13.518[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 801 Succ: 787 Fail:0 Unfinished:14
+2026.10.24-09:48:18.519[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 1802 Succ: 1787 Fail:0 Unfinished:15
+2026.10.24-09:48:23.519[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 2803 Succ: 2796 Fail:0 Unfinished:7
+2026.10.24-09:48:28.521[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 3800 Succ: 3462 Fail:0 Unfinished:338
+2026.10.24-09:48:33.523[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 4812 Succ: 4336 Fail:0 Unfinished:476
+2026.10.24-09:48:38.523[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 5815 Succ: 5806 Fail:0 Unfinished:9
+2026.10.24-09:48:43.524[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 6818 Succ: 6805 Fail:0 Unfinished:13
+2026.10.24-09:48:48.525[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 7818 Succ: 7803 Fail:0 Unfinished:15
+2026.10.24-09:48:53.526[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 8820 Succ: 8803 Fail:0 Unfinished:17
+2026.10.24-09:48:58.528[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 9821 Succ: 9811 Fail:0 Unfinished:10
+2026.10.24-09:49:03.528[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 10822 Succ: 10528 Fail:0 Unfinished:294
+2026.10.24-09:49:08.529[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 11835 Succ: 11533 Fail:0 Unfinished:302
+2026.10.24-09:49:13.530[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 12838 Succ: 12824 Fail:0 Unfinished:14
+2026.10.24-09:49:18.530[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 13838 Succ: 13828 Fail:0 Unfinished:10
+2026.10.24-09:49:23.531[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 14839 Succ: 14829 Fail:0 Unfinished:10
+2026.10.24-09:49:28.532[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 15841 Succ: 15827 Fail:0 Unfinished:14
+2026.10.24-09:49:33.533[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 16843 Succ: 16828 Fail:0 Unfinished:15
+2026.10.24-09:49:38.534[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 17836 Succ: 17709 Fail:0 Unfinished:127
+2026.10.24-09:49:43.535[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 18847 Succ: 18682 Fail:0 Unfinished:165
+2026.10.24-09:49:48.536[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 19859 Succ: 19847 Fail:0 Unfinished:12
+2026.10.24-09:49:53.537[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 20860 Succ: 20846 Fail:0 Unfinished:14
+2026.10.24-09:49:58.537[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 21862 Succ: 21850 Fail:0 Unfinished:12
+2026.10.24-09:50:03.539[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 22863 Succ: 22854 Fail:0 Unfinished:9
+2026.10.24-09:50:08.538[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 23865 Succ: 23852 Fail:0 Unfinished:13
+2026.10.24-09:50:13.539[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 24867 Succ: 24796 Fail:0 Unfinished:71
+2026.10.24-09:50:18.542[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 25868 Succ: 25790 Fail:0 Unfinished:78
+2026.10.24-09:50:23.541[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 26870 Succ: 26534 Fail:0 Unfinished:336
+2026.10.24-09:50:28.541[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 27876 Succ: 27862 Fail:0 Unfinished:14
+2026.10.24-09:50:33.542[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 28877 Succ: 28865 Fail:0 Unfinished:12
+2026.10.24-09:50:38.543[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 29878 Succ: 29870 Fail:0 Unfinished:8
+2026.10.24-09:50:43.544[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 30880 Succ: 30869 Fail:0 Unfinished:11
+2026.10.24-09:50:48.545[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 31881 Succ: 31869 Fail:0 Unfinished:12
+2026.10.24-09:50:53.546[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 32884 Succ: 32836 Fail:0 Unfinished:48
+2026.10.24-09:50:58.547[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 33889 Succ: 33508 Fail:0 Unfinished:381
+2026.10.24-09:51:03.548[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 34892 Succ: 34877 Fail:0 Unfinished:15
+2026.10.24-09:51:08.548[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 35893 Succ: 35881 Fail:0 Unfinished:12
+2026.10.24-09:51:13.549[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 36894 Succ: 36880 Fail:0 Unfinished:14
+2026.10.24-09:51:18.550[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 37895 Succ: 37885 Fail:0 Unfinished:10
+2026.10.24-09:51:23.551[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 38896 Succ: 38875 Fail:0 Unfinished:21
+2026.10.24-09:51:28.552[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 39901 Succ: 39716 Fail:0 Unfinished:185
+2026.10.24-09:51:33.553[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 40908 Succ: 40415 Fail:0 Unfinished:493
+2026.10.24-09:51:38.553[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 41913 Succ: 41900 Fail:0 Unfinished:13
+2026.10.24-09:51:43.553[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 42914 Succ: 42899 Fail:0 Unfinished:15
+2026.10.24-09:51:48.553[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 43916 Succ: 43904 Fail:0 Unfinished:12
+2026.10.24-09:51:53.554[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 44916 Succ: 44903 Fail:0 Unfinished:13
+2026.10.24-09:51:58.554[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 45916 Succ: 45901 Fail:0 Unfinished:15
+2026.10.24-09:52:03.555[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 46915 Succ: 46607 Fail:0 Unfinished:308
+2026.10.24-09:52:08.556[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 47928 Succ: 47570 Fail:0 Unfinished:358
+2026.10.24-09:52:13.556[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 48939 Succ: 48929 Fail:0 Unfinished:10
+2026.10.24-09:52:18.556[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 49939 Succ: 49923 Fail:0 Unfinished:16
+2026.10.24-09:52:23.556[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 50940 Succ: 50929 Fail:0 Unfinished:11
+2026.10.24-09:52:28.556[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 51942 Succ: 51930 Fail:0 Unfinished:12
+2026.10.24-09:52:33.557[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 52944 Succ: 52931 Fail:0 Unfinished:13
+2026.10.24-09:52:38.557[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 53928 Succ: 53640 Fail:0 Unfinished:288
+2026.10.24-09:52:43.558[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 54949 Succ: 54670 Fail:0 Unfinished:279
+2026.10.24-09:52:48.559[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 55952 Succ: 55941 Fail:0 Unfinished:11
+2026.10.24-09:52:53.560[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 56952 Succ: 56940 Fail:0 Unfinished:12
+2026.10.24-09:52:58.560[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 57954 Succ: 57943 Fail:0 Unfinished:11
+2026.10.24-09:53:03.560[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 58955 Succ: 58939 Fail:0 Unfinished:16
+2026.10.24-09:53:08.561[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 200tps Round 2 Transaction Info] - Submitted: 59956 Succ: 59944 Fail:0 Unfinished:12
+2026.10.24-09:53:09.620[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:53:09.620[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:53:09.622[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#2
+2026.10.24-09:53:09.629[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:53:09.629[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:53:09.630[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#2
+2026.10.24-09:53:14.632[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.24-09:53:14.632[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.24-09:53:14.634[32m info [39m [caliper] [report-builder] 	
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                                    | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transferAsset(Leitura+Escrita) - 200tps | 60000 | 0    | 200.0           | 3.30            | 0.03            | 0.42            | 199.9            |
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.24-09:53:14.634[32m info [39m [caliper] [round-orchestrator] 	Finished round 3 (transferAsset(Leitura+Escrita) - 200tps) in 300.107 seconds
+2026.10.24-09:53:14.634[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.24-09:53:14.634[32m info [39m [caliper] [round-orchestrator] 	Waiting 5 seconds for the next round...
+2026.10.24-09:53:19.639[32m info [39m [caliper] [round-orchestrator] 	Started round 4 (transferAsset(Leitura+Escrita) - 300tps)
+2026.10.24-09:53:19.641[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#0 for Round#3
+2026.10.24-09:53:19.642[32m info [39m [caliper] [worker-message-handler] 	Preparing Worker#1 for Round#3
+2026.10.24-09:53:19.650[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:53:19.650[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:53:19.651[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 3 is starting...
+2026.10.24-09:53:19.651[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 3 is starting...
+2026.10.24-09:53:19.652[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:53:19.652[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:53:19.653[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:53:19.653[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:53:19.653[32m info [39m [caliper] [caliper-worker] 	Info: worker 0 prepare test phase for round 3 is completed
+2026.10.24-09:53:19.653[32m info [39m [caliper] [caliper-worker] 	Info: worker 1 prepare test phase for round 3 is completed
+2026.10.24-09:53:19.653[32m info [39m [caliper] [worker-message-handler] 	Worker#1 prepared for Round#3
+2026.10.24-09:53:19.653[32m info [39m [caliper] [worker-message-handler] 	Worker#0 prepared for Round#3
+2026.10.24-09:53:19.654[32m info [39m [caliper] [worker-orchestrator] 	2 workers prepared, progressing to test phase.
+2026.10.24-09:53:19.654[32m info [39m [caliper] [round-orchestrator] 	Monitors successfully started
+2026.10.24-09:53:19.655[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is starting Round#3
+2026.10.24-09:53:19.655[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is starting Round#3
+2026.10.24-09:53:19.660[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:53:19.660[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	Generating contract map for user User1
+2026.10.24-09:53:19.661[32m info [39m [caliper] [caliper-worker] 	Worker #0 starting workload loop
+2026.10.24-09:53:19.661[32m info [39m [caliper] [caliper-worker] 	Worker #1 starting workload loop
+2026.10.24-09:53:24.656[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 1077 Succ: 616 Fail:0 Unfinished:461
+2026.10.24-09:53:29.657[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 2473 Succ: 2087 Fail:0 Unfinished:386
+2026.10.24-09:53:31.769[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_120,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:31.770[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_121,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:31.853[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_146,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:31.857[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_169,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:31.932[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_174,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:31.958[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_148,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:33.115[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_119,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.130[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_109,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.131[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_110,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.157[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_134,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.182[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_122,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.194[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_170,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.212[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_151,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.217[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_155,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:33.217[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_149,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:53:34.658[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 3771 Succ: 3731 Fail:15 Unfinished:25
+2026.10.24-09:53:39.659[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 5202 Succ: 5169 Fail:15 Unfinished:18
+2026.10.24-09:53:44.659[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 6607 Succ: 6579 Fail:15 Unfinished:13
+2026.10.24-09:53:49.660[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 8035 Succ: 8003 Fail:15 Unfinished:17
+2026.10.24-09:53:54.661[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 9384 Succ: 9086 Fail:15 Unfinished:283
+2026.10.24-09:53:59.286[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_399,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.287[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_400,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.366[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_500,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.384[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_420,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.401[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_404,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.402[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_417,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.538[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_18,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.538[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_19,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.540[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_13,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.650[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_34,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.650[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_450,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.650[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_445,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.650[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_49,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.655[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_42,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.662[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 10800 Succ: 9905 Fail:15 Unfinished:880
+2026.10.24-09:53:59.665[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_447,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.667[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_444,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.682[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_446,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.688[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_451,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.694[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_449,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.694[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_452,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.695[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_448,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.707[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_50,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.709[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_51,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.766[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_57,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.769[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_53,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.770[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_58,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.771[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_60,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.772[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_469,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.774[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_56,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.775[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_59,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.778[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_64,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.779[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_65,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.779[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_52,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.788[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_61,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.789[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_455,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.789[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_457,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.789[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_453,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.789[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_476,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.789[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_464,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.790[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_454,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.817[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_67,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.880[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_71,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.883[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_73,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.889[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_72,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.889[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_69,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.890[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_76,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.890[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_70,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.891[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_481,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.891[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_85,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.891[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_81,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.919[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_484,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.920[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_482,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.920[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_483,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.924[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_486,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.925[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_82,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.926[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_87,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.928[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_488,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.928[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_487,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.928[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_485,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.932[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_86,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.948[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_493,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.948[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_490,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.949[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_491,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.951[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_90,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.951[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_89,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.953[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_494,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.954[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_492,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.959[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_91,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.986[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_96,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.986[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_95,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.997[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_1,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:53:59.998[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_94,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:00.023[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_3,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:00.031[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_6,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:00.037[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_99,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:00.043[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_101,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:00.045[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_9,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:01.118[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_397,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.140[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_389,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.169[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_418,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.239[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_466,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.258[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_66,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.259[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_63,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.261[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_459,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.262[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_62,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.264[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_470,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.275[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_477,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.275[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_474,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.276[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_458,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.276[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_479,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.276[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_473,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.276[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_462,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.276[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_467,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.276[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_463,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.277[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_471,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.277[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_456,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.288[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_478,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.289[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_460,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.289[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_475,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.289[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_465,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.290[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_468,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.290[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_461,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.290[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_472,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.290[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_480,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.296[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_496,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.296[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_489,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.298[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_77,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.306[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_98,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.307[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_495,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.308[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_2,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.308[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_499,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.308[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_497,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.308[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_498,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:01.311[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_500,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:04.662[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 12129 Succ: 11982 Fail:129 Unfinished:18
+2026.10.24-09:54:09.664[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 13558 Succ: 13415 Fail:129 Unfinished:14
+2026.10.24-09:54:14.665[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 14978 Succ: 14824 Fail:129 Unfinished:25
+2026.10.24-09:54:19.666[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 16376 Succ: 15712 Fail:129 Unfinished:535
+2026.10.24-09:54:24.667[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 17679 Succ: 17106 Fail:129 Unfinished:444
+2026.10.24-09:54:26.493[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_138,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:26.498[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_141,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:26.505[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_284,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:29.667[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 18994 Succ: 18845 Fail:132 Unfinished:17
+2026.10.24-09:54:34.667[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 20413 Succ: 20266 Fail:132 Unfinished:15
+2026.10.24-09:54:39.668[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 21812 Succ: 21663 Fail:132 Unfinished:17
+2026.10.24-09:54:44.669[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 23264 Succ: 22908 Fail:132 Unfinished:224
+2026.10.24-09:54:49.669[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 24616 Succ: 24436 Fail:132 Unfinished:48
+2026.10.24-09:54:53.899[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_374,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:53.946[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_377,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:53.998[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_384,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:54:54.669[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 25978 Succ: 24921 Fail:135 Unfinished:922
+2026.10.24-09:54:55.426[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_375,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:54:59.670[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 27297 Succ: 27146 Fail:136 Unfinished:15
+2026.10.24-09:55:04.670[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 28668 Succ: 28515 Fail:136 Unfinished:17
+2026.10.24-09:55:09.670[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 30049 Succ: 29898 Fail:136 Unfinished:15
+2026.10.24-09:55:14.671[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 31455 Succ: 30701 Fail:136 Unfinished:618
+2026.10.24-09:55:19.671[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 32800 Succ: 32083 Fail:136 Unfinished:581
+2026.10.24-09:55:21.222[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_303,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.223[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_301,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.224[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_302,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.231[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_298,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.236[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_300,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.247[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_54,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.247[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_304,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.247[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_299,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.248[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_296,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.285[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_306,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.339[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_64,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:21.344[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_65,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:22.584[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_60,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:55:22.717[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_86,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:55:24.672[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 34113 Succ: 33946 Fail:150 Unfinished:17
+2026.10.24-09:55:29.673[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 35521 Succ: 35357 Fail:150 Unfinished:14
+2026.10.24-09:55:34.674[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 36910 Succ: 36747 Fail:150 Unfinished:13
+2026.10.24-09:55:39.675[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 38340 Succ: 37854 Fail:150 Unfinished:336
+2026.10.24-09:55:44.675[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 39653 Succ: 39325 Fail:150 Unfinished:178
+2026.10.24-09:55:48.470[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_69,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:48.497[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_74,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:48.606[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_75,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:48.612[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_237,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:55:49.676[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 41000 Succ: 40225 Fail:154 Unfinished:621
+2026.10.24-09:55:49.876[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_71,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:55:49.889[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_66,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:55:49.889[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_70,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:55:49.902[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_72,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:55:49.959[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_73,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:55:54.676[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 42350 Succ: 42170 Fail:159 Unfinished:21
+2026.10.24-09:55:59.677[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 43738 Succ: 43560 Fail:159 Unfinished:19
+2026.10.24-09:56:04.677[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 45144 Succ: 44970 Fail:159 Unfinished:15
+2026.10.24-09:56:09.677[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 46506 Succ: 45747 Fail:159 Unfinished:600
+2026.10.24-09:56:14.678[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 47898 Succ: 47157 Fail:159 Unfinished:582
+2026.10.24-09:56:19.678[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 49196 Succ: 49017 Fail:159 Unfinished:20
+2026.10.24-09:56:24.678[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 50608 Succ: 50432 Fail:159 Unfinished:17
+2026.10.24-09:56:29.678[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 52048 Succ: 51867 Fail:159 Unfinished:22
+2026.10.24-09:56:34.679[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 53463 Succ: 52917 Fail:159 Unfinished:387
+2026.10.24-09:56:39.679[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 54788 Succ: 54417 Fail:159 Unfinished:212
+2026.10.24-09:56:43.406[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_162,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:56:43.407[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_155,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:56:43.469[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_205,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:56:43.673[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_187,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:56:44.679[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 56118 Succ: 55371 Fail:163 Unfinished:584
+2026.10.24-09:56:44.956[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_238,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:56:44.956[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_189,OwnerA],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:56:49.680[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 57486 Succ: 57305 Fail:165 Unfinished:16
+2026.10.24-09:56:54.680[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 58892 Succ: 58710 Fail:165 Unfinished:17
+2026.10.24-09:56:59.680[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 60268 Succ: 60085 Fail:165 Unfinished:18
+2026.10.24-09:57:04.681[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 61629 Succ: 61140 Fail:165 Unfinished:324
+2026.10.24-09:57:09.681[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 62791 Succ: 62059 Fail:165 Unfinished:567
+2026.10.24-09:57:11.027[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_448,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:57:11.029[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_446,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:57:11.029[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_450,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:57:11.086[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w1_454,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:57:11.208[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_471,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:57:14.682[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 64072 Succ: 63884 Fail:170 Unfinished:18
+2026.10.24-09:57:19.683[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 65460 Succ: 65274 Fail:170 Unfinished:16
+2026.10.24-09:57:24.684[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 66846 Succ: 66659 Fail:170 Unfinished:17
+2026.10.24-09:57:29.685[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 68300 Succ: 67819 Fail:170 Unfinished:311
+2026.10.24-09:57:34.686[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 69650 Succ: 69309 Fail:170 Unfinished:171
+2026.10.24-09:57:39.687[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 70931 Succ: 70028 Fail:170 Unfinished:733
+2026.10.24-09:57:44.688[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 72279 Succ: 72090 Fail:170 Unfinished:19
+2026.10.24-09:57:49.689[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 73682 Succ: 73495 Fail:170 Unfinished:17
+2026.10.24-09:57:54.690[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 75043 Succ: 74855 Fail:170 Unfinished:18
+2026.10.24-09:57:59.691[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 76415 Succ: 75666 Fail:170 Unfinished:579
+2026.10.24-09:58:04.692[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 77829 Succ: 76978 Fail:170 Unfinished:681
+2026.10.24-09:58:05.637[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_404,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.679[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_407,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.685[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_409,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.694[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_414,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.694[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_402,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.708[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_410,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.708[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_415,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.711[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_408,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.720[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_417,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.724[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_423,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.724[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_413,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.727[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_420,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.730[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_425,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.732[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_421,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.735[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_427,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.781[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_429,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.781[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_428,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.809[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_432,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.840[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_440,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.846[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_438,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.850[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_439,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.851[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_435,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.851[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_437,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.876[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_444,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.970[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_459,OwnerA],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:05.983[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_460,OwnerB],  with error: EndorseError: 10 ABORTED: failed to collect enough transaction endorsements, see attached details for more info
+Details:
+-  peer0.org2.example.com:9051:ProposalResponsePayloads do not match
+2026.10.24-09:58:07.250[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_422,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:58:07.250[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_424,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:58:07.250[31m error[39m [caliper] [connectors/peer-gateway/PeerGateway] 	Failed to perform submit transaction [TransferAsset] using arguments [warmup_asset_w0_426,OwnerB],  with error: Error: Failed to submit trasaction with status code: 11
+2026.10.24-09:58:09.693[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 79123 Succ: 78910 Fail:199 Unfinished:14
+2026.10.24-09:58:14.693[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 80505 Succ: 80291 Fail:199 Unfinished:15
+2026.10.24-09:58:19.694[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 81876 Succ: 81658 Fail:199 Unfinished:19
+2026.10.24-09:58:24.695[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 83285 Succ: 82832 Fail:199 Unfinished:254
+2026.10.24-09:58:29.696[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 84606 Succ: 84252 Fail:199 Unfinished:155
+2026.10.24-09:58:34.696[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 85898 Succ: 84884 Fail:199 Unfinished:815
+2026.10.24-09:58:39.696[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 87228 Succ: 87014 Fail:199 Unfinished:15
+2026.10.24-09:58:44.697[32m info [39m [caliper] [default-observer] 	[transferAsset(Leitura+Escrita) - 300tps Round 3 Transaction Info] - Submitted: 88618 Succ: 88404 Fail:199 Unfinished:15
+2026.10.24-09:58:48.107[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:58:48.108[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:58:48.109[32m info [39m [caliper] [worker-message-handler] 	Worker#0 finished Round#3
+2026.10.24-09:58:49.697[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.24-09:58:51.980[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gateway for user User1
+2026.10.24-09:58:51.980[32m info [39m [caliper] [connectors/peer-gateway/PeerGateway] 	disconnecting gRpc client at peer peer0.org1.example.com
+2026.10.24-09:58:51.980[32m info [39m [caliper] [worker-message-handler] 	Worker#1 finished Round#3
+2026.10.24-09:58:56.984[32m info [39m [caliper] [default-observer] 	Resetting txCount indicator count
+2026.10.24-09:58:56.985[32m info [39m [caliper] [report-builder] 	### Test result ###
+2026.10.24-09:58:56.986[32m info [39m [caliper] [report-builder] 	
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                                    | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transferAsset(Leitura+Escrita) - 300tps | 89801 | 199  | 271.7           | 4.09            | 0.03            | 0.81            | 271.7            |
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.24-09:58:56.987[32m info [39m [caliper] [round-orchestrator] 	Finished round 4 (transferAsset(Leitura+Escrita) - 300tps) in 331.318 seconds
+2026.10.24-09:58:56.987[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.24-09:58:56.987[32m info [39m [caliper] [report-builder] 	### All test results ###
+2026.10.24-09:58:56.989[32m info [39m [caliper] [report-builder] 	
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+| Name                                    | Succ  | Fail | Send Rate (TPS) | Max Latency (s) | Min Latency (s) | Avg Latency (s) | Throughput (TPS) |
+|-----------------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| Aquecimento-Ledger (warmup)             | 1000  | 0    | 100.2           | 0.15            | 0.03            | 0.07            | 99.6             |
+|-----------------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transferAsset(Leitura+Escrita) - 100tps | 30000 | 0    | 100.0           | 1.64            | 0.03            | 0.17            | 100.0            |
+|-----------------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transferAsset(Leitura+Escrita) - 200tps | 60000 | 0    | 200.0           | 3.30            | 0.03            | 0.42            | 199.9            |
+|-----------------------------------------|-------|------|-----------------|-----------------|-----------------|-----------------|------------------|
+| transferAsset(Leitura+Escrita) - 300tps | 89801 | 199  | 271.7           | 4.09            | 0.03            | 0.81            | 271.7            |
++-----------------------------------------+-------+------+-----------------+-----------------+-----------------+-----------------+------------------+
+
+2026.10.24-09:58:56.998[32m info [39m [caliper] [report-builder] 	Generated report with path /home/vinicin/TCC/SmartBFT/caliper-workspace/report.html
+2026.10.24-09:58:56.999[32m info [39m [caliper] [monitor.js] 	Stopping all monitors
+2026.10.24-09:58:56.999[32m info [39m [caliper] [worker-orchestrator] 	Sending exit message to connected workers
+2026.10.24-09:58:56.999[32m info [39m [caliper] [round-orchestrator] 	Benchmark finished in 980.783 seconds. Total rounds: 4. Successful rounds: 4. Failed rounds: 0.
+2026.10.24-09:58:57.000[32m info [39m [caliper] [caliper-engine] 	Skipping end command due to benchmark flow conditioning
+2026.10.24-09:58:57.000[32m info [39m [caliper] [cli-launch-manager] 	Benchmark successfully finished!
+2026.10.24-09:58:57.000[32m info [39m [caliper] [worker-message-handler] 	Worker#1 is exiting
+2026.10.24-09:58:57.000[32m info [39m [caliper] [worker-message-handler] 	Worker#0 is exiting

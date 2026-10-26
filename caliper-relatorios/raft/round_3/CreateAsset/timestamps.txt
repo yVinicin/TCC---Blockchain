@@ -1,0 +1,4 @@
+round=3
+operation=CreateAsset
+start=2026-10-23T00:31:13-0300
+end=2026-10-23T00:46:50-0300

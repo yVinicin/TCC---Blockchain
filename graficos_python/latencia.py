@@ -134,8 +134,10 @@ def build_dataframe_from_caliper_reports(reports_dir: str) -> pd.DataFrame:
     Varre reports_dir recursivamente em busca de report.html e
     extrai todas as linhas de todos os rounds (em memória, sem salvar CSV).
     """
-    # Somente os rounds normais (ignora a pasta "saturacao")
-    html_paths = glob.glob(os.path.join(reports_dir, "**", "round_*", "report.html"), recursive=True)
+    # Somente os rounds normais (ignora a pasta "saturacao").
+    # Cada round agora tem um report.html por operação, dentro da
+    # respectiva subpasta: round_N/<Operacao>/report.html
+    html_paths = glob.glob(os.path.join(reports_dir, "**", "round_*", "*", "report.html"), recursive=True)
 
     if not html_paths:
         raise FileNotFoundError(
@@ -279,3 +281,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

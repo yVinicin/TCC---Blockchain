@@ -125,8 +125,9 @@ def parse_report_html(html_path: str) -> list[dict]:
 
 
 def load_throughput(reports_dir: str) -> pd.DataFrame:
+    # round_N/<Operacao>/report.html
     paths = glob.glob(
-        os.path.join(reports_dir, "**", "round_*", "report.html"), recursive=True
+        os.path.join(reports_dir, "**", "round_*", "*", "report.html"), recursive=True
     )
     rows = []
     for p in sorted(paths):
@@ -169,27 +170,31 @@ def cpu_mean_for_round(csv_path: str) -> float:
 
 def load_cpu_per_round(reports_dir: str) -> pd.DataFrame:
     """
-    Retorna DataFrame com colunas: algorithm, round, cpu_mean
-    (uma linha por round de cada algoritmo).
+    Retorna DataFrame com colunas: algorithm, workload, round, cpu_mean
+    (uma linha por round de cada algoritmo x operação). A CPU média agora
+    é calculada separadamente para cada operação, já que cada uma roda
+    isolada e tem seu próprio CPU.csv.
     """
     rows = []
     for algorithm in ("Raft", "SmartBFT"):
-        pattern = os.path.join(
-            reports_dir, algorithm.lower(), "round_*", "CPU.csv"
-        )
-        paths = sorted(glob.glob(pattern))
-        if not paths:
-            print(f"[!] Nenhum CPU.csv encontrado para {algorithm}.")
-            continue
-        for path in paths:
-            _, round_num = parse_algorithm_and_round(path)
-            cpu_mean     = cpu_mean_for_round(path)
-            rows.append({
-                "algorithm": algorithm,
-                "round":     round_num,
-                "cpu_mean":  cpu_mean,
-            })
-        print(f"[+] {algorithm}: {len(paths)} rounds de CPU carregados.")
+        for workload in WORKLOADS:
+            pattern = os.path.join(
+                reports_dir, algorithm.lower(), "round_*", workload, "CPU.csv"
+            )
+            paths = sorted(glob.glob(pattern))
+            if not paths:
+                print(f"[!] Nenhum CPU.csv encontrado para {algorithm}/{workload}.")
+                continue
+            for path in paths:
+                _, round_num = parse_algorithm_and_round(path)
+                cpu_mean     = cpu_mean_for_round(path)
+                rows.append({
+                    "algorithm": algorithm,
+                    "workload":  workload,
+                    "round":     round_num,
+                    "cpu_mean":  cpu_mean,
+                })
+            print(f"[+] {algorithm}/{workload}: {len(paths)} rounds de CPU carregados.")
     return pd.DataFrame(rows)
 
 
@@ -202,7 +207,7 @@ def compute_efficiency(throughput_df: pd.DataFrame, cpu_df: pd.DataFrame) -> pd.
     Cruza throughput com CPU média do round e calcula eficiência
     (tx/s por %) para cada combinação algorithm × workload × tps × round.
     """
-    merged = throughput_df.merge(cpu_df, on=["algorithm", "round"], how="left")
+    merged = throughput_df.merge(cpu_df, on=["algorithm", "workload", "round"], how="left")
     merged["efficiency"] = merged["throughput"] / merged["cpu_mean"]
     return merged
 
@@ -337,3 +342,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
